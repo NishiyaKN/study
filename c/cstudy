@@ -1,0 +1,23 @@
+lexicon = symbols
+syntax = collating
+semantics = meaning of statement
+IL = instructions list = machine language
+linking = joining different executable codes
+prototype = int main(void)
+declaration = int number;
+assingment = number = 2;
+--------------------------------------------------
+3e8 = 3 x 10 ^ 8
+--------------------------------------------------
+cascade = if elseif elseif else
+--------------------------------------------------
+int types:
+unsigned = only positive
+long long = big numbers
+short = smol numbers
+
+you can use then like "unsigned long long BigPosNum"
+you can use unsigned char for 255 characters
+
+letter L or l appended on the literal, such as 129L makes them type long
+--------------------------------------------------

@@ -1,0 +1,31 @@
+h1 {
+    color:goldenrod;
+    font-size: 60px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: darkgreen;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#message-el{
+    font-style: italic;
+}
+
+button{
+    font-size: 30px;
+    border-color:goldenrod;
+    color: darkgreen;
+    border-style: none;
+    border-radius: 2px;
+    background-color: goldenrod;
+    font-weight: bolder;
+    padding: 5px;
+    margin:5px;
+}
