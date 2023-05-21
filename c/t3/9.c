@@ -8,24 +8,14 @@ int main(){
     printf("Numeros que se repetem:\n");
     for(i=0;i<10;i++){
         repete=0;
-        for(j=i+1;j<10;i++){
-            if(arr[i] == arr[j]){
+        for(j=0;j<10;j++){
+            if(arr[i] == arr[j] && i != j){
                 repete = 1;
+            }
+            if(repete){
+                printf("%d\n",arr[i]);
                 break;
             }
         }
-        if(repete){
-            int ambos = 0;
-            for(i=0;i<10;i++){
-                if(arr[i] == arr[j]){
-                    ambos = 1;
-                    break;
-                }
-            }
-            if(ambos){
-                printf("%d\n",arr[i]);
-            }
-        }
     }
-
 }

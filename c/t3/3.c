@@ -17,11 +17,14 @@ int main(){
         }
     }
 
-    printf("\nCandidato 1: %d\nCandidato 2: %d\nVotos em branco: %d\nVotos nulos: %d\nVencedor: Candidato ",c1,c2,branco,nulo);
+    printf("\nCandidato 1: %d\nCandidato 2: %d\nVotos em branco: %d\nVotos nulos: %d\nVotos lidos: %d\nVencedor: ",c1,c2,branco,nulo,c1+c2+branco+nulo);
     if(c1>c2){
-        printf("1");
+        printf("Candidato 1");
+    }
+    else if(c1<c2){
+        printf("Candidato 2");
     }
     else{
-        printf("2");
+        printf("Empate");
     }
 }
