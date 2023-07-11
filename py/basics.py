@@ -356,66 +356,6 @@
 # print(summed_lst_num)
 
 #############################################################################################
-
-def is_year_leap(year):
-    if year % 4 != 0:
-        leap = False
-    elif year % 100 != 0:
-        leap = True
-    elif year % 400 != 0:
-        leap = False
-    else:
-        leap = True
-    return leap
-
-def ask_numbers(n):
-    i = 0
-    while i < n:
-        year = int(input("\nType " + str( n - i ) + " more year(s) to know which is a leap one\n"))
-        if year > 1582:
-            list_years.append(year)
-            i += 1
-        else:
-            print("\n*** Invalid year, type anything above 1582 ***\n")
-
-    while True:
-        print("\nIs this correct? (Y/N)")
-        text = ""
-        for i in range(n):
-            text += str(list_years[i]) + " "
-        print(text)
-
-        user_input = input()
-        if user_input == "Y" or user_input == "y":
-            return True
-        elif user_input == "N" or user_input == "n":
-            return False
-        else:
-            print("\n*** Invalid option ***\n")
-
-def parse_result(n):
-    for i in range(n):
-        list_results.append(is_year_leap(list_years[i]))
-
-    for i in range(n):
-        if list_results[i] is False:
-            print(str(list_years[i]) + " is a common year")
-        else:
-            print(str(list_years[i]) + " is a leap year")
-
-while True:
-    number_years = int(input("How many years do you want to know whether it's a leap or normal year? "))
-    list_years = []
-    list_results = []
-    all_ok = ask_numbers(number_years)
-    print()
-    if all_ok is True:
-        parse_result(number_years)
-        print("\nEnd of the program :)\n")
-        break
-    else:
-        print("Let's try again\n")
-
 #############################################################################################
 #############################################################################################
 #############################################################################################
