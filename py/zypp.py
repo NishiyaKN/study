@@ -7,7 +7,5 @@ while True:
     output = p1.stdout.readline().strip()
     if output:
         print(output.strip())
-    else:
-        break
     if fnmatch.fnmatch(output.strip(),"*NEW*"):
         pyautogui.press("Enter")
