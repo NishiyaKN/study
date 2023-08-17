@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Unidade 1 - Exerício 6</title>
+    <script>
+        const n1 = prompt("Digite o numero 1: ");
+        const n2 = prompt("Digite o numero 2: ");
+        const n3 = prompt("Digite o numero 3: ");
+        var maior;
+        var menor;
+
+        while (true){
+            if(n1 > n2 && n1 > n3){
+                maior = n1;
+                break;
+            }
+            else if(n2 > n1 && n2 > n3){
+                maior = n2;
+                break;
+            }
+            else if(n3 > n1 && n3 > n2){
+                maior = n3;
+                break;
+            }
+        }
+
+        while(true){
+            if(n1<n2 && n1 < n3){
+                menor = n1;
+                break;
+            }
+            else if(n2 < n1 && n2 < n3){
+                menor = n2;
+                break;
+            }
+            else if(n3 < n1 && n3 < n2){
+                menor = n3;
+                break;
+            }
+        }
+
+        alert("O maior numero e: " + maior);
+        alert("O menor numero e: " + menor);
+        
+    </script>
+  </head>
+</html>
+
