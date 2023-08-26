@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Unidade 2 - Exerício 2</title>
+    <script>
+        // esse codigo pega um numero inicial e dobra ele 5 vezes 
+
+        // funcao primaria, recebe o numero inicial e a funcao mult
+        function main(num,callback){
+            // retorna uma arrow function que recebe o numero inicial
+            return (num) =>{
+                // entra em um loop que vai executar 5 vezes, atualizando o 
+                // valor do num por meio da funcao callback (multiplica por 2)
+                for(let i = 0; i < 5 ; i++){
+                    alert("Numero: " + num)
+                    num = callback(num)
+                }
+            }
+        }
+
+        const mult = (num) =>{
+            newNum = num * 2;
+            return newNum;
+        }
+
+        var initialNum = prompt("Digite um numero inicial")
+
+        // precisa atribuir o resultado da funcao main a uma variavel pois
+        // como estamos retornando uma funcao, ao executar o main ele
+        // retornaria a arrow function sem executar o que esta dentro dela
+        const alerta = main(initialNum,mult);
+        alerta(initialNum,mult);
+
+        // outra maneira de fazer isso seria com a linha abaixo
+        //main(initialNum,mult)(initialNum,mult);
+
+        // https://developer.mozilla.org/pt-BR/docs/Glossary/First-class_Function
+    </script>
+  </head>
+</html>
+
+

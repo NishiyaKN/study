@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Unidade 1 - Exerício 1</title>
+    <script>
+        function soma(num1,num2,callback){
+            var result = num1 + num2;
+            return () => callback(result);
+        }
+
+        const msg = (result) =>{
+            alert("Resultado da soma: " + result);
+        }
+
+        const alerta = soma(1,2,msg);
+        alerta();
+
+    </script>
+  </head>
+</html>
+

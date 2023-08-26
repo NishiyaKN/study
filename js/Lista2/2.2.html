@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Unidade 1 - Exerício 1</title>
+    <script>
+        function main(num,callback){
+            result = callback(num);
+            alert("Numero: " + result)
+
+            while(result <= 128){
+                return (result) =>{
+                    result = main(num,mult);
+                }
+            }
+        }
+
+        const mult = (num) =>{
+            num = num * 2;
+            return num;
+        }
+
+        var result = 0;
+        var num = 2;
+        const alerta = main(num,mult);
+        alerta(num);
+
+    </script>
+  </head>
+</html>

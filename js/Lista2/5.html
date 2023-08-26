@@ -1,0 +1,25 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Unidade 2 - Exerício 5</title>
+    <script>
+
+        const somaSuprema = (f1,f2) => {
+            return(f1() + f2());
+        }
+
+        function soma1(){
+            return 1 + 1
+        }
+
+        function soma2(){
+            return 2 + 2
+        }
+
+        const result = somaSuprema(soma1,soma2)
+        alert(result)
+
+    </script>
+  </head>
+</html>
+

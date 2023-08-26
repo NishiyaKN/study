@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Unidade 1 - Exerício 1</title>
+    <script>
+      function calcularSoma(a, b, callback) {
+        var resultado = a + b;
+        callback(resultado);
+      }
+
+      function mostrarResultado(resultado) {
+        alert("O resultado é: " + resultado);
+      }
+
+      calcularSoma(5, 10, mostrarResultado);
+    </script>
+  </head>
+</html>
