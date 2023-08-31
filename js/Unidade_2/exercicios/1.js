@@ -1,5 +1,5 @@
 const func = (num,callback) => {
-    result = callback(num);
+    let result = callback(num);
     return result;
 }
 

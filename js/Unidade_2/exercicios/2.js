@@ -4,16 +4,15 @@ function main(num,callback){
 };
 
 const verificaPar = (num) =>{
-    result = num % 2;
-    if(result === 0){
-        return result;
+    let sobra = num % 2;
+    if(sobra === 0){
+        return sobra;
     }
     else{
         throw new Error("Condicao nao satisfeita, jogando um erro para nao executar a funcao principal");
     }
 };
 
-var input = 10;
-var returnedFunction = main(input,verificaPar);
+let returnedFunction = main(10,verificaPar);
 returnedFunction();
 

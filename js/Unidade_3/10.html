@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina HTML 5</title>
+    <script>
+        function busca(array, callback){
+            const pares = callback(array);
+            return pares.find((num,index)=> index === 0);
+        }
+        const verificaPar = (array) =>{
+            const par = array.filter((num)=> num % 2 === 0);
+            return par;
+        }
+
+        const numRetornado = busca([1,2,3,4,5],verificaPar);
+        alert("Numero retornado: "+numRetornado);
+
+    </script>
+</head>
+</html>
+
+
+
