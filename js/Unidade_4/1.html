@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+</head>
+
+<body>
+    <h1 id="title">Titulo</h1>
+    <button id="botao" onclick="click">Alterar cor</button>
+    <script>
+        let cor = 0;
+        botao.addEventListener("click",() => {
+            if(cor === 0){
+                title.style.color = "blue";
+                cor = 1;
+                console.log(cor)
+            }
+            else{
+                title.style.color = "red";
+                cor = 0;
+                console.log(cor)
+            }
+        })
+    </script>
+</body>
+</html>

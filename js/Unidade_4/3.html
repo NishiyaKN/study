@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+</head>
+
+<body>
+    <h1 id="tempo"></h1>
+    <script>
+        function getHorario(){
+            let dia = new Date()
+            let horario = dia.toLocaleTimeString();
+            tempo.innerText = horario;
+        setInterval(getHorario,1000)
+    </script>
+</body>
+</html>
+
