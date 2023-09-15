@@ -33,9 +33,30 @@ button{
 .op{
     background-color: orange;
 }
+
+#clear{
+    position: absolute;
+    float: right;
+
+}
+
 #equals{
     background-color: yellow;
 }
+
+#clear{
+    position: absolute;
+    margin-top: -400px;
+    margin-left: 220px;
+}
+#txt{
+    position: absolute;
+    margin-top: -450px;
+    margin-left: 350px;
+    text-align: left;
+    
+}
+
 
 </style>
 </head>
@@ -60,6 +81,10 @@ button{
             <button class="btn" id="equals">=</button>
             <button class="btn op" id="plus">+</button>
         </div>
+        <pre id="txt">
+        Nao sei onde colocar
+        vai ficar ai flutuando</pre>
+            <button class="btn op" id="clear">C</button>
     </div>
     <script>
         var numero;
@@ -67,16 +92,21 @@ button{
         var segundo;
 
         var operation = 0;
+        var hasDecimal = false;
+        var equalPressed = false;
 
         var conta = document.getElementById("painel");
 
         var btnNumeros = document.getElementsByClassName("number");
         for(let i = 0;i<btnNumeros.length;i++){
             btnNumeros[i].addEventListener("click",()=>{
+                if(!equalPressed){
                 var n = 9-i
                 conta.value+=n
                 numero = conta.value
                 <!-- alert(parseInt(conta.value) *2) -->
+
+                }
             })
         }
 
@@ -87,27 +117,31 @@ button{
 
             // this under here is only for the first with decimal and second normla
             <!-- segundo = segundo[segundo.length - 1] -->
-            if(operation === 1){
-            segundo = numero.split(/[+]+/)[1];
-                resultado = parseFloat(primeiro) + parseFloat(segundo);
-            }
-            else if(operation === 2){
-            segundo = numero.split(/[-]+/)[1];
-                resultado = primeiro - segundo;
-            }
-            else if(operation === 3){
-            segundo = numero.split(/[/]+/)[1];
-                resultado = primeiro / segundo;
-            }
-            else if(operation === 4){
-            segundo = numero.split(/[*]+/)[1];
-                resultado = primeiro * segundo;
-            }
-            conta.value+='='+ resultado
+            if(!equalPressed && operation !== 0){
 
-            <!-- alert("numero: " + numero) -->
-            <!-- alert("primeiro:" + primeiro); -->
-            alert("segundo:" + segundo);
+                if(operation === 1){
+                segundo = numero.split(/[+]+/)[1];
+                    resultado = parseFloat(primeiro) + parseFloat(segundo);
+                }
+                else if(operation === 2){
+                segundo = numero.split(/[-]+/)[1];
+                    resultado = primeiro - segundo;
+                }
+                else if(operation === 3){
+                segundo = numero.split(/[/]+/)[1];
+                    resultado = primeiro / segundo;
+                }
+                else if(operation === 4){
+                segundo = numero.split(/[*]+/)[1];
+                    resultado = primeiro * segundo;
+                }
+                conta.value+='='+ resultado
+
+                equalPressed = true;
+                <!-- alert("numero: " + numero) -->
+                <!-- alert("primeiro:" + primeiro); -->
+                <!-- alert("segundo:" + segundo); -->
+                }
         })
 
         var soma = document.getElementById("plus");
@@ -148,8 +182,26 @@ button{
 
         var dot = document.getElementById("decimal");
         dot.addEventListener("click",()=>{
-            primeiro = numero;
-            conta.value+=".";
+            if(!equalPressed){
+                if(primeiro === undefined){
+                    primeiro = numero;
+                    conta.value+=".";
+                }
+                if(operation !== 0 && !hasDecimal){
+                    conta.value+=".";
+                    hasDecimal = true;
+                }
+            }
+        })
+
+        var ce = document.getElementById("clear");
+        ce.addEventListener("click",()=>{
+            conta.value="";
+            primeiro=undefined;
+            segundo=undefined;
+            hasDecimal=false;
+            equalPressed=false;
+            operation=0;
         })
 
     </script>
