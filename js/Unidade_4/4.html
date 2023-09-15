@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head>
+<style>
+#calculadora{
+    border:1px solid black;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+#btn_grid{
+    margin-top: 30px;
+}
+
+input{
+    margin-top: 20px;
+    font-size: 25px;
+    height: 100px;
+    width: 350px;
+    background-color: lightgray;
+}
+
+button{
+    width: 80px;
+    height: 80px;
+    margin:2px;
+    font-size: 19px;
+    border-radius: 10px;
+}
+
+.op{
+    background-color: orange;
+}
+#equals{
+    background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+    <div id="calculadora">
+        <input id=painel readonly></input>
+        <div id="btn_grid">
+            <button class="btn number">9</button>
+            <button class="btn number">8</button>
+            <button class="btn number">7</button>
+            <button class="btn op" id="divide">/</button>
+            <button class="btn number">6</button>
+            <button class="btn number">5</button>
+            <button class="btn number">4</button>
+            <button class="btn op" id="multiply">*</button>
+            <button class="btn number">3</button>
+            <button class="btn number">2</button>
+            <button class="btn number">1</button>
+            <button class="btn op" id="minus">-</button>
+            <button class="btn number">0</button>
+            <button class="btn" id="decimal">.</button>
+            <button class="btn" id="equals">=</button>
+            <button class="btn op" id="plus">+</button>
+        </div>
+    </div>
+    <script>
+        var numero;
+        var primeiro;
+        var segundo;
+
+        var operation = 0;
+
+        var conta = document.getElementById("painel");
+
+        var btnNumeros = document.getElementsByClassName("number");
+        for(let i = 0;i<btnNumeros.length;i++){
+            btnNumeros[i].addEventListener("click",()=>{
+                var n = 9-i
+                conta.value+=n
+                numero = conta.value
+                <!-- alert(parseInt(conta.value) *2) -->
+            })
+        }
+
+        var igual = document.getElementById("equals");
+        igual.addEventListener("click",()=>{
+            var resultado;
+            <!-- segundo = numero.slice(numero.indexOf('+')+1); -->
+
+            // this under here is only for the first with decimal and second normla
+            <!-- segundo = segundo[segundo.length - 1] -->
+            if(operation === 1){
+            segundo = numero.split(/[+]+/)[1];
+                resultado = parseFloat(primeiro) + parseFloat(segundo);
+            }
+            else if(operation === 2){
+            segundo = numero.split(/[-]+/)[1];
+                resultado = primeiro - segundo;
+            }
+            else if(operation === 3){
+            segundo = numero.split(/[/]+/)[1];
+                resultado = primeiro / segundo;
+            }
+            else if(operation === 4){
+            segundo = numero.split(/[*]+/)[1];
+                resultado = primeiro * segundo;
+            }
+            conta.value+='='+ resultado
+
+            <!-- alert("numero: " + numero) -->
+            <!-- alert("primeiro:" + primeiro); -->
+            alert("segundo:" + segundo);
+        })
+
+        var soma = document.getElementById("plus");
+        soma.addEventListener("click",()=>{
+            primeiro = numero;
+            if(operation === 0){
+                conta.value+="+";
+                operation = 1;
+            }
+        })
+
+        var sub = document.getElementById("minus");
+        sub.addEventListener("click",()=>{
+            primeiro = numero;
+            if(operation === 0){
+                conta.value+="-";
+                operation = 2;
+            }
+        })
+
+        var divisao = document.getElementById("divide");
+        divisao.addEventListener("click",()=>{
+            primeiro = numero;
+            if(operation === 0){
+                conta.value+="/";
+                operation = 3;
+            }
+        })
+
+        var multi = document.getElementById("multiply");
+        multi.addEventListener("click",()=>{
+            primeiro = numero;
+            if(operation === 0){
+                conta.value+="*";
+                operation = 4;
+            }
+        })
+
+        var dot = document.getElementById("decimal");
+        dot.addEventListener("click",()=>{
+            primeiro = numero;
+            conta.value+=".";
+        })
+
+    </script>
+</body>
+</html>
