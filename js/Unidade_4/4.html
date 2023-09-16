@@ -90,6 +90,7 @@ button{
         var numero;
         var primeiro;
         var segundo;
+        var resultado;
 
         var operation = 0;
         var hasDecimal = false;
@@ -100,23 +101,20 @@ button{
         var btnNumeros = document.getElementsByClassName("number");
         for(let i = 0;i<btnNumeros.length;i++){
             btnNumeros[i].addEventListener("click",()=>{
-                if(!equalPressed){
+                if(equalPressed){
+                    reset();
+                }
                 var n = 9-i
                 conta.value+=n
                 numero = conta.value
-                <!-- alert(parseInt(conta.value) *2) -->
-
-                }
             })
         }
 
         var igual = document.getElementById("equals");
         igual.addEventListener("click",()=>{
-            var resultado;
             <!-- segundo = numero.slice(numero.indexOf('+')+1); -->
 
             // this under here is only for the first with decimal and second normla
-            <!-- segundo = segundo[segundo.length - 1] -->
             if(!equalPressed && operation !== 0){
 
                 if(operation === 1){
@@ -151,6 +149,12 @@ button{
                 conta.value+="+";
                 operation = 1;
             }
+            if(equalPressed && operation !== 0){
+                primeiro = resultado;
+                conta.value = primeiro + "+";
+                equalPressed = false;
+                operation = 1;
+            }
         })
 
         var sub = document.getElementById("minus");
@@ -158,6 +162,12 @@ button{
             primeiro = numero;
             if(operation === 0){
                 conta.value+="-";
+                operation = 2;
+            }
+            if(equalPressed && operation !== 0){
+                primeiro = resultado;
+                conta.value = primeiro + "-";
+                equalPressed = false;
                 operation = 2;
             }
         })
@@ -169,6 +179,12 @@ button{
                 conta.value+="/";
                 operation = 3;
             }
+            if(equalPressed && operation !== 0){
+                primeiro = resultado;
+                conta.value = primeiro + "/";
+                equalPressed = false;
+                operation = 3;
+            }
         })
 
         var multi = document.getElementById("multiply");
@@ -176,6 +192,12 @@ button{
             primeiro = numero;
             if(operation === 0){
                 conta.value+="*";
+                operation = 4;
+            }
+            if(equalPressed && operation !== 0){
+                primeiro = resultado;
+                conta.value = primeiro + "*";
+                equalPressed = false;
                 operation = 4;
             }
         })
@@ -195,14 +217,16 @@ button{
         })
 
         var ce = document.getElementById("clear");
-        ce.addEventListener("click",()=>{
+        ce.addEventListener("click",reset)
+
+        function reset(){
             conta.value="";
             primeiro=undefined;
             segundo=undefined;
             hasDecimal=false;
             equalPressed=false;
             operation=0;
-        })
+        }
 
     </script>
 </body>
