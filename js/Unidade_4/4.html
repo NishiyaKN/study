@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+<!--The "C" button is floating since I've been told that the UI doesn't matter, only the functionality of the calculator-->
 <style>
 #calculadora{
     border:1px solid black;
@@ -98,9 +99,12 @@ button{
 
         var conta = document.getElementById("painel");
 
+        // The numbers aren't in the usual order calculators have, but it's easier this way :P
         var btnNumeros = document.getElementsByClassName("number");
         for(let i = 0;i<btnNumeros.length;i++){
             btnNumeros[i].addEventListener("click",()=>{
+                // You don't need to press "C" to clear the pannel, just press a number and it
+                // will clear for you while diplaying the number you typed
                 if(equalPressed){
                     reset();
                 }
@@ -114,23 +118,22 @@ button{
         igual.addEventListener("click",()=>{
             <!-- segundo = numero.slice(numero.indexOf('+')+1); -->
 
-            // this under here is only for the first with decimal and second normla
+            // It does one operation at time, using two numbers only
             if(!equalPressed && operation !== 0){
-
                 if(operation === 1){
-                segundo = numero.split(/[+]+/)[1];
+                segundo = numero.split(/[+]/)[1];
                     resultado = parseFloat(primeiro) + parseFloat(segundo);
                 }
                 else if(operation === 2){
-                segundo = numero.split(/[-]+/)[1];
+                segundo = numero.split(/[-]/)[1];
                     resultado = primeiro - segundo;
                 }
                 else if(operation === 3){
-                segundo = numero.split(/[/]+/)[1];
+                segundo = numero.split(/[/]/)[1];
                     resultado = primeiro / segundo;
                 }
                 else if(operation === 4){
-                segundo = numero.split(/[*]+/)[1];
+                segundo = numero.split(/[*]/)[1];
                     resultado = primeiro * segundo;
                 }
                 conta.value+='='+ resultado
@@ -160,6 +163,9 @@ button{
         var sub = document.getElementById("minus");
         sub.addEventListener("click",()=>{
             primeiro = numero;
+            <!-- if(numero === undefined){ -->
+            <!--     conta.value+="-"; -->
+            <!-- } -->
             if(operation === 0){
                 conta.value+="-";
                 operation = 2;
@@ -175,15 +181,17 @@ button{
         var divisao = document.getElementById("divide");
         divisao.addEventListener("click",()=>{
             primeiro = numero;
-            if(operation === 0){
-                conta.value+="/";
-                operation = 3;
-            }
-            if(equalPressed && operation !== 0){
-                primeiro = resultado;
-                conta.value = primeiro + "/";
-                equalPressed = false;
-                operation = 3;
+            if(numero !== undefined){
+                if(operation === 0){
+                    conta.value+="/";
+                    operation = 3;
+                }
+                if(equalPressed && operation !== 0){
+                    primeiro = resultado;
+                    conta.value = primeiro + "/";
+                    equalPressed = false;
+                    operation = 3;
+                }
             }
         })
 
