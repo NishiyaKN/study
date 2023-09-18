@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <h1>Cadastro de cliente</h1>
+    <p>Nome: </p>
+    <input></input>
+    <br>
+    <p>E-mail: </p>
+    <input></input>
+    <br>
+    <p>Senha: </p>
+    <input></input>
+    <button>Submeter</button>
+
+    <script>
+        var btn = document.getElementsByTagName("button");
+        btn[0].addEventListener("click",()=>{
+            var input = document.getElementsByTagName("input");
+            for(let i = 0;i<input.length;i++){
+                if(input[i].value === ""){
+                    alert("todos os campos devem estar preenchidos!")
+                    break;
+                }
+            }
+        })
+    </script>
+</body>
+</html>
