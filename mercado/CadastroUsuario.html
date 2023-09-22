@@ -87,16 +87,21 @@ table, th, td {
             var nome = document.getElementById("userNome");
             var email = document.getElementById("userEmail");
             var senha = document.getElementById("userSenha");
-            contatos.push({
-                nome: nome.value,
-                email: email.value,
-                senha: senha.value
-            })
-            nome.value = '';
-            email.value = '';
-            senha.value = '';
-            // Only the array is updated, we need to refresh the table
-            refreshTable();
+            if(nome.value !== "" && email.value !== "" && senha.value !== ""){
+                contatos.push({
+                    nome: nome.value,
+                    email: email.value,
+                    senha: senha.value
+                })
+                nome.value = '';
+                email.value = '';
+                senha.value = '';
+                // Only the array is updated, we need to refresh the table
+                refreshTable();
+            }
+            else{
+                alert("Preencha todos os campos")
+            }
         })
 
         function refreshTable(){
@@ -158,20 +163,21 @@ table, th, td {
             var email = document.getElementById("userEmail");
             var senha = document.getElementById("userSenha");
 
-            if(isEditing){
+            if(isEditing && nome.value !== "" && email.value !== "" && senha.value !== ""){
                 contatos.splice(position,1,{nome: nome.value, email: email.value, senha: senha.value});
                 console.log(contatos);
                 isEditing = false;
+                console.log(isEditing,position)
+                nome.value = '';
+                email.value = '';
+                senha.value = '';
+
+                btnConfirm.style.display="none";
+                refreshTable();
             }
-            
-
-            console.log(isEditing,position)
-            nome.value = '';
-            email.value = '';
-            senha.value = '';
-
-            btnConfirm.style.display="none";
-            refreshTable();
+            else{
+                alert("Preencha todos os campos");
+            }
         }
 
         // Call all these when opening the webpage
