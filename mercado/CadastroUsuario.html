@@ -8,18 +8,30 @@ table, th, td {
 </head>
 
 <body>
+    <h1>Cadastro Usuario</h1>
+    Nome:<input id="userNome"></input>
+    <br>
+    Email:<input id="userEmail"></input>
+    <br>
+    Senha:<input id="userSenha" type="password"></input>
+    <br>
+    <br>
     <table id="tbUser">
     </table>
+    <br>
     <button id="btnAdd">Adicionar Contato</button>
+    <button id="btnConfirma" style="display:none">Confirmar edicao</button>
     <script>
         var contatos = [
-            {nome:"Jonas",email:"jonas@email.com",fone:"1234-1234"},
-            {nome:"Maria",email:"maria@email.com",fone:"3562-2349"},
-            {nome:"Linus Torvalds",email:"ltorvalds@email.com",fone:"2598-9781"},
-            {nome:"Stallman",email:"richardstallman@fsf.com",fone:"9295-0838"},
+            {nome:"Jonas",email:"jonas@email.com",senha:"1234-1234"},
+            {nome:"Maria",email:"maria@email.com",senha:"3562-2349"},
+            {nome:"Linus Torvalds",email:"ltorvalds@email.com",senha:"2598-9781"},
+            {nome:"Stallman",email:"richardstallman@fsf.com",senha:"9295-0838"},
             ];
 
         var tabela = document.getElementById("tbUser");
+
+        var isEditing = false;
 
         // The table is updated by removing all it's child elements(all rows), including the header
         // and then the array contato is updated, lastly the rows are created with the updated array
@@ -39,7 +51,7 @@ table, th, td {
                         headerTitle="Email";
                         break;
                     case 2:
-                        headerTitle="Fone";
+                        headerTitle="Senha";
                         break;
                     case 3:
                         headerTitle="Acoes";
@@ -62,7 +74,7 @@ table, th, td {
 
                 cell1.innerHTML = contatos[i].nome
                 cell2.innerHTML = contatos[i].email
-                cell3.innerHTML = contatos[i].fone
+                cell3.innerHTML = contatos[i].senha
                 cell4.innerHTML = "<button class='btnEditar';>Editar</button><button class='btnExcluir';>Excluir</button>"
                 // By using a class for the button, we are able to add an event listener for every button created here
             }
@@ -71,16 +83,17 @@ table, th, td {
         // Creating event listener to add a new person
         var btn_add = document.getElementById("btnAdd");
         btn_add.addEventListener("click",()=>{
-
-            // User input could be acquired from a text box, but with prompt is easier
-            var newNome = prompt("Digite o nome")
-            var newEmail = prompt("Digite o email")
-            var newFone = prompt("Digite o fone")
+            var nome = document.getElementById("userNome");
+            var email = document.getElementById("userEmail");
+            var senha = document.getElementById("userSenha");
             contatos.push({
-                nome: newNome,
-                email: newEmail,
-                fone: newFone
+                nome: nome.value,
+                email: email.value,
+                senha: senha.value
             })
+            nome.value = '';
+            email.value = '';
+            senha.value = '';
             // Only the array is updated, we need to refresh the table
             refreshTable();
         })
@@ -104,11 +117,18 @@ table, th, td {
             var btn_editar = document.getElementsByClassName("btnEditar");
             for(let i = 0;i < btn_editar.length;i++){
                 btn_editar[i].addEventListener("click",()=>{
-                    console.log(contatos)
-                    nomeId = contatos[i].nome;
-                    newEmail = prompt("Digite o novo email");
-                    newFone = prompt("Digite o novo fone");
-                    contatos.splice(i,1,{nome: nomeId, email: newEmail, fone: newFone})
+                    var nome = document.getElementById("userNome");
+                    var email = document.getElementById("userEmail");
+                    var senha = document.getElementById("userSenha");
+
+                    nome.value = contatos[i].nome;
+                    email.value = contatos[i].email;
+                    senha.value = contatos[i].senha;
+
+                    var btnConfirm = document.getElementById("btnConfirma");
+                    btnConfirm.style.display="inline"
+
+
                     refreshTable();
                     // The name is fixed, only the other cells are editable
                     // About the splice, we remove 1 element from index i, and in it's place we push a new element
@@ -124,6 +144,24 @@ table, th, td {
             }
         }
 
+        <!-- var btnConfirm = document.getElementById("btnConfirma"); -->
+        <!-- btnConfirm.addEventListener("click",confirmar()); -->
+
+        function confirmar(i){
+            var nome = document.getElementById("userNome");
+            var email = document.getElementById("userEmail");
+            var senha = document.getElementById("userSenha");
+
+            contatos.splice(i,1,{nome: nome.value, email: email.value, senha: senha.value});
+
+            nome.value = '';
+            email.value = '';
+            senha.value = '';
+
+            btnConfirm.style.display="none";
+
+        }
+
         // Call all these when opening the webpage
         createTableHeader();
         createTable();
@@ -131,3 +169,4 @@ table, th, td {
     </script>
 </body>
 </html>
+
