@@ -32,6 +32,7 @@ table, th, td {
         var tabela = document.getElementById("tbUser");
 
         var isEditing = false;
+        var position;
 
         // The table is updated by removing all it's child elements(all rows), including the header
         // and then the array contato is updated, lastly the rows are created with the updated array
@@ -128,6 +129,8 @@ table, th, td {
                     var btnConfirm = document.getElementById("btnConfirma");
                     btnConfirm.style.display="inline"
 
+                    isEditing = true;
+                    position = i;
 
                     refreshTable();
                     // The name is fixed, only the other cells are editable
@@ -144,22 +147,31 @@ table, th, td {
             }
         }
 
-        <!-- var btnConfirm = document.getElementById("btnConfirma"); -->
-        <!-- btnConfirm.addEventListener("click",confirmar()); -->
+        var btnConfirm = document.getElementById("btnConfirma");
+        btnConfirm.addEventListener("click",()=>{
+            console.log("clicke")
+            confirmar();
+        });
 
-        function confirmar(i){
+        function confirmar(){
             var nome = document.getElementById("userNome");
             var email = document.getElementById("userEmail");
             var senha = document.getElementById("userSenha");
 
-            contatos.splice(i,1,{nome: nome.value, email: email.value, senha: senha.value});
+            if(isEditing){
+                contatos.splice(position,1,{nome: nome.value, email: email.value, senha: senha.value});
+                console.log(contatos);
+                isEditing = false;
+            }
+            
 
+            console.log(isEditing,position)
             nome.value = '';
             email.value = '';
             senha.value = '';
 
             btnConfirm.style.display="none";
-
+            refreshTable();
         }
 
         // Call all these when opening the webpage
