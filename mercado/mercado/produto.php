@@ -48,6 +48,19 @@ $result = mysqli_query($mysqli, "SELECT * FROM produto ORDER BY id_produto DESC"
 			<td><strong>Preço</strong></td>
 			<td><strong>Ações</strong></td>
 		</tr>
+<script>
+let campos = document.getElementsByTagName("input");
+campos[4].addEventListener("click", ()=>{
+for(let i = 0; i < campos.length -1; i++){
+    if(campos[i].value === ""){
+        alert("Preencha todos os campos");
+        event.preventDefault();
+        break;
+    }
+}
+});
+
+</script>
 		<?php
 		// Fetch the next row of a result set as an associative array
 		while ($res = mysqli_fetch_assoc($result)) {

@@ -24,7 +24,7 @@ $preco = $resultData['preco'];
 <body>
     <h2>Editar Produto</h2>
     <p>
-	    <a href="index.php">Home</a>
+	    <a href="produto.php">Voltar</a>
     </p>
 	
 	<form name="edit" method="post" action="produtoEditAction.php">
@@ -34,7 +34,7 @@ $preco = $resultData['preco'];
 				<td><input type="text" name="nome" value="<?php echo $nome; ?>"></td>
 			</tr>
 			<tr> 
-				<td>Descrição</td>
+				<td>Categoria</td>
 				<td><input type="text" name="categoria" value="<?php echo $categoria; ?>"></td>
 			</tr>
 			<tr> 
@@ -47,9 +47,21 @@ $preco = $resultData['preco'];
 			</tr>
 			<tr>
 				<td><input type="hidden" name="id_produto" value=<?php echo $id; ?>></td>
-				<td><input type="submit" name="update" value="Update"></td>
+				<td><input type="submit" name="update" value="Atualizar"></td>
 			</tr>
 		</table>
 	</form>
+<script>
+let campos = document.getElementsByTagName("input");
+campos[5].addEventListener("click", ()=>{
+for(let i = 0; i < campos.length -2; i++){
+    if(campos[i].value === ""){
+        alert("Preencha todos os campos");
+        event.preventDefault();
+        break;
+    }
+}
+});
+</script>
 </body>
 </html>
