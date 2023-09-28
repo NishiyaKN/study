@@ -56,8 +56,8 @@ $result = mysqli_query($mysqli, "SELECT * FROM produto ORDER BY id_produto DESC"
 			echo "<td>".$res['categoria']."</td>";
 			echo "<td>".$res['quantidade']."</td>";	
 			echo "<td>".$res['preco']."</td>";	
-			echo "<td><a href=\"edit.php?id=$res[id_produto]\">Edit</a> | 
-			<a href=\"delete.php?id=$res[id_produto]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
+			echo "<td><a href=\"edit.php?id=$res[id_produto]\">Editar</a> | 
+			<a href=\"delete.php?id=$res[id_produto]\" onClick=\"return confirm('Tem certeza que quer deletar?')\">Deletar</a></td>";
 		}
 		?>
 	</table>
