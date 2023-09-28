@@ -5,9 +5,10 @@
 
 <body>
 <?php
-// Include the database connection file
+// Conexao com o banco de dados
 require_once("dbConnection.php");
 
+// Verifica se no form do produto.php foi  
 if (isset($_POST['submit'])) {
 	// Escape special characters in string for use in SQL statement	
 	$nome = mysqli_real_escape_string($mysqli, $_POST['nome']);
