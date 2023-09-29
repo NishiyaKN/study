@@ -16,6 +16,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM produto ORDER BY id_produto DESC"
 <body>
 	<h2>Mercado</h2>
 
+    <a href="/mercado/controleAdmin.php">Voltar</a>
 	<form action="produtoAdd.php" method="post" name="add">
 		<table width="25%" border="0">
 			<tr> 

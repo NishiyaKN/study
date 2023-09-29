@@ -16,7 +16,7 @@ $result = mysqli_query($mysqli, $query);
 // Check if a row was returned (authentication success)
 if (mysqli_num_rows($result) == 1) {
     // Authentication successful, redirect to a welcome page or dashboard
-    header("Location: produto.php");
+    header("Location: controleAdmin.php");
     exit();
 } else {
     // Authentication failed, redirect back to the login page with an error message
