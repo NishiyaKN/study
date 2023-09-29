@@ -1,25 +1,24 @@
-<?php // Include the database connection file
+<?php 
 require_once("dbConnection.php");
 
-// Get user input from the form
+// Pega o input do usuario
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-// Protect against SQL injection (better to use prepared statements)
+// Escapa caracteres especiais como medida de seguranca 
 $username = mysqli_real_escape_string($mysqli, $username);
 $password = mysqli_real_escape_string($mysqli, $password);
 
-// Query the database for the user
+// Faz um query para verificar se o login existe e esta certo
 $query = "SELECT * FROM admin WHERE login='$username' AND senha='$password'";
 $result = mysqli_query($mysqli, $query);
 
-// Check if a row was returned (authentication success)
 if (mysqli_num_rows($result) == 1) {
-    // Authentication successful, redirect to a welcome page or dashboard
+    // Se houver uma linha retornada quer dizer que esta correto o login e senha, vai pra tela de controle
     header("Location: controleAdmin.php");
     exit();
 } else {
-    // Authentication failed, redirect back to the login page with an error message
+    // Se nao houver, volta pra pagina de login
     header("Location: login.php?error=1");
     exit();
 }

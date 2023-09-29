@@ -1,9 +1,8 @@
 <?php
-// Include the database connection file
 require_once("dbConnection.php");
 
-// Fetch data in descending order (lastest entry first)
 $result = mysqli_query($mysqli, "SELECT * FROM produto ORDER BY id_produto DESC");
+// Mostra erros se houver
     ini_set('display_errors', true);
     error_reporting(-1);
 ?>
@@ -29,7 +28,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM produto ORDER BY id_produto DESC"
 
 </script>
 		<?php
-		// Fetch the next row of a result set as an associative array
+		// Vai pegando cada linha de dados e coloca em uma array associativa
 		while ($res = mysqli_fetch_assoc($result)) {
 			echo "<tr>";
 			echo "<td>".$res['nome']."</td>";
