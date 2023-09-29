@@ -16,7 +16,8 @@ $result = mysqli_query($mysqli, "SELECT * FROM produto ORDER BY id_produto DESC"
 <body>
 	<h2>Mercado</h2>
 
-	<form action="addAction.php" method="post" name="add">
+    <a href="/mercado/controleAdmin.php">Voltar</a>
+	<form action="produtoAdd.php" method="post" name="add">
 		<table width="25%" border="0">
 			<tr> 
 				<td>Nome</td>
@@ -48,6 +49,19 @@ $result = mysqli_query($mysqli, "SELECT * FROM produto ORDER BY id_produto DESC"
 			<td><strong>Preço</strong></td>
 			<td><strong>Ações</strong></td>
 		</tr>
+<script>
+let campos = document.getElementsByTagName("input");
+campos[4].addEventListener("click", ()=>{
+for(let i = 0; i < campos.length -1; i++){
+    if(campos[i].value === ""){
+        alert("Preencha todos os campos");
+        event.preventDefault();
+        break;
+    }
+}
+});
+
+</script>
 		<?php
 		// Fetch the next row of a result set as an associative array
 		while ($res = mysqli_fetch_assoc($result)) {
@@ -56,8 +70,8 @@ $result = mysqli_query($mysqli, "SELECT * FROM produto ORDER BY id_produto DESC"
 			echo "<td>".$res['categoria']."</td>";
 			echo "<td>".$res['quantidade']."</td>";	
 			echo "<td>".$res['preco']."</td>";	
-			echo "<td><a href=\"edit.php?id=$res[id_produto]\">Editar</a> | 
-			<a href=\"delete.php?id=$res[id_produto]\" onClick=\"return confirm('Tem certeza que quer deletar?')\">Deletar</a></td>";
+			echo "<td><a href=\"produtoEdit.php?id=$res[id_produto]\">Editar</a> | 
+			<a href=\"produtoDel.php?id=$res[id_produto]\" onClick=\"return confirm('Tem certeza que quer remover este item?')\">Remover</a></td>";
 		}
 		?>
 	</table>
