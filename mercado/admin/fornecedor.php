@@ -2,37 +2,33 @@
 require_once("dbConnection.php");
 
 // Pega todos os dados da tabela produto
-$result = mysqli_query($mysqli, "SELECT * FROM produto ORDER BY id_produto DESC");
+$result = mysqli_query($mysqli, "SELECT * FROM fornecedores ORDER BY id_forn DESC");
     ini_set('display_errors', true);
     error_reporting(-1);
 ?>
 
 <html>
 <head>	
-	<title>Alterar produto</title>
+	<title>Mercado</title>
 </head>
 
 <body>
-	<h2>Alterar produto</h2>
+	<h2>Mercado</h2>
 
     <a href="/mercado/controleAdmin.php">Voltar</a>
-	<form action="produtoAdd.php" method="post" name="add">
+	<form action="fornecedorAdd.php" method="post" name="add">
 		<table width="25%" border="0">
 			<tr> 
 				<td>Nome</td>
 				<td><input type="text" name="nome"></td>
 			</tr>
 			<tr> 
-				<td>Categoria</td>
-				<td><input type="text" name="categoria"></td>
+				<td>Endereço</td>
+				<td><input type="text" name="endereco"></td>
 			</tr>
 			<tr> 
-				<td>Quantidade</td>
-				<td><input type="text" name="quantidade"></td>
-			</tr>
-			<tr> 
-				<td>Preço</td>
-				<td><input type="text" name="preco"></td>
+				<td>CNPJ</td>
+				<td><input type="text" name="cnpj"></td>
 			</tr>
 			<tr> 
 				<td></td>
@@ -43,10 +39,8 @@ $result = mysqli_query($mysqli, "SELECT * FROM produto ORDER BY id_produto DESC"
 	<table width='80%' border=0>
 		<tr bgcolor='#DDDDDD'>
 			<td><strong>Nome</strong></td>
-			<td><strong>Categoria</strong></td>
-			<td><strong>Quantidade</strong></td>
-			<td><strong>Preço</strong></td>
-			<td><strong>Ações</strong></td>
+			<td><strong>Endereço</strong></td>
+			<td><strong>CNPJ</strong></td>
 		</tr>
 <script>
 let campos = document.getElementsByTagName("input");
@@ -66,11 +60,10 @@ for(let i = 0; i < campos.length -1; i++){
 		while ($res = mysqli_fetch_assoc($result)) {
 			echo "<tr>";
 			echo "<td>".$res['nome']."</td>";
-			echo "<td>".$res['categoria']."</td>";
-			echo "<td>".$res['quantidade']."</td>";	
-			echo "<td>".$res['preco']."</td>";	
-			echo "<td><a href=\"produtoEdit.php?id=$res[id_produto]\">Editar</a> | 
-			<a href=\"produtoDel.php?id=$res[id_produto]\" onClick=\"return confirm('Tem certeza que quer remover este item?')\">Remover</a></td>";
+			echo "<td>".$res['endereco']."</td>";
+			echo "<td>".$res['cnpj']."</td>";
+			echo "<td><a href=\"fornecedorEdit.php?id=$res[id_forn]\">Editar</a> | 
+			<a href=\"fornecedorDel.php?id=$res[id_forn]\" onClick=\"return confirm('Tem certeza que quer remover este item?')\">Remover</a></td>";
 		}
 		?>
 	</table>

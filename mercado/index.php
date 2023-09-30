@@ -14,15 +14,14 @@ $result = mysqli_query($mysqli, "SELECT * FROM produto ORDER BY id_produto DESC"
 
 <body>
 	<h2>Mercado</h2>
-    <a href="login.php">Login</a>
+    <a href="login.php">Login Administrativo</a>
     <h3>Produtos</h3>
 
 	<table width='80%' border=0>
 		<tr bgcolor='#DDDDDD'>
 			<td><strong>Nome</strong></td>
 			<td><strong>Categoria</strong></td>
-			<td><strong>Quantidade</strong></td>
-			<td><strong>Preço</strong></td>
+			<td><strong>Quantidade</strong></td> <td><strong>Preço</strong></td>
 		</tr>
 <script>
 

@@ -3,4 +3,4 @@
 <a href="/mercado/produto.php">Alterar produtos<a><br>
 <a href="/mercado/usuario.php">Alterar usuarios<a><br>
 <a href="/mercado/admin.php">Alterar admins<a><br>
-<a href="/mercado/distribuidora.php">Alterar distribuidoras<a>
+<a href="/mercado/fornecedor.php">Alterar fornecedores<a>

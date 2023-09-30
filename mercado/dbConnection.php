@@ -1,6 +1,6 @@
 <?php
 $databaseHost = '127.0.0.1'; 
-$databaseName = 'mercadao';
+$databaseName = 'mercado';
 $databaseUsername = 'root';
 $databasePassword = 'Nobara38!';
 

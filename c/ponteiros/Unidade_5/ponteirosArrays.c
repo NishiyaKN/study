@@ -5,6 +5,7 @@ int main(){
     int i;
 
     p = &mat[0][0]; // aponta para o primeiro elemento
+    /* p = mat; */
     for(i=0;i<4;i++){
         printf("%d\n",*(p+i));
     }
