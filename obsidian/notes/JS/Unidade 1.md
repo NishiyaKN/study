@@ -2,9 +2,10 @@
 - Inicialmente chamado de "LiveScript" (oficialmente é ECMAScript)
 - Utilizado incialmente para o front-end, agora está em toda parte
 - Pode ser executado diretamente do navegador
+- Linguaguem multiparadigma (OOP/funcional)
 ___
 ### Características
-- [[Linguagem Interpretada]] e [[Orientada a Objetos]]
+- Linguagem Interpretada e [[Orientada a Objetos]]
 - Tipagem dinâmica - variáveis não possuem um tipo estático definido
 - Manipulação do [[DOM]]
 - [[Assincronismo]]

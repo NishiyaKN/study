@@ -4,43 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "0522552e710174db",
+        "id": "ca80e728bc11e14c",
         "type": "tabs",
         "children": [
           {
-            "id": "80ec1a4c8780e7b1",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "notes/JS/Media/Pasted image 20231003212537.png"
-              }
-            }
-          },
-          {
-            "id": "5e481a8f892e7efe",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "notes/JS/Media/Condition example.png"
-              }
-            }
-          },
-          {
-            "id": "121b58246c92ffbf",
+            "id": "f047f880fe065a46",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/JS/Unidade 1.md",
+                "file": "TODO.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/JS/Unidade 1.md",
+                "file": "TODO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/JS/Unidade 1.md",
+                "file": "TODO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/JS/Unidade 1.md"
+                "file": "TODO.md"
               }
             }
           }
@@ -167,34 +146,41 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "73ea793750b2f734",
+  "active": "f047f880fe065a46",
   "lastOpenFiles": [
+    "notes/JS/Unidade 2.md",
+    "Pasted image 20231004213128.png",
+    "notes/JS/Concepts/argumentos.md",
+    "notes/JS/Unidade 1.md",
+    "notes/JS/Concepts/Orientada a Objetos.md",
+    "notes/JS/Concepts/função.md",
+    "notes/JS/Concepts/método.md",
+    "notes/JS/Concepts/parâmetros.md",
+    "notes/JS/Concepts/this.md",
+    "notes/ARQUITETURA/Cap 3.md",
+    "notes/ARQUITETURA/Cap 1.md",
+    "TODO.md",
+    "notes/JS/Linguagem Interpretada.md",
+    "notes/JS/Concepts/Linguagem Interpretada.md",
     "notes/JS/Concepts/DOM.md",
+    "notes/JS/Concepts/Assincronismo.md",
+    "notes/JS/Media/Pasted image 20231003212537.png",
     "notes/JS/Media/Pasted image 20231003213314.png",
     "notes/JS/Media/Pasted image 20231003212142.png",
     "notes/JS/Media/Condition example.png",
     "notes/JS/Media/DOM model example.png",
-    "notes/JS/Media/Pasted image 20231003212537.png",
     "notes/JS/Media",
-    "notes/JS/Unidade 1.md",
-    "notes/JS/Concepts/Linguagem Interpretada.md",
     "notes/JS/Media/Pasted image 20231003212214.png",
     "notes/JS/Media/Pasted image 20231003212152.png",
     "Pasted image 20231003211554.png",
     "Pasted image 20231003211223.png",
-    "notes/JS/Concepts/Orientada a Objetos.md",
-    "notes/JS/Concepts/Assincronismo.md",
     "notes/JS/Concepts",
-    "TODO.md",
     "notes/BD/JOINS.md",
-    "notes/ARQUITETURA/Cap 3.md",
-    "notes/ARQUITETURA/Cap 1.md",
     "notes/JS",
     "USCS.md",
     "notes/ARQUITETURA/Concepts/FSB.md",
     "notes/ARQUITETURA/Concepts",
     "notes/ARQUITETURA/NETACAD.md",
-    "notes/ARQUITETURA/Untitled Diagram.svg",
     "Untitled.md",
     "Untitled 3.md",
     "Untitled 2.md",

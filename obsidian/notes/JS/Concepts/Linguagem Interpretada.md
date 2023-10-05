@@ -1,1 +1,0 @@
-Linguagem cujo código-fonte é executado diretamente por um interpretador em tempo de execução, sem necessidade de compilação prévia

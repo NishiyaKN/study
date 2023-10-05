@@ -11,7 +11,7 @@ ___
 BDD - Metade vai ser transactions, metade query sql
 DOO - 
 ARQ -
-LDP - Ate unidade 4, colecao map e set nao cai
+LDP - Ate unidade 4, colecao map e set nao cai, as 4 dissertativas sao baseadas nos exercicios feitos a mao
 ALG - Ponteiros, structures, array de multiplas dimensoes
 
 ___
