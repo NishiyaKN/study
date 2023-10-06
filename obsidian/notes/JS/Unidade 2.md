@@ -74,4 +74,4 @@ ___
 Refere-se à capacidade de uma função lembrar do escopo em que foi criada, mesmo que ela seja executada fora desse escopo
 - Permite que a função tenha acesso às variáveis e parâmetros do escopo onde foi definida, mesmo que esse escopo não exista mais.
 - Ocorre quando uma função é definida dentro do escopo de outra função e, em seguida, a função interna (a função aninhada) é retornada ou passada como callback para outras partes do código.
-![[Pasted image 20231004213128.png]]
+![[Closure example.png]]

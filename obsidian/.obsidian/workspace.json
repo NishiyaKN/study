@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/C/Ponteiros.md",
+                "file": "notes/C/Estruturas.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/C/Ponteiros.md",
+                "file": "notes/C/Estruturas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/C/Ponteiros.md",
+                "file": "notes/C/Estruturas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/C/Ponteiros.md"
+                "file": "notes/C/Estruturas.md"
               }
             }
           }
@@ -148,48 +148,47 @@
   },
   "active": "7d445b5a88904945",
   "lastOpenFiles": [
-    "Pasted image 20231006083848.png",
-    "Pasted image 20231006074255.png",
-    "Pasted image 20231006074119.png",
+    "notes/ARQUITETURA/Cap 3.md",
+    "notes/JS/Unidade 2.md",
+    "notes/JS/Unidade 1.md",
+    "notes/C/Ponteiros.md",
+    "notes/C/Estruturas.md",
+    "notes/JS/Concepts/parâmetros.md",
+    "TODO.md",
+    "notes/C/Media/Pasted image 20231006074255.png",
+    "notes/C/Media/Pasted image 20231005221329.png",
+    "notes/C/Media/Pasted image 20231005205111.png",
+    "notes/JS/Media/Closure example.png",
+    "notes/JS/Media/Function example.png",
+    "notes/JS/Media/Pasted image 20231003213314.png",
+    "notes/JS/Media/For loop.png",
+    "notes/JS/Media/Do while loop.png",
+    "notes/JS/Media/While loop.png",
+    "notes/JS/Media/DOM model example.png",
     "notes/JS/Concepts/método.md",
-    "Excalidraw/Drawing 2023-10-01 21.20.20.excalidraw.md",
     "notes/JS/Concepts/argumentos.md",
-    "notes/JS/Concepts/Assincronismo.md",
     "notes/JS/Concepts/DOM.md",
+    "notes/ARQUITETURA/Concepts/FSB.md",
+    "notes/ARQUITETURA/Cap 1.md",
+    "Excalidraw/Drawing 2023-10-01 21.20.20.excalidraw.md",
+    "notes/JS/Concepts/Assincronismo.md",
     "notes/JS/Concepts/função.md",
     "notes/JS/Concepts/Orientada a Objetos.md",
-    "notes/JS/Concepts/parâmetros.md",
     "notes/JS/Concepts/this.md",
-    "notes/JS/Unidade 1.md",
-    "notes/JS/Unidade 2.md",
-    "notes/C/Ponteiros.md",
-    "notes/JS/Media/Pasted image 20231004213128.png",
-    "notes/C/Media/Pasted image 20231005205111.png",
-    "notes/C/Media/Pasted image 20231005222053.png",
-    "notes/C/Media/Pasted image 20231005221329.png",
     "notes/C/Media",
-    "TODO.md",
     "notes/C",
-    "notes/ARQUITETURA/Cap 3.md",
-    "notes/ARQUITETURA/Cap 1.md",
     "notes/JS/Linguagem Interpretada.md",
     "notes/JS/Concepts/Linguagem Interpretada.md",
-    "notes/JS/Media/Pasted image 20231003212537.png",
-    "notes/JS/Media/Pasted image 20231003213314.png",
-    "notes/JS/Media/Pasted image 20231003212142.png",
-    "notes/JS/Media/Condition example.png",
     "notes/JS/Media",
     "notes/JS/Concepts",
     "notes/BD/JOINS.md",
     "notes/JS",
     "USCS.md",
-    "notes/ARQUITETURA/Concepts/FSB.md",
     "notes/ARQUITETURA/Concepts",
     "notes/ARQUITETURA/NETACAD.md",
     "Untitled.md",
     "Untitled 3.md",
     "Untitled 2.md",
-    "Untitled 1.md",
     "notes/BD",
     "notes/ARQUITETURA",
     "Excalidraw",

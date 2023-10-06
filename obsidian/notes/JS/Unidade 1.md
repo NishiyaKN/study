@@ -31,13 +31,13 @@ ___
 	![[Condition example.png|300]]
  - **Repetição**:
 	 - for
-		 ![[Pasted image 20231003212142.png|300]]
+		 ![[For loop.png|300]]
 	 - while
-	 ![[Pasted image 20231003212152.png|250]]
+	 ![[While loop.png|250]]
 	- do while
-	![[Pasted image 20231003212214.png|250]]
+	![[Do while loop.png|250]]
 - **Funções**
-	 ![[Pasted image 20231003212537.png|350]]
+	 ![[Function example.png|350]]
 - **Escopo global e local**
 ___
 Funções alert(), confirm() e prompt()
