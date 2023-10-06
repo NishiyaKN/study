@@ -17,7 +17,7 @@ int main(){
         scanf("%lf",&a[i].nota);
         getchar();
     }
-    printf("Media dos alunos: %.2lf",media(a));
+    printf("Media dos alunos: %.2lf\n",media(a));
 }
 
 double media(struct aluno a[]){
