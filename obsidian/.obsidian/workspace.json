@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ca80e728bc11e14c",
+        "id": "cbe9c207a75f9d2b",
         "type": "tabs",
         "children": [
           {
-            "id": "f047f880fe065a46",
+            "id": "7d445b5a88904945",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "notes/C/Ponteiros.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
+                "file": "notes/C/Ponteiros.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO.md",
+                "file": "notes/C/Ponteiros.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md"
+                "file": "notes/C/Ponteiros.md"
               }
             }
           }
@@ -146,34 +146,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f047f880fe065a46",
+  "active": "7d445b5a88904945",
   "lastOpenFiles": [
-    "notes/JS/Unidade 2.md",
-    "Pasted image 20231004213128.png",
-    "notes/JS/Concepts/argumentos.md",
-    "notes/JS/Unidade 1.md",
-    "notes/JS/Concepts/Orientada a Objetos.md",
-    "notes/JS/Concepts/função.md",
+    "Pasted image 20231006083848.png",
+    "Pasted image 20231006074255.png",
+    "Pasted image 20231006074119.png",
     "notes/JS/Concepts/método.md",
+    "Excalidraw/Drawing 2023-10-01 21.20.20.excalidraw.md",
+    "notes/JS/Concepts/argumentos.md",
+    "notes/JS/Concepts/Assincronismo.md",
+    "notes/JS/Concepts/DOM.md",
+    "notes/JS/Concepts/função.md",
+    "notes/JS/Concepts/Orientada a Objetos.md",
     "notes/JS/Concepts/parâmetros.md",
     "notes/JS/Concepts/this.md",
+    "notes/JS/Unidade 1.md",
+    "notes/JS/Unidade 2.md",
+    "notes/C/Ponteiros.md",
+    "notes/JS/Media/Pasted image 20231004213128.png",
+    "notes/C/Media/Pasted image 20231005205111.png",
+    "notes/C/Media/Pasted image 20231005222053.png",
+    "notes/C/Media/Pasted image 20231005221329.png",
+    "notes/C/Media",
+    "TODO.md",
+    "notes/C",
     "notes/ARQUITETURA/Cap 3.md",
     "notes/ARQUITETURA/Cap 1.md",
-    "TODO.md",
     "notes/JS/Linguagem Interpretada.md",
     "notes/JS/Concepts/Linguagem Interpretada.md",
-    "notes/JS/Concepts/DOM.md",
-    "notes/JS/Concepts/Assincronismo.md",
     "notes/JS/Media/Pasted image 20231003212537.png",
     "notes/JS/Media/Pasted image 20231003213314.png",
     "notes/JS/Media/Pasted image 20231003212142.png",
     "notes/JS/Media/Condition example.png",
-    "notes/JS/Media/DOM model example.png",
     "notes/JS/Media",
-    "notes/JS/Media/Pasted image 20231003212214.png",
-    "notes/JS/Media/Pasted image 20231003212152.png",
-    "Pasted image 20231003211554.png",
-    "Pasted image 20231003211223.png",
     "notes/JS/Concepts",
     "notes/BD/JOINS.md",
     "notes/JS",
@@ -187,12 +192,8 @@
     "Untitled 1.md",
     "notes/BD",
     "notes/ARQUITETURA",
-    "Excalidraw/Drawing 2023-10-01 21.20.20.excalidraw.md",
-    "Excalidraw/Drawing 2023-10-01 21.29.18.excalidraw.md",
     "Excalidraw",
     "Untitled.canvas",
-    "plugins/obsidian-vimrc-support/manifest.json",
-    "plugins/obsidian-vimrc-support/main.js",
-    "plugins/obsidian-vim-reading-view-navigation/manifest.json"
+    "plugins/obsidian-vimrc-support/manifest.json"
   ]
 }

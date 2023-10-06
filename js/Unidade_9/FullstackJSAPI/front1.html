@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cadastramento de Produtos</title>
+</head>
+<body>
+<h2>Cadastramento de Produtos</h2>
+<!-- Formulário de cadastro de produtos -->
+<form id="productForm">
+<div>
+<!-- Campo para inserção do ID do produto -->
+<label for="id">ID:</label>
+<input type="number" id="id" placeholder="ID" required />
+</div>
+<div>
+<!-- Campo para inserção do nome do produto -->
+<label for="nome">Nome:</label>
+<input type="text" id="nome" placeholder="Nome" required />
+</div>
+<!-- Botões de submit e cancelamento -->
+<button type="submit">Cadastrar</button>
+<button type="button" id="cancelBtn">Cancelar</button>
+</form>
+<!-- Tabela para exibição dos produtos cadastrados -->
+<table>
+<thead>
+<tr>
+<!-- Cabeçalhos da tabela -->
+<th>ID</th>
+<th>Nome</th>
+<th>Ações</th>
+</tr>
+</thead>
+<tbody id="productsTable"></tbody>
+<!-- Linhas da tabela serão inseridas dinamicamente com JavaScript -->
+</table>
+<script>
+/* Declaração da lista de produtos e variável de produto atual para edição */
+let produtos = [];
+let produtoAtual = null;
+/* Função para exibir os produtos na tabela */
+function displayProducts() {
+const tbody = document.getElementById("productsTable");
+tbody.innerHTML = "";
+produtos.forEach((produto) => {
+
+const row = document.createElement("tr");
+row.innerHTML = `
+
+<td>${produto.id}</td>
+<td>${produto.nome}</td>
+<td>
+<button onclick="editProduct(${produto.id})">Alterar</button>
+<button onclick="deleteProduct(${produto.id})">Remover</button>
+</td>
+`;
+tbody.appendChild(row);
+});
+}
+/* Função para permitir a edição de um produto específico */
+function editProduct(id) {
+produtoAtual = id;
+const produto = produtos.find((p) => p.id === id);
+document.getElementById("id").value = produto.id;
+document.getElementById("nome").value = produto.nome;
+document.getElementById("cancelBtn").style.display = "inline-block";
+}
+/* Função para deletar um produto específico via API */
+function deleteProduct(id) {
+fetch("http://localhost:3000/produtos/" + id, {
+method: "DELETE",
+})
+.then(() => {
+produtos = produtos.filter((p) => p.id !== id);
+displayProducts();
+})
+.catch((error) => console.error("Error:", error));
+}
+/* Event listener para gerenciar o submit do formulário */
+document
+.getElementById("productForm")
+.addEventListener("submit", function (event) {
+event.preventDefault();
+const produto = {
+id: parseInt(document.getElementById("id").value),
+nome: document.getElementById("nome").value,
+};
+if (produtoAtual) {
+fetch("http://localhost:3000/produtos/" + produtoAtual, {
+method: "PUT",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify(produto),
+})
+
+.then((response) => response.json())
+.then((data) => {
+const index = produtos.findIndex((p) => p.id === produtoAtual);
+produtos[index] = data;
+displayProducts();
+document.getElementById("productForm").reset();
+produtoAtual = null;
+document.getElementById("cancelBtn").style.display = "none";
+})
+.catch((error) => console.error("Error:", error));
+} else {
+fetch("http://localhost:3000/produtos", {
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify(produto),
+})
+.then((response) => response.json())
+.then((data) => {
+produtos.push(data);
+displayProducts();
+document.getElementById("productForm").reset();
+})
+.catch((error) => console.error("Error:", error));
+}
+});
+/* Event listener para gerenciar o botão de cancelamento de edição */
+document
+.getElementById("cancelBtn")
+.addEventListener("click", function () {
+produtoAtual = null;
+document.getElementById("productForm").reset();
+this.style.display = "none";
+});
+/* Fetch inicial para obter os produtos da API e exibi-los na tabela */
+fetch("http://localhost:3000/produtos")
+.then((response) => response.json())
+.then((data) => {
+produtos = data;
+displayProducts();
+})
+.catch((error) => console.error("Error:", error));
+fetch("https://api.example.com/data", {
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify({
+key1: "value1",
+
+key2: "value2",
+}),
+})
+.then((response) => response.json())
+.then((data) => console.log(data))
+.catch((error) => console.error("Error:", error));
+</script>
+</body>
+</html>

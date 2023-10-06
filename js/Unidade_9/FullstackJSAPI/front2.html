@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cadastramento de Produtos</title>
+<!-- Importando estilos do Bootstrap -->
+<link
+rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+/>
+</head>
+<body class="container mt-5">
+<h2>Cadastramento de Produtos</h2>
+<!-- Formulário para adicionar/editar produtos -->
+<form id="productForm" class="my-4">
+<div class="form-group">
+<input
+type="number"
+id="id"
+class="form-control"
+placeholder="ID"
+required
+/>
+</div>
+<div class="form-group">
+<input
+type="text"
+id="nome"
+class="form-control"
+placeholder="Nome"
+required
+/>
+</div>
+<button type="submit" class="btn btn-primary">Cadastrar</button>
+<button
+type="button"
+id="cancelBtn"
+class="btn btn-secondary"
+style="display: none"
+>
+Cancelar
+</button>
+</form>
+<!-- Tabela para listar produtos -->
+<table class="table table-bordered">
+
+<thead>
+<tr>
+<th>ID</th>
+<th>Nome</th>
+<th>Ações</th>
+</tr>
+</thead>
+<tbody id="productsTable"></tbody>
+</table>
+<script>
+// Array para armazenar produtos do servidor
+let produtos = [];
+// ID do produto em edição
+let produtoAtual = null;
+// Função para exibir produtos na tabela
+function displayProducts() {
+const tbody = document.getElementById("productsTable");
+tbody.innerHTML = "";
+produtos.forEach((produto) => {
+const row = document.createElement("tr");
+row.innerHTML = `
+
+<td>${produto.id}</td>
+<td>${produto.nome}</td>
+<td>
+<button class="btn btn-warning btn-sm"
+
+onclick="editProduct(${produto.id})">Alterar</button>
+
+<button class="btn btn-danger btn-sm"
+onclick="deleteProduct(${produto.id})">Remover</button>
+
+</td>
+`;
+tbody.appendChild(row);
+});
+}
+// Função para carregar um produto no formulário para edição
+function editProduct(id) {
+produtoAtual = id;
+const produto = produtos.find((p) => p.id === id);
+document.getElementById("id").value = produto.id;
+document.getElementById("nome").value = produto.nome;
+// Mostra o botão cancelar durante a edição
+document.getElementById("cancelBtn").style.display = "inline-block";
+}
+// Função para remover produto do servidor e atualizar a lista
+function deleteProduct(id) {
+fetch("http://localhost:3000/produtos/" + id, {
+method: "DELETE",
+})
+.then(() => {
+produtos = produtos.filter((p) => p.id !== id);
+
+displayProducts();
+})
+.catch((error) => console.error("Error:", error));
+}
+// Evento para lidar com o envio do formulário
+document
+.getElementById("productForm")
+.addEventListener("submit", function (event) {
+event.preventDefault();
+// Coleta os valores do formulário
+const produto = {
+id: parseInt(document.getElementById("id").value),
+nome: document.getElementById("nome").value,
+};
+if (produtoAtual) {
+// Se estiver editando
+fetch("http://localhost:3000/produtos/" + produtoAtual, {
+method: "PUT",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify(produto),
+})
+.then((response) => response.json())
+.then((data) => {
+const index = produtos.findIndex((p) => p.id === produtoAtual);
+produtos[index] = data;
+displayProducts();
+// Limpa o formulário e reseta o produto em edição
+document.getElementById("productForm").reset();
+produtoAtual = null;
+document.getElementById("cancelBtn").style.display = "none";
+})
+.catch((error) => console.error("Error:", error));
+} else {
+// Se for um novo produto
+fetch("http://localhost:3000/produtos", {
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+},
+body: JSON.stringify(produto),
+})
+.then((response) => response.json())
+.then((data) => {
+produtos.push(data);
+displayProducts();
+document.getElementById("productForm").reset();
+})
+.catch((error) => console.error("Error:", error));
+
+}
+});
+// Cancela a edição e limpa o formulário
+document
+.getElementById("cancelBtn")
+.addEventListener("click", function () {
+produtoAtual = null;
+document.getElementById("productForm").reset();
+this.style.display = "none";
+});
+// Carrega produtos do servidor ao carregar a página
+fetch("http://localhost:3000/produtos")
+.then((response) => response.json())
+.then((data) => {
+produtos = data;
+displayProducts();
+})
+.catch((error) => console.error("Error:", error));
+</script>
+<!-- Bibliotecas JS auxiliares (Bootstrap requer jQuery e Popper.js) -->
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
