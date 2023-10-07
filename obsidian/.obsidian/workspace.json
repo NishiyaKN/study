@@ -11,15 +11,26 @@
             "id": "7d445b5a88904945",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "notes/C/Media/Pasted image 20231005205111.png"
+              }
+            }
+          },
+          {
+            "id": "5845e7c42d83242c",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/C/Estruturas.md",
+                "file": "notes/JS/Unidade 3.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/C/Estruturas.md",
+                "file": "notes/JS/Unidade 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/C/Estruturas.md",
+                "file": "notes/JS/Unidade 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/C/Estruturas.md"
+                "file": "notes/JS/Unidade 3.md"
               }
             }
           }
@@ -146,25 +157,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7d445b5a88904945",
+  "active": "5845e7c42d83242c",
   "lastOpenFiles": [
-    "notes/ARQUITETURA/Cap 3.md",
-    "notes/JS/Unidade 2.md",
-    "notes/JS/Unidade 1.md",
+    "notes/JS/Unidade 4.md",
     "notes/C/Ponteiros.md",
-    "notes/C/Estruturas.md",
-    "notes/JS/Concepts/parâmetros.md",
+    "notes/JS/Unidade 3.md",
+    "notes/JS/Unidade 1.md",
     "TODO.md",
-    "notes/C/Media/Pasted image 20231006074255.png",
-    "notes/C/Media/Pasted image 20231005221329.png",
+    "notes/JS/Unidade 2.md",
+    "notes/C/! Recursividade.md",
+    "notes/C/!! Arrays e matrizes.md",
+    "Pasted image 20231007082217.png",
+    "notes/C/Funções e Modularidade.md",
+    "Pasted image 20231007073920.png",
     "notes/C/Media/Pasted image 20231005205111.png",
+    "notes/C/Media/Pasted image 20231005221329.png",
+    "notes/C/Media/Pasted image 20231005222053.png",
+    "notes/C/Media/Pasted image 20231006074119.png",
+    "notes/C/Media/Pasted image 20231006074255.png",
+    "notes/C/Media/Pasted image 20231006083848.png",
+    "notes/C/Media/Pasted image 20231007073116.png",
+    "notes/C/Estruturas.md",
+    "notes/BD/JOINS.md",
+    "notes/C/Untitled",
+    "notes/ARQUITETURA/Cap 3.md",
+    "notes/JS/Concepts/parâmetros.md",
     "notes/JS/Media/Closure example.png",
-    "notes/JS/Media/Function example.png",
-    "notes/JS/Media/Pasted image 20231003213314.png",
-    "notes/JS/Media/For loop.png",
-    "notes/JS/Media/Do while loop.png",
-    "notes/JS/Media/While loop.png",
-    "notes/JS/Media/DOM model example.png",
     "notes/JS/Concepts/método.md",
     "notes/JS/Concepts/argumentos.md",
     "notes/JS/Concepts/DOM.md",
@@ -181,18 +199,12 @@
     "notes/JS/Concepts/Linguagem Interpretada.md",
     "notes/JS/Media",
     "notes/JS/Concepts",
-    "notes/BD/JOINS.md",
     "notes/JS",
     "USCS.md",
     "notes/ARQUITETURA/Concepts",
-    "notes/ARQUITETURA/NETACAD.md",
-    "Untitled.md",
-    "Untitled 3.md",
-    "Untitled 2.md",
     "notes/BD",
     "notes/ARQUITETURA",
     "Excalidraw",
-    "Untitled.canvas",
-    "plugins/obsidian-vimrc-support/manifest.json"
+    "Untitled.canvas"
   ]
 }

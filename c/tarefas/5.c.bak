@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+struct aluno{
+    char nome[30];
+    double nota;
+};
+
+double media(int *p);
+
+int main(){
+    struct aluno a[3];
+    int i;
+    struct aluno *p;
+    p = &a[0];
+    for(i=0;i<3;i++){
+        printf("\nDigite o nome do aluno %d: ",i+1);
+        fgets((*(p+i)).nome,30,stdin);
+        printf("Digite a nota do aluno %d: ",i+1);
+        scanf("%lf",&((*(p+i))).nota);
+        getchar();
+    }
+    printf("Media dos alunos: %.2lf\n",media(a));
+}
+
+double media(int *p){
+    int i;
+    double soma = 0,media;
+    for(i=0;i<3;i++){
+        soma = soma + ((*p+1)).nota;
+    }
+    media = soma / 3;
+    return media;
+}
+

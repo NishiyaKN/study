@@ -13,10 +13,13 @@ struct cadastro{
 	char rua[50];
 	int numero;
 };
+int main(){
+	struct cadastro c;
+	c.idade = 18;
+}
 ```
 Após definir uma struct, devemos declará-la:
 ```c
-struct cadastro c;
 ```
 ___
 ### Uso de structs
@@ -43,8 +46,78 @@ struct ponto{
 struct ponto p1 = {10, 20};
 ```
 ___
+### TYPEDEF
+Comando usado para definir um novo tipo de dado (basicamente apenas renomear um já existente):
+```c
+typedef int inteiro;
+int main(){
+	int x = 10;
+	inteiro y = 20;
+}
+```
+No código acima, tanto `int` quanto `inteiro` se referem ao mesmo tipo de dado.
+Sua utilidade nesse contexto refere-se a possibilidade de **dar nome à structs** para que não tenha que ficar digitando `struct` toda vez:
+```c
+typedef struct
+{
+	float Peso;
+	int Idade;
+	float Altura;
+} Pessoa;
+int main(){
+	Pessoa Joao; // struct Pessoa Joao;
+	Joao.Idade = 15;
+	Joao.Peso = 60.5;
+	Joao.Altura = 1.89
+}
+```
+___
 ### Array de estruturas
+Usamos a seguinte sintaxe para criar e manipular um array de estruturas:
+```c
+struct cadastro cad[4];
+int i;
+for(i=0;i<4;i++){
+	gets(c[i].nome);
+	scanf("%d",&c[i].idade);
+}
+
+```
+___
+### Atribuição de estruturas
+Somente pode ser feita se ambas as estruturas forem as **mesmas**. Serve para **copiar** os dados de uma estrutura para outra.
+```c
+struct cadastro c1,c2;
+c1 = c2;
+// Or with arrays:
+struct cadastro c[10];
+c[1] = c[2];
+```
 ___
 ### Estrutura de estruturas
-___
-### TYPEDEF
+Podemos declarar uma estrutura que use outra estrutura como um de seus atributos. Para acessar os atributos aninhados, utilizamos outro `.`
+```c
+struct endereco{
+	char rua[50];
+	int numero;
+};
+struct cadastro{
+	char nome[50];
+	int idade;
+	struct endereco ender; // HERE
+}
+
+strcpy(c.ender.rua,"Rua Raul");
+c.ender.numero = 123;
+```
+![[Pasted image 20231007073116.png|200]]
+Para inicializar uma estrutura de estrutura:
+```c
+struct ponto {
+	int x,y;
+}
+struct retangulo{
+	struct ponto inicio,fim;
+}
+struct retangulo r = {{10,20},{30,40}};
+```
