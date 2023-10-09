@@ -11,9 +11,11 @@
             "id": "7d445b5a88904945",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "notes/C/Media/Pasted image 20231005205111.png"
+                "file": "notes/BD/5-Controle de concorrência.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -23,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/JS/Unidade 3.md",
+                "file": "TODO.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/JS/Unidade 3.md",
+                "file": "notes/BD/5-Controle de concorrência.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/JS/Unidade 3.md",
+                "file": "notes/BD/5-Controle de concorrência.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/JS/Unidade 3.md"
+                "file": "notes/BD/5-Controle de concorrência.md"
               }
             }
           }
@@ -157,54 +158,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5845e7c42d83242c",
+  "active": "7d445b5a88904945",
   "lastOpenFiles": [
+    "Pasted image 20231009092531.png",
+    "Pasted image 20231009092510.png",
+    "notes/BD/3-Procedimentos e triggers.md",
+    "notes/BD/4-Transações e propriedades ACID.md",
+    "notes/BD/5-Controle de concorrência.md",
+    "notes/BD/Media/Pasted image 20231009083754.png",
+    "notes/BD/Media",
+    "notes/BD/Media/Pasted image 20231009085944.png",
+    "notes/BD/Media/Pasted image 20231009090020.png",
+    "notes/BD/Media/Pasted image 20231009083805.png",
+    "TODO.md",
+    "notes/BD/Media/Pasted image 20231009091301.png",
+    "notes/BD/Controle Exemplo.md",
+    "notes/BD/Media/Pasted image 20231009090245.png",
+    "notes/BD/Media/Pasted image 20231009090151.png",
+    "notes/BD/Media/Pasted image 20231009090007.png",
+    "Excalidraw/Drawing 2023-10-09 08.13.33.excalidraw.md",
+    "notes/BD/1-Base.md",
+    "notes/BD/2-Junções, visões.md",
+    "notes/C/Media/Pasted image 20231005205111.png",
+    "notes/ARQ/! Cap 3.md",
+    "notes/C/!! Arrays e matrizes.md",
+    "notes/C/! Recursividade.md",
     "notes/JS/Unidade 4.md",
-    "notes/C/Ponteiros.md",
     "notes/JS/Unidade 3.md",
     "notes/JS/Unidade 1.md",
-    "TODO.md",
-    "notes/JS/Unidade 2.md",
-    "notes/C/! Recursividade.md",
-    "notes/C/!! Arrays e matrizes.md",
-    "Pasted image 20231007082217.png",
-    "notes/C/Funções e Modularidade.md",
-    "Pasted image 20231007073920.png",
-    "notes/C/Media/Pasted image 20231005205111.png",
-    "notes/C/Media/Pasted image 20231005221329.png",
-    "notes/C/Media/Pasted image 20231005222053.png",
-    "notes/C/Media/Pasted image 20231006074119.png",
-    "notes/C/Media/Pasted image 20231006074255.png",
-    "notes/C/Media/Pasted image 20231006083848.png",
-    "notes/C/Media/Pasted image 20231007073116.png",
-    "notes/C/Estruturas.md",
+    "notes/JAVA",
     "notes/BD/JOINS.md",
+    "notes/C/Estruturas.md",
+    "notes/C/Ponteiros.md",
+    "notes/C/Funções e Modularidade.md",
+    "notes/JS/Unidade 2.md",
     "notes/C/Untitled",
-    "notes/ARQUITETURA/Cap 3.md",
     "notes/JS/Concepts/parâmetros.md",
-    "notes/JS/Media/Closure example.png",
     "notes/JS/Concepts/método.md",
     "notes/JS/Concepts/argumentos.md",
-    "notes/JS/Concepts/DOM.md",
-    "notes/ARQUITETURA/Concepts/FSB.md",
-    "notes/ARQUITETURA/Cap 1.md",
+    "notes/ARQ/Concepts/FSB.md",
+    "notes/ARQ/Cap 1.md",
     "Excalidraw/Drawing 2023-10-01 21.20.20.excalidraw.md",
-    "notes/JS/Concepts/Assincronismo.md",
-    "notes/JS/Concepts/função.md",
-    "notes/JS/Concepts/Orientada a Objetos.md",
-    "notes/JS/Concepts/this.md",
     "notes/C/Media",
     "notes/C",
-    "notes/JS/Linguagem Interpretada.md",
-    "notes/JS/Concepts/Linguagem Interpretada.md",
     "notes/JS/Media",
     "notes/JS/Concepts",
     "notes/JS",
-    "USCS.md",
-    "notes/ARQUITETURA/Concepts",
+    "notes/ARQ/Concepts",
     "notes/BD",
-    "notes/ARQUITETURA",
-    "Excalidraw",
     "Untitled.canvas"
   ]
 }

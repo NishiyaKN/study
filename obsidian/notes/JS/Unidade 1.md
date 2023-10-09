@@ -7,7 +7,7 @@ ___
 ### Características
 - Linguagem Interpretada e [[Orientada a Objetos]]
 - Tipagem dinâmica - variáveis não possuem um tipo estático definido
-- Manipulação do [[DOM]]
+- Manipulação do [[Unidade 4]]
 - [[Assincronismo]]
 ___
 ### Variáveis
