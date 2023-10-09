@@ -1,4 +1,4 @@
-Para evitar/identificar os escalonamento não-seriáveis temos os protocolos de controle de concorrência:
+Para evitar/identificar os escalonamento não-seriáveis temos os protocolos de controle de concorrência
 ___
 ## Bloqueio bifásico
 Sempre gera escalonamento correto, ele bloqueia o acesso até o processo atual ter terminado suas ações com o dado.

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/BD/5-Controle de concorrência.md",
+                "file": "notes/BD/Controle Exemplo.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/Drawing 2023-10-09 10.12.45.excalidraw.md"
+                "file": "notes/BD/Media/Drawing 2023-10-09 10.12.45.excalidraw.md"
               }
             }
           }
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/BD/5-Controle de concorrência.md",
+                "file": "notes/BD/Controle Exemplo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/BD/5-Controle de concorrência.md",
+                "file": "notes/BD/Controle Exemplo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/BD/5-Controle de concorrência.md"
+                "file": "notes/BD/Controle Exemplo.md"
               }
             }
           }
@@ -169,26 +169,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5845e7c42d83242c",
+  "active": "73ea793750b2f734",
   "lastOpenFiles": [
-    "notes/BD/4-Transações e propriedades ACID.md",
     "notes/BD/5-Controle de concorrência.md",
-    "Pasted image 20231009102241.png",
-    "Pasted image 20231009102214.png",
-    "Excalidraw/Drawing 2023-10-09 10.12.45.excalidraw.md",
-    "TODO.md",
-    "Pasted image 20231009092531.png",
-    "Pasted image 20231009092510.png",
+    "notes/BD/Controle Exemplo.md",
+    "notes/BD/4-Transações e propriedades ACID.md",
     "notes/BD/3-Procedimentos e triggers.md",
+    "notes/BD/JOINS.md",
+    "notes/BD/Media/Drawing 2023-10-09 10.12.45.excalidraw.md",
+    "notes/BD/Media/Drawing 2023-10-09 08.13.33.excalidraw.md",
+    "Excalidraw/Drawing 2023-10-01 21.20.20.excalidraw.md",
+    "notes/BD/Media/Pasted image 20231009102241.png",
+    "notes/BD/Media/Pasted image 20231009102214.png",
+    "notes/BD/Media/Pasted image 20231009092531.png",
+    "notes/BD/Media/Pasted image 20231009092510.png",
+    "TODO.md",
     "notes/BD/Media/Pasted image 20231009083754.png",
     "notes/BD/Media",
     "notes/BD/Media/Pasted image 20231009085944.png",
     "notes/BD/Media/Pasted image 20231009090020.png",
     "notes/BD/Media/Pasted image 20231009083805.png",
     "notes/BD/Media/Pasted image 20231009091301.png",
-    "notes/BD/Controle Exemplo.md",
     "notes/BD/Media/Pasted image 20231009090245.png",
-    "Excalidraw/Drawing 2023-10-09 08.13.33.excalidraw.md",
     "notes/BD/1-Base.md",
     "notes/BD/2-Junções, visões.md",
     "notes/ARQ/! Cap 3.md",
@@ -198,7 +200,6 @@
     "notes/JS/Unidade 3.md",
     "notes/JS/Unidade 1.md",
     "notes/JAVA",
-    "notes/BD/JOINS.md",
     "notes/C/Estruturas.md",
     "notes/C/Ponteiros.md",
     "notes/C/Funções e Modularidade.md",
