@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/BD/5-Controle de concorrência.md",
+                "file": "TODO.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +25,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "notes/BD/5-Controle de concorrência.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "d0e583662a32ddfb",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-10-09 10.12.45.excalidraw.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -158,28 +169,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7d445b5a88904945",
+  "active": "5845e7c42d83242c",
   "lastOpenFiles": [
+    "notes/BD/4-Transações e propriedades ACID.md",
+    "notes/BD/5-Controle de concorrência.md",
+    "Pasted image 20231009102241.png",
+    "Pasted image 20231009102214.png",
+    "Excalidraw/Drawing 2023-10-09 10.12.45.excalidraw.md",
+    "TODO.md",
     "Pasted image 20231009092531.png",
     "Pasted image 20231009092510.png",
     "notes/BD/3-Procedimentos e triggers.md",
-    "notes/BD/4-Transações e propriedades ACID.md",
-    "notes/BD/5-Controle de concorrência.md",
     "notes/BD/Media/Pasted image 20231009083754.png",
     "notes/BD/Media",
     "notes/BD/Media/Pasted image 20231009085944.png",
     "notes/BD/Media/Pasted image 20231009090020.png",
     "notes/BD/Media/Pasted image 20231009083805.png",
-    "TODO.md",
     "notes/BD/Media/Pasted image 20231009091301.png",
     "notes/BD/Controle Exemplo.md",
     "notes/BD/Media/Pasted image 20231009090245.png",
-    "notes/BD/Media/Pasted image 20231009090151.png",
-    "notes/BD/Media/Pasted image 20231009090007.png",
     "Excalidraw/Drawing 2023-10-09 08.13.33.excalidraw.md",
     "notes/BD/1-Base.md",
     "notes/BD/2-Junções, visões.md",
-    "notes/C/Media/Pasted image 20231005205111.png",
     "notes/ARQ/! Cap 3.md",
     "notes/C/!! Arrays e matrizes.md",
     "notes/C/! Recursividade.md",
@@ -198,7 +209,6 @@
     "notes/JS/Concepts/argumentos.md",
     "notes/ARQ/Concepts/FSB.md",
     "notes/ARQ/Cap 1.md",
-    "Excalidraw/Drawing 2023-10-01 21.20.20.excalidraw.md",
     "notes/C/Media",
     "notes/C",
     "notes/JS/Media",

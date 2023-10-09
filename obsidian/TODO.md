@@ -3,9 +3,7 @@
 - [ ] LDP - Apresentacao - 16/11
 ___
 ### N1
-BDD - Metade vai ser transactions, metade query sql, sobre controle de concorrencia cai mais até a parte do protocolo bifásico
-- [ ]  Loops
-- [ ] Switch case
+BDD - Metade vai ser transactions, metade query sql, sobre controle de concorrencia cai mais até a parte do protocolo bifásico e timestamp, mas nada muito a fundo, exercicios capitulo 17 do silverschatz
 DOO - 
 ARQ -
 **LDP - Ate unidade 4, colecao map e set nao cai, as 4 dissertativas sao baseadas nos exercicios feitos a mao**

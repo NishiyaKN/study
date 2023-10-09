@@ -1,4 +1,5 @@
 Para evitar/identificar os escalonamento não-seriáveis temos os protocolos de controle de concorrência:
+___
 ## Bloqueio bifásico
 Sempre gera escalonamento correto, ele bloqueia o acesso até o processo atual ter terminado suas ações com o dado.
 - Teremos dois estados:
@@ -17,7 +18,23 @@ Temos dois tipos de implementações do controle bifásico:
 Se bloquear o tabela inteira, outros não terão acesso, então tenta bloquear pedaços pequenos dos dados.
 ### Deadlock
 Uma transação espera um recurso que está bloqueado por outra e vice versa.
-![[Pasted image 20231009091301.png]]
+![[Pasted image 20231009091301.png|400]]
 Pra resolver isso, precisa cancelar uma das transações. Normalmente a qual está em execução a menos tempo, ou a que realizou o menor número de operações, etc. 
 ### Starvation
-Uma transação aguarda por tempo indetermindado até a outra terminar (fila de prioridade.
+Uma transação aguarda por tempo indetermindado até a outra terminar (fila de prioridade).
+___
+## Timestamp
+Protocolo de marcas de tempo
+- Protocolo otimista - não acha que haverá algum problema, não faz antecipações, trata o problema quando ele corre.
+- Controle por ordem de chegada - tipo a fila da farmácia com senha
+- Cada dado e cada transação recebe um timestamp
+
+Exemplo:
+TS(x) -  timestamp da ultima transação
+TS(x) = 1 => TS(x) = 3
+![[Drawing 2023-10-09 10.12.45.excalidraw]]
+Se o timestamp da transação for menor que o do dado, ele perdeu a vez e vai ter que executar novamente para pegar um outro timestamp. **Gera stavation, mas não deadlock**.
+Algoritmo:
+![[Pasted image 20231009102214.png|300]]
+Algoritmo do timestamp estrito (evita starvation):
+![[Pasted image 20231009102241.png|300]]
