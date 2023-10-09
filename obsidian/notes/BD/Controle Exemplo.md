@@ -1,4 +1,3 @@
-
 ## Controle de concorrência
 Perda de atualização
 ![[Pasted image 20231009085944.png]]

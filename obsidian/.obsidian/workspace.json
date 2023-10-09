@@ -161,16 +161,17 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "73ea793750b2f734",
+  "active": "5845e7c42d83242c",
   "lastOpenFiles": [
+    "TODO.md",
     "notes/BD/5-Controle de concorrência.md",
     "notes/BD/Controle Exemplo.md",
     "notes/BD/4-Transações e propriedades ACID.md",
@@ -183,7 +184,6 @@
     "notes/BD/Media/Pasted image 20231009102214.png",
     "notes/BD/Media/Pasted image 20231009092531.png",
     "notes/BD/Media/Pasted image 20231009092510.png",
-    "TODO.md",
     "notes/BD/Media/Pasted image 20231009083754.png",
     "notes/BD/Media",
     "notes/BD/Media/Pasted image 20231009085944.png",
