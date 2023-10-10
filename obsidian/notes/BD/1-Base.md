@@ -40,6 +40,7 @@ from <tabelas>
 [having <condições>]
 [order by atributo]
 ```
+distinct trabalha em cima do resultado
 ___
 ## Nulos
 Verificamos se um valor é nulo a partir dos comandos **IS NULL** e **IS NOT NULL**:

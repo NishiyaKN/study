@@ -8,41 +8,30 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7d445b5a88904945",
+            "id": "76c9cbb7d6c17df2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "notes/JAVA/6- Atributos e Métodos de Instância e de Classe.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5845e7c42d83242c",
+            "id": "2762e7dbf9d8e696",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/BD/Controle Exemplo.md",
+                "file": "notes/JAVA/5- Herança.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "d0e583662a32ddfb",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "notes/BD/Media/Drawing 2023-10-09 10.12.45.excalidraw.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/BD/Controle Exemplo.md",
+                "file": "notes/JAVA/6- Atributos e Métodos de Instância e de Classe.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/BD/Controle Exemplo.md",
+                "file": "notes/JAVA/6- Atributos e Métodos de Instância e de Classe.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/BD/Controle Exemplo.md"
+                "file": "notes/JAVA/6- Atributos e Métodos de Instância e de Classe.md"
               }
             }
           }
@@ -169,17 +158,37 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5845e7c42d83242c",
+  "active": "76c9cbb7d6c17df2",
   "lastOpenFiles": [
+    "notes/JAVA/5- Herança.md",
+    "notes/JAVA/4.1- Encapsulamento.md",
+    "notes/JAVA/4- 4 Pilares de DOO.md",
+    "notes/JAVA/3.1 - Construtor.md",
+    "notes/JAVA/1- Base.md",
+    "notes/JAVA/2- Classe e objeto.md",
+    "notes/JAVA/3- Modificador de acesso.md",
+    "notes/JAVA/6- Atributos e Métodos de Instância e de Classe.md",
+    "notes/JAVA/Aula 8.md",
+    "notes/JS/4- User Interface.md",
+    "notes/JS/3- Coleções.md",
+    "notes/JS/2- Programação funcional.md",
+    "notes/JS/1- Base.md",
+    "notes/JAVA/Conceitos principais.md",
+    "notes/C/Estruturas.md",
+    "notes/C/! Recursividade.md",
+    "notes/JS/Media/Closure example.png",
+    "notes/JAVA/Media/Pasted image 20231010112657.png",
+    "notes/JAVA/Media",
     "TODO.md",
-    "notes/BD/5-Controle de concorrência.md",
-    "notes/BD/Controle Exemplo.md",
+    "Excalidraw/Drawing 2023-10-10 08.31.33.excalidraw.md",
     "notes/BD/4-Transações e propriedades ACID.md",
-    "notes/BD/3-Procedimentos e triggers.md",
-    "notes/BD/JOINS.md",
+    "notes/BD/5-Controle de concorrência.md",
     "notes/BD/Media/Drawing 2023-10-09 10.12.45.excalidraw.md",
-    "notes/BD/Media/Drawing 2023-10-09 08.13.33.excalidraw.md",
-    "Excalidraw/Drawing 2023-10-01 21.20.20.excalidraw.md",
+    "notes/BD/Controle Exemplo.md",
+    "notes/BD/3-Procedimentos e triggers.md",
+    "notes/BD/1-Base.md",
+    "notes/BD/2-Junções, visões.md",
+    "notes/BD/JOINS.md",
     "notes/BD/Media/Pasted image 20231009102241.png",
     "notes/BD/Media/Pasted image 20231009102214.png",
     "notes/BD/Media/Pasted image 20231009092531.png",
@@ -189,34 +198,14 @@
     "notes/BD/Media/Pasted image 20231009085944.png",
     "notes/BD/Media/Pasted image 20231009090020.png",
     "notes/BD/Media/Pasted image 20231009083805.png",
-    "notes/BD/Media/Pasted image 20231009091301.png",
-    "notes/BD/Media/Pasted image 20231009090245.png",
-    "notes/BD/1-Base.md",
-    "notes/BD/2-Junções, visões.md",
-    "notes/ARQ/! Cap 3.md",
-    "notes/C/!! Arrays e matrizes.md",
-    "notes/C/! Recursividade.md",
-    "notes/JS/Unidade 4.md",
-    "notes/JS/Unidade 3.md",
-    "notes/JS/Unidade 1.md",
     "notes/JAVA",
-    "notes/C/Estruturas.md",
-    "notes/C/Ponteiros.md",
-    "notes/C/Funções e Modularidade.md",
-    "notes/JS/Unidade 2.md",
     "notes/C/Untitled",
-    "notes/JS/Concepts/parâmetros.md",
-    "notes/JS/Concepts/método.md",
-    "notes/JS/Concepts/argumentos.md",
-    "notes/ARQ/Concepts/FSB.md",
-    "notes/ARQ/Cap 1.md",
     "notes/C/Media",
     "notes/C",
     "notes/JS/Media",
     "notes/JS/Concepts",
     "notes/JS",
     "notes/ARQ/Concepts",
-    "notes/BD",
     "Untitled.canvas"
   ]
 }
