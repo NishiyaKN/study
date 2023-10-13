@@ -15,7 +15,7 @@ const multiplicar = function(a,b) {
 ```
 ___
 ### Funções de order superior
-Funções que podem receber outras funções como argumentos ou retornar outras funções.
+Funções que podem **receber outras funções como argumentos** ou retornar outras funções.
 ``` js
 function aplicarOperacao(a,b,operacao){
 	return operacao(a,b);

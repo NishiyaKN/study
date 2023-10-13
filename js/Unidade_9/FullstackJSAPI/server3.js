@@ -69,27 +69,27 @@ app.get('/produtos/:id', (req, res) => {
 
 // Rota para adicionar um novo produto
 app.post('/produtos', (req, res) => {
-    const { descricao, quantidade, valor } = req.body;
+    const {id, descricao, quantidade, valor } = req.body;
   
-    if (!descricao || !quantidade || !valor) {
+    if (!id || !descricao || !quantidade || !valor) {
       res.status(400).json({ error: 'Descricao, quantidade, and valor are required fields' });
       return;
     }
   
     // Query pra pegar o maior numero de id na tabela
-    connection.query('SELECT MAX(id) as maxId FROM produtos', (err, maxIdResults) => {
-      if (err) {
-        console.error('Error retrieving max ID:', err);
-        res.status(500).json({ error: 'Internal server error' });
-        return;
-      }
+    // connection.query('SELECT MAX(id) as maxId FROM produtos', (err, maxIdResults) => {
+    //   if (err) {
+    //     console.error('Error retrieving max ID:', err);
+    //     res.status(500).json({ error: 'Internal server error' });
+    //     return;
+    //   }
   
       // Coloca como proximo id o id maximo acrescido de 1
-      const nextId = (maxIdResults[0].maxId || 0) + 1;
+      // const nextId = (maxIdResults[0].maxId || 0) + 1;
   
       // Insere os dados
       const insertQuery = 'INSERT INTO produtos (id, descricao, quantidade, valor) VALUES (?, ?, ?, ?)';
-      const values = [nextId, descricao, quantidade, valor];
+      const values = [id, descricao, quantidade, valor];
   
       connection.query(insertQuery, values, (err, insertResults) => {
         if (err) {
@@ -98,10 +98,9 @@ app.post('/produtos', (req, res) => {
           return;
         }
   
-        res.status(201).json({ message: 'Data inserted successfully', id: nextId });
+        res.status(201).json({ message: 'Data inserted successfully', id: id});
       });
     });
-  });
   
 
 // Rota para atualizar um produto

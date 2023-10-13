@@ -2,7 +2,6 @@ ___
 **ESD** - Electrostatic Discharge, < 30 volts can damage pc components
 ___
 ### Power supply
-
 - **Types**
 	- AT - obsolete
 	- ATX - obsolete
@@ -10,7 +9,7 @@ ___
 	- EPS12V - used for high-end desktop models
 - **Connectors**
 	- 20/24 pin - motherboard
-	- SATA - desk drives
+	- SATA - disk drives
 	- Molex - hard drives, optical drives, etc
 	- Berg - floppy drives
 	- 4/8 pin - auxiliary power for GPU, CPU
@@ -21,9 +20,8 @@ ___
 	- 12V
 ---
 ### Motherboard
-
 - **Connections**
-	- Chiptset - control how system hardware interacts with the CPU, limits how much RAM  can be added
+	- Chipset - control how system hardware interacts with the CPU, limits how much RAM  can be added
 	- BIOS - boot the system and manage the flow of data to every component
 	- UEFI - newer BIOS, specifies a different firmware 
 	- IDE - old disk drives, 40 pin connector
@@ -38,20 +36,18 @@ ___
 	 - Mini ITX - used in thin clients
 ---
 ### CPU
-
 - **Architectures**
 	- PGA - pin grid array, pins are in the CPU package
 	- LGA - land grid array, pins are in the socket
  ---
-### Memory
-
+### Memory - cnp
 - **ROM**
 	Directly accessed by the CPU, stores basic operation instructions such as boot
 	- ROM - Read-Only Memory
 	- PROM - Programmable ROM
 	- EPROM - Erasable PROM, erased by UV light exposure
-	- EEPROM - Electrically EPROM, aka Flash ROM, used for BIOS
-
+	- EEPROM - Electrically EPROM, used for BIOS
+		- Flash Memroy is an upgrade from EEPROM
 - **RAM**
 	Acessed by programs used by the CPU
 	- DRAM - Dynamic RAM, used for main memory
@@ -80,3 +76,4 @@ ___
 	- Disc drive - like HDD, 1,8', 2.5' ,3.5'
 	- Expasion cards - plugged directly into the motherboard
 	- mSata (M.2) - use a special socket
+![[Pasted image 20231012092135.png]]
