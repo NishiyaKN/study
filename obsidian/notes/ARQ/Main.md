@@ -6,8 +6,26 @@
 	- baixa velocidade: teclado, mouse
 	- alta velocidade: placa de rede/vídeo
 - STORAGE - HD, SSD
+- Chipset - circuitos integrados responsáveis pela comunicação entre todos os componentes do PC.
 **Comunicação entre esses elementos é o barramento**
+___
+## Barramento (Bus)
+- de dados: troca de dados no computador
+- de endereço: indica o local onde a CPU deve ler ou gravar dados (define o maximo de RAM)
+- de controle: regula os outros barramentos, controlando as operações (ex: diz se é read ou write, quanto tempo )
 
+Há também os barramentos de IO (USB, SATA, PCI, etc)
+### Protocolos
+- Serial - envia um bit por vez
+	- Usa um par de fios, um para cada direção do dado enviado
+	- Unidirecional
+	- Troca de informação entre dispositivos
+	- Melhor para longa distância
+- Paralelo - envia vario bits por vez
+	- Usa varios fios, mas não pode enviar para ambos os lados ao mesmo tempo
+	- Bidirecional
+	- Troca de dados entre processador, memória, etc (barramentos) 
+PCIe usa diversas conexões seriais (x2,x4,x8,x16,x32) que funcionam independente entre si, se fosse paralela cada disparada de bits teria que esperar que todos cheguem no destino corretamente, mas como é serial, cada linha tem seu próprio clock.
 ___
 ## Swap - cnp
 Exemplo
@@ -48,8 +66,9 @@ ___
 ## CPU
 Chipset - controlador - northbridge e southbride, alta e baixa velocidade
 ___
-Slot de memoria na motherboard
-se tiver 4 espaçoes e 2 memória, coloca um espaçado do outro ou 
+## RAM
+Cada geração de DDR é incompatível com as outras, usa voltagem cada vez menor.
+Slot de memoria na motherboard - se tiver 4 espaçoes e 2 memória, coloca um espaçado do outro ou 
 ___
 **1. O que são as tecnologias SIMM ou DIMM para memórias?**
 SIMM: Single Inline Memory Module, é uma placa de circuito que conta com diversos chips de memória, e possui apenas uma linha de conexão. É uma tecnologia mais antiga, suportando apenas 32 bits de transferência de dados e fornecendo armazenamento de 4MB a 64MB

@@ -21,5 +21,5 @@ ___
 Permite que objetos de classes diferentes sejam tratadas de maneira uniforme a partir de uma classe base
 - Facilita a extensibilidade, flexibilidade e modularidade do código
 - Permite lidar com diferentes tipos de objetos de forma genérica
-- Explicado melhor na [[Aula 8]]
+- Explicado melhor na [[8- Polimorfismo]]
 ___ 

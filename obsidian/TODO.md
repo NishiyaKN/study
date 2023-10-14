@@ -15,6 +15,7 @@ ___
 - [ ] Python - Netacad - xx/xx
 
 Battery logger:
-- [ ] Colocar identificador unico para cada sessao (para fazer update do uptime)
+- [x] Colocar identificador unico para cada sessao (para fazer update do uptime)
 - [ ] Mostrar a sessao e quando se iniciou
-- [ ] Mostrar o tempo total decorrido de cada sessao
+- [x] Mostrar o tempo total decorrido de cada sessao
+___
