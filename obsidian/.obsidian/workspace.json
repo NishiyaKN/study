@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/JS/1- Base.md",
+                "file": "notes/ARQ/Main.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/JS/1- Base.md",
+                "file": "notes/ARQ/Main.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/JS/1- Base.md",
+                "file": "notes/ARQ/Main.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/JS/1- Base.md"
+                "file": "notes/ARQ/Main.md"
               }
             }
           }
@@ -146,18 +146,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ef5ddca7e73d3ceb",
+  "active": "73ea793750b2f734",
   "lastOpenFiles": [
-    "notes/JS/3- Coleções.md",
-    "notes/JS/1- Base.md",
-    "notes/ARQ/Main.md",
     "notes/ARQ/Cap 1.md",
+    "notes/ARQ/! Cap 3.md",
+    "TODO.md",
+    "notes/JS/4- User Interface.md",
+    "notes/JS/3- Coleções.md",
+    "notes/JS/2- Programação funcional.md",
+    "notes/JS/1- Base.md",
+    "notes/C/Recursividade.md",
+    "notes/C/Arrays e matrizes.md",
+    "Pasted image 20231015100326.png",
+    "notes/ARQ/Main.md",
     "notes/JAVA/9- Exceções.md",
     "Pasted image 20231012092135.png",
     "notes/JAVA/Conceitos principais.md",
     "notes/JAVA/8.1 Coleções.md",
     "notes/JAVA/FORMS/Unidade 02.png",
-    "TODO.md",
     "notes/JAVA/4- 4 Pilares de DOO.md",
     "notes/JAVA/1- Base.md",
     "notes/JAVA/8- Polimorfismo.md",
@@ -174,18 +180,12 @@
     "notes/JAVA/3.1 - Construtor.md",
     "notes/JAVA/5- Herança.md",
     "notes/JAVA/4.1- Encapsulamento.md",
-    "notes/BD/4-Transações e propriedades ACID.md",
-    "notes/BD/5-Controle de concorrência.md",
-    "notes/BD/3-Procedimentos e triggers.md",
-    "notes/BD/2-Junções, visões.md",
-    "notes/BD/1-Base.md",
     "notes/JS/Forms/Linguagem Javascript.png",
     "notes/JS/Forms/Unidade 2 - Programação Funcional.png",
     "notes/JS/Forms/Unidade 3.png",
     "notes/JS/Forms/Unidade 4 - Interface com Usuário.png",
     "notes/JS/Forms",
     "notes/JS/Media/Closure example.png",
-    "notes/JAVA/Media/Pasted image 20231010112657.png",
     "notes/JAVA/Media",
     "notes/BD/Media",
     "notes/JAVA",
