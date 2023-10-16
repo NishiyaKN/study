@@ -80,10 +80,17 @@ DDR – Double Data Rate - oferece uma velocidade de transferência de dados dua
 
 **3. Redundâncias de disco para melhorar a segurança no armazenamento de dados. Quais tecnologias existem para isso?**
 Utilizamos RAID – Redundant Array of Independent Drives – para isso. Essa tecnologia fornece uma maneira de armazenar dados em vários dispositivos de armazenamento por meio de diversos métodos:
-- Striping: os dados são distribuidos por várias unidades, melhorando o desempenho e otimizando o espaço de disco, mas se um disco falhar, todos os dados serão perdidos.
-- Espelhamento: armazena dados duplicados em uma ou mais unidades, proporcionando redundância para que a falha de um disco não acarrete na perda dos dados, mas reduz o tamanho do disco pela metade.  
-- Paridade: fornece verificação básica de erros e tolerância a falhas, armazenando somas de verificação separadamente dos dados, permitindo a reconstrução dos dados sem perda de velocidade e capacidade.
+- Striping: os dados são **distribuidos por várias unidades**, melhorando o desempenho e otimizando o espaço de disco, mas se um disco falhar, todos os dados serão perdidos.
+- Espelhamento: armazena dados **duplicados em uma ou mais unidades**, proporcionando redundância para que a falha de um disco não acarrete na perda dos dados, mas reduz o tamanho do disco pela metade.  
+- Paridade: fornece verificação básica de erros e tolerância a falhas, armazenando **somas de verificação separadamente dos dados**, permitindo a reconstrução dos dados sem perda de velocidade e capacidade.
 - Dupla paridade – fornece toleância a falhas de até duas unidades com falha.
 
 **4. Por que a partir de um determinado momento da história dos microprocessadores, as empresas começaram a projetá-los com vários núcleos?**
 Isso se deve ao fato de que, conforme a frequência do clock foi aumentando, começaram a ser notadas as limitações em sua progressão devido a capacidade de resfriação térmica dos componentes dos processadores não ser o suficiente, ou seja, uma alta frequência demanda alto uso de energia elétrica, onde grande parte dela é convertida em calor que pode danificar o processador caso seja excessiva. Desse modo, a divisão de poder de processamento entre diversos núcleos permite que cada núcleo possua uma frequência não excessiva ao mesmo tempo em que trabalham simultaneamente para fornecer altas velocidades de processamento.
+
+Se a frequencia for mto alta, os pinos do CPU que conecta no socket viram antenas, transformando energia eletrica em ondas eletromagnéticas, perdendo a efetividade
+___
+
+![[atv4.jpeg|500]]
+![[IMG_20231011_184748.jpg|500]]
+![[IMG_20231011_184758.jpg|500]]

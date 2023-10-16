@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "notes/ARQ/Main.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -146,8 +146,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "73ea793750b2f734",
+  "active": "ef5ddca7e73d3ceb",
   "lastOpenFiles": [
+    "notes/ARQ/ATIVIDADE.md",
+    "notes/ARQ/Main.md",
+    "atv4.jpeg",
+    "IMG_20231011_184748.jpg",
+    "Pasted image 20231012092135.png",
+    "Pasted image 20231015100326.png",
+    "ATIVIDADE #4 - Dado um circuito com portas Digitais, descobrir a expressão booleana (11 Oct 2023 11 31 17) 1.jpeg",
+    "IMG_20231011_184758.jpg",
     "notes/ARQ/Cap 1.md",
     "notes/ARQ/! Cap 3.md",
     "TODO.md",
@@ -157,10 +165,7 @@
     "notes/JS/1- Base.md",
     "notes/C/Recursividade.md",
     "notes/C/Arrays e matrizes.md",
-    "Pasted image 20231015100326.png",
-    "notes/ARQ/Main.md",
     "notes/JAVA/9- Exceções.md",
-    "Pasted image 20231012092135.png",
     "notes/JAVA/Conceitos principais.md",
     "notes/JAVA/8.1 Coleções.md",
     "notes/JAVA/FORMS/Unidade 02.png",
@@ -179,13 +184,8 @@
     "notes/JAVA/3- Modificador de acesso.md",
     "notes/JAVA/3.1 - Construtor.md",
     "notes/JAVA/5- Herança.md",
-    "notes/JAVA/4.1- Encapsulamento.md",
     "notes/JS/Forms/Linguagem Javascript.png",
-    "notes/JS/Forms/Unidade 2 - Programação Funcional.png",
-    "notes/JS/Forms/Unidade 3.png",
-    "notes/JS/Forms/Unidade 4 - Interface com Usuário.png",
     "notes/JS/Forms",
-    "notes/JS/Media/Closure example.png",
     "notes/JAVA/Media",
     "notes/BD/Media",
     "notes/JAVA",
