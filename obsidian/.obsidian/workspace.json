@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "notes/ARQ/STUDY.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0088d5e91d3e0b0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "notes/ARQ/Main.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7f66d05bfa9fb8bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/ARQ/Cap 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/ARQ/Main.md",
+                "file": "notes/ARQ/STUDY.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/ARQ/Main.md",
+                "file": "notes/ARQ/STUDY.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/ARQ/Main.md"
+                "file": "notes/ARQ/STUDY.md"
               }
             }
           }
@@ -146,18 +170,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "73ea793750b2f734",
+  "active": "ef5ddca7e73d3ceb",
   "lastOpenFiles": [
-    "notes/ARQ/Media/Pasted image 20231017190324.png",
-    "notes/ARQ/Pasted image 20231017190241.png.md",
-    "notes/ARQ/Main.md",
     "notes/ARQ/Cap 1.md",
+    "notes/ARQ/! Cap 3.md",
+    "notes/ARQ/Main.md",
+    "notes/ARQ/STUDY.md",
+    "notes/ARQ/Media/IMG_20231011_184748.jpg",
+    "notes/ARQ/Pasted image 20231017190241.png.md",
+    "notes/ARQ/Media/Pasted image 20231017190324.png",
     "notes/ARQ/Media/IMG_20231011_184758.jpg",
     "notes/ARQ/Media/Pasted image 20231017190241.png",
     "notes/ARQ/Media/Pasted image 20231012092135.png",
-    "notes/ARQ/! Cap 3.md",
     "notes/ARQ/Media/atv4.jpeg",
-    "notes/ARQ/Media/IMG_20231011_184748.jpg",
     "notes/C/Recursividade.md",
     "notes/C/Ponteiros.md",
     "notes/C/Funções e Modularidade.md",
@@ -183,8 +208,6 @@
     "notes/JAVA/FORMS/Unidade 02.png",
     "notes/JAVA/4- 4 Pilares de DOO.md",
     "notes/JAVA/1- Base.md",
-    "notes/JAVA/8- Polimorfismo.md",
-    "Unidade 02 2.png",
     "notes/JAVA/FORMS",
     "notes/JS/Forms",
     "notes/JAVA/Media",

@@ -4,7 +4,9 @@ import time
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 import subprocess
+from datetime import date
 
+today = date.today()
 options = Options()
 options.add_argument("--headless")
 
@@ -15,12 +17,16 @@ browser.get('https://www.terabyteshop.com.br/produto/18613/monte-seu-pc-gamer-pl
 time.sleep(10)
 price = browser.find_element(By.ID, 'valVista')
 price_text = price.text
+if price_text == "R$ 0,00":
+    print("Error, try again later")
+    browser.close()
+else: 
+    bash_command = f'echo -e "{today}\n{price_text}\n------------" >> /home/yori/Documents/price.txt'
+    subprocess.run(bash_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
 
-bash_command = f'echo "{price_text}" >> /home/yori/Documents/price.txt'
-subprocess.run(bash_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    print(today)
+    print(price.text)
 
-print("Price: " + price.text)
-
-# Close the browser
-time.sleep(10)
-browser.close()
+    # Close the browser
+    time.sleep(10)
+    browser.close()

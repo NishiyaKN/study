@@ -1,0 +1,10 @@
+- [ ] Chipset
+- [ ] RISC / CISC
+- [ ] ROM
+- [ ] RAM
+- [ ] SIMM / DIMM
+- [ ] SWAP
+- [ ] Barramentos
+- [ ] Protocolos
+- [ ] BIOS
+- [ ] RAID
