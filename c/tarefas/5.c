@@ -14,7 +14,7 @@ int main(){
     notas = &a[0].nota;
     for(i=0;i<3;i++){
         printf("Digite o nome do aluno %d: ",i+1);
-        fgets(a[i].nome + i,30,stdin);
+        fgets(a[i].nome ,30,stdin);
         printf("Digite a nota do aluno %d: ",i+1);
         scanf("%lf",notas + i);
         getchar();

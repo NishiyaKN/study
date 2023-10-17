@@ -71,9 +71,9 @@ Cada geração de DDR é incompatível com as outras, usa voltagem cada vez meno
 Slot de memoria na motherboard - se tiver 4 espaçoes e 2 memória, coloca um espaçado do outro ou 
 ___
 **1. O que são as tecnologias SIMM ou DIMM para memórias?**
-SIMM: Single Inline Memory Module, é uma placa de circuito que conta com diversos chips de memória, e possui apenas uma linha de conexão. É uma tecnologia mais antiga, suportando apenas 32 bits de transferência de dados e fornecendo armazenamento de 4MB a 64MB
+SIMM: Single Inline Memory Module, é uma placa de circuito que conta com diversos chips de memória, e possui um conjunto de contatos em uma única linha de pinos. É uma tecnologia mais antiga, suportando apenas 32 bits de transferência de dados e fornecendo armazenamento de 4MB a 64MB
 
-DIMM: Double Inline Memory Module, é um placa de circuito que suporta os chips de SDRAM e todas as versões de DDR SDRAM. É a mais utilizada para equipamentos modernos, possuindo suporte para 64 bits de transferência de dados e fornecendo armazenamento de 32MB a 1GB.
+DIMM: Double Inline Memory Module, é um placa de circuito que suporta os chips de SDRAM e todas as versões de DDR SDRAM, e possui contatos em ambos os lados, dispostos em duas fileiras paralelas. É a mais utilizada para equipamentos modernos, possuindo suporte para 64 bits de transferência de dados e fornecendo armazenamento de 32MB a 1GB.
 
 **2. O que a tecnologia DDR de memória oferece?**
 DDR – Double Data Rate - oferece uma velocidade de transferência de dados duas vezes maior que a SDRAM comum por suportar duas gravações e duas leituras por ciclo de clock da CPU.
@@ -89,6 +89,8 @@ Utilizamos RAID – Redundant Array of Independent Drives – para isso. Essa te
 Isso se deve ao fato de que, conforme a frequência do clock foi aumentando, começaram a ser notadas as limitações em sua progressão devido a capacidade de resfriação térmica dos componentes dos processadores não ser o suficiente, ou seja, uma alta frequência demanda alto uso de energia elétrica, onde grande parte dela é convertida em calor que pode danificar o processador caso seja excessiva. Desse modo, a divisão de poder de processamento entre diversos núcleos permite que cada núcleo possua uma frequência não excessiva ao mesmo tempo em que trabalham simultaneamente para fornecer altas velocidades de processamento.
 
 Se a frequencia for mto alta, os pinos do CPU que conecta no socket viram antenas, transformando energia eletrica em ondas eletromagnéticas, perdendo a efetividade
+___
+![[Pasted image 20231017190324.png]]
 ___
 
 ![[atv4.jpeg|500]]

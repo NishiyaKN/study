@@ -12,6 +12,8 @@ simultâneo ao banco de dados de uma agência bancária:
 - SOMA10P: Acrescenta 10% do valor corrente à conta de um correntista da agência bancária.
 ![[Drawing 2023-10-09 08.13.33.excalidraw]]
 O critério de consistência seria os dois valores possíveis caso cada trasação fosse executada após a outra terminar. Mas caso o processador decida intercalar os processos, acabaremos com um resultado totalmente diferente.
+## Estados de uma transação
+![[Pasted image 20231016083251.png]]
 ___
 ## Propriedades ACID
 - **Atomicidade** - cada transação é indivisível, importante para o exemplo mostrado acima, ou ele faz toda a transação ou ele não faz nada.

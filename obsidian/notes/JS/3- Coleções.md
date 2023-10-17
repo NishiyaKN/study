@@ -1,5 +1,5 @@
 # Coleções
-## Intrudução
+## Introdução
 Uma coleção é uma estrutura de dados que permite armazenar e organizar dados. Exemplos:
 - Array - coleção de elementos ordenados
 - Map - coleção de pares de chave-valor, semelhante a um objeto, mas possui chaves únicas

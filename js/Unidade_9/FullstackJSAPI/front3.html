@@ -134,6 +134,7 @@
             produtos.push(data);
             displayProducts();
             document.getElementById("productForm").reset();
+            location.reload();
             })
             .catch((error) => console.error("Error:", error));
         }
