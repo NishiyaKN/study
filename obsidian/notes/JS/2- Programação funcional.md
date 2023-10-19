@@ -1,6 +1,6 @@
 # Programação funcional
 
-É um paradigma de programação que se baseia no conceito de funções matemáticas e evita mudanças de estados e dados mutáveis e as **funções podem ser utilizadas como se fossem variáveis**.
+É um paradigma de programação que se baseia no conceito de funções matemáticas e evita mudanças de estados e dados mutáveis e as **funções são tratadas como cidadãos de primeria classe, podem ser utilizadas como se fossem variáveis**.
 Ela incentiva a criação de funções puras (não tem efeitos colaterais e sempre retornam os mesmos resultados para os mesmos argumentos).
 ___
 ### Funções de primeira classe

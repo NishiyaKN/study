@@ -4,7 +4,7 @@ Sua estrutura é em formato de árvore, com vários galhos que representam difer
 
 Exemplo de DOM:
 ![[DOM model example.png]]
-Podemos alterar o DOM através do use de javascript. Para isso, utilizamos o objeto **document**, que é responsável por conceder ao javascript o acesso a árvore DOM do nevegador web. Qualquer coisa criada pelo navegador no modela da página pode ser acessado através desse objeto.
+Podemos alterar o DOM através do use de javascript. Para isso, utilizamos o objeto **document**, que é responsável por conceder ao javascript o acesso a árvore DOM do nevegador web. Qualquer coisa criada pelo navegador no modelo da página pode ser acessado através desse objeto.
 ___
 ## Exemplos de manipulação do DOM
 ### Seleção de elementos

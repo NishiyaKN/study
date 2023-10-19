@@ -4,7 +4,7 @@ Uma coleção é uma estrutura de dados que permite armazenar e organizar dados.
 - Array - coleção de elementos ordenados
 - Map - coleção de pares de chave-valor, semelhante a um objeto, mas possui chaves únicas
 - Set - coleção de elementos únicos
-- Object - coleçãod de pares de chave-valor
+- Object - coleção de pares de chave-valor
 ___
 ## Array
 - Estrutura indexada
@@ -89,7 +89,7 @@ No código acima, a função `somar` tem como parâmetro `...num`, isso signific
 Podemos fazer a desestruturação de arrays:
 ```js
 const num = [1,2,3,4,5];
-const [primeiro,segundo, ...resto] = numeros;
+const [primeiro,segundo, ...resto] = num;
 console.log(primeiro); // 1
 console.log(segundo); // 2 
 console.log(resto); // [3,4,5]
