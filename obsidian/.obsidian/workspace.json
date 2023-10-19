@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/JS/STUDY.md",
+                "file": "notes/JS/Forms/FORMS.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/JS/STUDY.md",
+                "file": "notes/JS/Forms/FORMS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/JS/STUDY.md",
+                "file": "notes/JS/Forms/FORMS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/JS/STUDY.md"
+                "file": "notes/JS/Forms/FORMS.md"
               }
             }
           }
@@ -172,14 +172,15 @@
   },
   "active": "6181af3000f20ac3",
   "lastOpenFiles": [
-    "notes/JS/3- Coleções.md",
+    "notes/JS/Forms/Unidade 2.png.md",
+    "notes/JS/Forms/FORMS.md",
     "notes/JS/STUDY.md",
+    "notes/JS/3- Coleções.md",
     "notes/JS/1- Base.md",
     "notes/JS/2- Programação funcional.md",
     "notes/JS/Concepts/Orientada a Objetos.md",
     "notes/JS/4- User Interface.md",
     "notes/ARQ/Cap 1.md",
-    "notes/JS/Forms/FORMS.md",
     "notes/JS/Forms/Unidade 4 - Interface com Usuário.png",
     "notes/JS/Forms/Unidade 2 - Programação Funcional.png",
     "notes/JS/Forms/Linguagem Javascript.png",
@@ -208,7 +209,6 @@
     "notes/ARQ/Media",
     "notes/ARQ/ATIVIDADE.md",
     "notes/JAVA/9- Exceções.md",
-    "notes/JAVA/Conceitos principais.md",
     "notes/JAVA/FORMS",
     "notes/JS/Forms",
     "notes/JAVA/Media",
