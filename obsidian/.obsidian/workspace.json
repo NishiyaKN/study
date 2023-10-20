@@ -4,46 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "aee36fe47a2bdd04",
+        "id": "3f94235353c66a86",
         "type": "tabs",
         "children": [
           {
-            "id": "6181af3000f20ac3",
+            "id": "6d00801565eac48c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/JS/Forms/FORMS.md",
+                "file": "notes/C/STUDY.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0088d5e91d3e0b0f",
+            "id": "d9619505f0769720",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/JS/3- Coleções.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "027ade395b94c67d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "notes/JS/4- User Interface.md",
+                "file": "notes/C/5- Ponteiros.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/JS/Forms/FORMS.md",
+                "file": "notes/C/5- Ponteiros.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/JS/Forms/FORMS.md",
+                "file": "notes/C/5- Ponteiros.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/JS/Forms/FORMS.md"
+                "file": "notes/C/5- Ponteiros.md"
               }
             }
           }
@@ -170,19 +159,27 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6181af3000f20ac3",
+  "active": "d9619505f0769720",
   "lastOpenFiles": [
-    "notes/JS/Forms/Unidade 2.png.md",
-    "notes/JS/Forms/FORMS.md",
+    "notes/C/STUDY.md",
+    "notes/C/5- Ponteiros.md",
+    "notes/C/4- Recursividade.md",
+    "TODO.md",
+    "notes/C/3- Estruturas.md",
+    "notes/C/2- Funções e Modularidade.md",
+    "notes/C/1- Arrays e matrizes.md",
+    "notes/JS/4- User Interface.md",
+    "notes/JS/2- Programação funcional.md",
     "notes/JS/STUDY.md",
     "notes/JS/3- Coleções.md",
     "notes/JS/1- Base.md",
-    "notes/JS/2- Programação funcional.md",
+    "notes/JS/Forms/FORMS.md",
+    "notes/JS/Forms/Unidade 2 - Programação Funcional.png",
+    "notes/JS/Forms/Unidade 3.png",
+    "notes/JS/Forms/Unidade 2.png.md",
     "notes/JS/Concepts/Orientada a Objetos.md",
-    "notes/JS/4- User Interface.md",
     "notes/ARQ/Cap 1.md",
     "notes/JS/Forms/Unidade 4 - Interface com Usuário.png",
-    "notes/JS/Forms/Unidade 2 - Programação Funcional.png",
     "notes/JS/Forms/Linguagem Javascript.png",
     "notes/ARQ/Main.md",
     "notes/ARQ/N1.md",
@@ -195,20 +192,12 @@
     "notes/ARQ/Media/Pasted image 20231017190241.png",
     "notes/ARQ/Media/Pasted image 20231012092135.png",
     "notes/ARQ/Media/atv4.jpeg",
-    "notes/C/Recursividade.md",
-    "notes/C/Ponteiros.md",
-    "notes/C/Funções e Modularidade.md",
-    "notes/C/Estruturas.md",
-    "notes/C/Arrays e matrizes.md",
     "notes/BD/5-Controle de concorrência.md",
     "notes/BD/Controle Exemplo.md",
     "notes/ARQ/Concepts/FSB.md",
-    "notes/BD/Media/Pasted image 20231016083251.png",
     "notes/BD/4-Transações e propriedades ACID.md",
-    "TODO.md",
     "notes/ARQ/Media",
     "notes/ARQ/ATIVIDADE.md",
-    "notes/JAVA/9- Exceções.md",
     "notes/JAVA/FORMS",
     "notes/JS/Forms",
     "notes/JAVA/Media",

@@ -17,14 +17,8 @@ int *p = NULL;
 **O ponteiro armazena o endereço da variável para onde ele aponta:**
 ![[Pasted image 20231005205111.png]]
 
-Para acessar o **endereço de memória**, utilizamos o operador `&`:
-``` c
-int x = 10;
-int *p;
-p = &x;
-```
-
-Para acessar o **conteúdo** do endereço de memória, utilizamos o operador `*`:
+Para acessar o **endereço de memória**, utilizamos o operador `&`
+Para acessar o **conteúdo** do endereço de memória, utilizamos o operador `*`
 ``` c
 int x = 10;
 int *p;
@@ -74,7 +68,8 @@ Não existem restrições, somente devemos utilizar `*p` para relizá-las:
 ```
 
 ### Operações relacionais
-- Podemos usar `==` e `!=` para verificar se os ponteiros apontam para o mesmo lugar(nesse caso `p1 = p2` seria igual, equanto `*p1 = *p2` seria diferente)
+- Podemos usar `==` e `!=` para verificar se os ponteiros apontam para o mesmo lugar
+(nesse caso `p1 = p2` seria igual, equanto `*p1 = *p2` seria diferente)
 - Podemos usar `>`, `<`, `>=`, `<=` para verificar qual ponteiro aponta para uma posição mais alta na memória.
 ___
 ## Ponteiros genéricos
@@ -133,7 +128,7 @@ p->y = 20; // y = 20
 // ponteiro->nome_do_campo
 ```
 ### Ponteiro para ponteiro
-Podemos fazer com que um ponteiro aponte para um ponteiro que aponta para algum ençdereço da memória. Definimos isso a partir da quantidade de `*` antes do nome do ponteiro.
+Podemos fazer com que um ponteiro aponte para um ponteiro que aponta para algum endereço da memória. Definimos isso a partir da quantidade de `*` antes do nome do ponteiro.
 ```c
 char letra = 'a';
 int *p1;

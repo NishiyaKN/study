@@ -2,7 +2,7 @@
 int main(){
     printf("Inicio do programa\n");
     int a = 5;
-    int * p = NULL;
+    int * p;
 
     p = &a; // ponteiro p recebe o endereco de a
 

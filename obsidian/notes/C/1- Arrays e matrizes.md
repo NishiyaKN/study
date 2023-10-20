@@ -4,7 +4,6 @@ int var;
 a[1] = 3;
 var = a[0];
 ```
-
 ## Matriz
 ![[Pasted image 20231015100326.png|280]]
 Exemplo de programa que recebe 16 numeros em uma matriz 4x4 e depois imprime todos os valores

@@ -4,7 +4,7 @@
 - Composto heterogêneo (struct) 
 ### Definição
 ___
-Estruturas são agrupamento de dados, parecido com **objetos**.
+Estruturas são agrupamento de dados, parecido com **objetos**. Podem ser vistos como um novo tipo de dado.
 Exemplo:
 ```c
 struct cadastro{
@@ -17,9 +17,6 @@ int main(){
 	struct cadastro c;
 	c.idade = 18;
 }
-```
-Após definir uma struct, devemos declará-la:
-```c
 ```
 ___
 ### Uso de structs
@@ -75,13 +72,12 @@ ___
 ### Array de estruturas
 Usamos a seguinte sintaxe para criar e manipular um array de estruturas:
 ```c
-struct cadastro cad[4];
+struct cadastro c[4];
 int i;
 for(i=0;i<4;i++){
 	gets(c[i].nome);
 	scanf("%d",&c[i].idade);
 }
-
 ```
 ___
 ### Atribuição de estruturas

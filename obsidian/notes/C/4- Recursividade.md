@@ -1,7 +1,7 @@
 Recursão ocorre quando uma função chama a si mesma repetidas vezes. Para gerar uma resposta, deve haver alguma condição de término. Um exemplo disso é o cálculo de um **fatorial**:
 ```c
 int fatorial(int n){
-	if(n < 1){
+	if(n <= 1){
 		return 1; // fatorial de 0 ou 1 = 1
 	}
 	else{
