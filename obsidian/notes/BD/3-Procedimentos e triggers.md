@@ -99,5 +99,4 @@ insert into ItensVenda values(1, 3, 1) -- IdVenda=1, ProdutoCod=3, Quantidade=1
 insert into ItensVenda values(2, 6, 4) -- IdVenda=2, ProdutoCod=6, Quantidade=4
 delete from ItensVenda where IdVenda = 1
 ```
-
 Temos também os comandos `SHOW TRIGGERS` e `DROP TRIGGER [nome]`

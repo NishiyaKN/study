@@ -5,10 +5,8 @@ select nome,id_curso
 from aluno a, realiza r
 where a.ID = r.ID
 ```
-
 ## Views
 Usado para restringir o acesso aos dados, retorna uma tabela com dados específicos definidos na view.
-
 ```mysql
 -- Criando uma view, 'or replace' pode ser usado para atualizar a view
 create or replace view nome_view as

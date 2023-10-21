@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "d9619505f0769720",
+            "id": "900a2bab2649dd9f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/C/5- Ponteiros.md",
+                "file": "TODO.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/C/5- Ponteiros.md",
+                "file": "TODO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/C/5- Ponteiros.md",
+                "file": "TODO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/C/5- Ponteiros.md"
+                "file": "TODO.md"
               }
             }
           }
@@ -159,14 +159,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d9619505f0769720",
+  "active": "73ea793750b2f734",
   "lastOpenFiles": [
+    "notes/PY",
+    "notes/BD/4-Transações e propriedades ACID.md",
+    "notes/BD/3-Procedimentos e triggers.md",
+    "notes/BD/1-Base.md",
+    "notes/BD/2-Junções, visões.md",
+    "notes/BD/5-Controle de concorrência.md",
+    "notes/BD/Controle Exemplo.md",
+    "notes/ARQ/N1.md",
     "notes/C/STUDY.md",
+    "notes/C/3- Estruturas.md",
+    "notes/C/2- Funções e Modularidade.md",
+    "notes/ARQ/Cap 1.md",
+    "notes/ARQ/Main.md",
     "notes/C/5- Ponteiros.md",
     "notes/C/4- Recursividade.md",
     "TODO.md",
-    "notes/C/3- Estruturas.md",
-    "notes/C/2- Funções e Modularidade.md",
     "notes/C/1- Arrays e matrizes.md",
     "notes/JS/4- User Interface.md",
     "notes/JS/2- Programação funcional.md",
@@ -178,26 +188,16 @@
     "notes/JS/Forms/Unidade 3.png",
     "notes/JS/Forms/Unidade 2.png.md",
     "notes/JS/Concepts/Orientada a Objetos.md",
-    "notes/ARQ/Cap 1.md",
     "notes/JS/Forms/Unidade 4 - Interface com Usuário.png",
     "notes/JS/Forms/Linguagem Javascript.png",
-    "notes/ARQ/Main.md",
-    "notes/ARQ/N1.md",
     "notes/ARQ/STUDY.md",
-    "notes/ARQ/! Cap 3.md",
     "notes/ARQ/Media/IMG_20231011_184748.jpg",
-    "notes/ARQ/Pasted image 20231017190241.png.md",
     "notes/ARQ/Media/Pasted image 20231017190324.png",
     "notes/ARQ/Media/IMG_20231011_184758.jpg",
     "notes/ARQ/Media/Pasted image 20231017190241.png",
     "notes/ARQ/Media/Pasted image 20231012092135.png",
     "notes/ARQ/Media/atv4.jpeg",
-    "notes/BD/5-Controle de concorrência.md",
-    "notes/BD/Controle Exemplo.md",
-    "notes/ARQ/Concepts/FSB.md",
-    "notes/BD/4-Transações e propriedades ACID.md",
     "notes/ARQ/Media",
-    "notes/ARQ/ATIVIDADE.md",
     "notes/JAVA/FORMS",
     "notes/JS/Forms",
     "notes/JAVA/Media",
