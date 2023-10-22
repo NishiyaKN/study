@@ -12,4 +12,3 @@ df = pd.DataFrame(data)
 fig = px.line(df, x="date", y="price", title='Price history')
 fig.update_layout(yaxis_range=[1000,4000])
 fig.show()
-
