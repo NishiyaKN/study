@@ -10,21 +10,14 @@ filename = "individual_price.json"
 try:
     open(filename,"x")
     file = open(filename,'w')
-    file.write("[]")
+    file.write('{\n    "RX 6600": [],\n    "RX 6500 XT":[],\n    "5 5600":[],\n    "5 5500":[],\n    "5 4600G":[]\n}')
+    file.close()
     print("Created",filename,"file")
 except:
     print(filename,"file exists")
 
-today = datetime.today().strftime('%Y-%m-%d')
-# file = open(filename,"r")
-# content = file.read()
-# file.close()
-
-# if(content.count(today) == 0):
-# print("New day, new query")
 options = Options()
 options.add_argument("--headless")
-
 
 def get_price(num):
     browser = webdriver.Firefox(options=options)
@@ -50,7 +43,7 @@ def get_price(num):
     data = browser.find_element(By.ID, 'valVista')
     data = data.text
     if data == "R$ 0,00":
-        print("Error, try again later")
+        print("Error retrieving",component," price. Try again later")
         browser.close()
         exit()
     else: 
@@ -69,10 +62,25 @@ def get_price(num):
 
         new_file_data = open(filename, 'w')
         json.dump(file_data,new_file_data, indent=4, separators=(',',': '))
+
+        print("Price recorded successfully")
         file.close()
         new_file_data.close()
-
         browser.close()
 
-for i in range(0,5):
-    get_price(i)
+today = datetime.today().strftime('%Y-%m-%d')
+file = open(filename,"r")
+content = file.read()
+file.close()
+
+if(content.count(today) == 0):
+    print("New day, new query")
+    for i in range(0,5):
+        get_price(i)
+else:
+    print("Already done the daily update")
+    i = int(input("Manually retrieve price of which component?\n0- RX 6600\n1- RX 6500 XT\n2- 5 5600\n3- 5 5500\n4- 4600G\n"))
+    if i >= 0 and i < 5:
+        get_price(i)
+    else:
+        print("Invalid option")
