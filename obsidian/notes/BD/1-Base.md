@@ -12,10 +12,12 @@ ___
 create schema nome_db;
 
 create table nome_tb(
-	id int primary key not null,
+	id int not null,
 	nome varchar(100),
 	sobrenome varchar(100),
-	datanasc date);
+	datanasc date
+	primary key(id)
+	);
 
 alter table nome_tb add email varchar(100);
 alter table nome_tb drop sobrenome;
@@ -108,6 +110,8 @@ from projeto, trabalha-em
 where pnumero = pno
 group by pnumero, pnome;
 ```
+Normalmente trabalha com funções agregadas, com quantidades de algo `count()`
+Se houver select em elementos não oriundos de funções agregadas, coloque todos eles no group by
 ___
 ## Consultas aninhadas
 É uma consulta especificada dentro da cláusula **WHERE** de uma outra consulta:

@@ -13,25 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/BD/Multidão de abelha.md",
+                "file": "notes/BD/4-Transações e propriedades ACID.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "900a2bab2649dd9f",
+            "id": "fa50da375ad52af9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/BD/Controle Exemplo.md",
+                "file": "notes/BD/5-Controle de concorrência.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "03c42fc684da74e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/BD/Untitled 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/BD/Multidão de abelha.md",
+                "file": "notes/BD/Untitled 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/BD/Multidão de abelha.md",
+                "file": "notes/BD/Untitled 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/BD/Multidão de abelha.md"
+                "file": "notes/BD/Untitled 1.md"
               }
             }
           }
@@ -158,16 +171,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6d00801565eac48c",
+  "active": "03c42fc684da74e0",
   "lastOpenFiles": [
-    "notes/BD/2-Junções, visões.md",
-    "notes/BD/3-Procedimentos e triggers.md",
-    "notes/BD/4-Transações e propriedades ACID.md",
     "notes/BD/5-Controle de concorrência.md",
-    "notes/BD/Multidão de abelha.md",
+    "notes/BD/4-Transações e propriedades ACID.md",
+    "notes/BD/Untitled 1.md",
     "notes/BD/Controle Exemplo.md",
-    "notes/BD/JOINS.md",
+    "TODO.md",
+    "notes/BD/Multidão de abelha.md",
+    "notes/BD/3-Procedimentos e triggers.md",
+    "notes/BD/2-Junções, visões.md",
     "notes/BD/1-Base.md",
+    "notes/BD/Untitled.md",
+    "notes/BD/Media/Untitled 1.md",
+    "notes/BD/Media/Untitled.md",
+    "notes/BD/JOINS.md",
     "notes/C/STUDY.md",
     "notes/BD/Media/Drawing 2023-10-09 10.12.45.excalidraw.md",
     "notes/BD/Media/Pasted image 20231009083754.png",
@@ -180,17 +198,12 @@
     "notes/ARQ/Main.md",
     "notes/C/5- Ponteiros.md",
     "notes/C/4- Recursividade.md",
-    "TODO.md",
     "notes/C/1- Arrays e matrizes.md",
     "notes/JS/4- User Interface.md",
     "notes/JS/2- Programação funcional.md",
     "notes/JS/STUDY.md",
-    "notes/JS/3- Coleções.md",
-    "notes/JS/1- Base.md",
-    "notes/JS/Forms/FORMS.md",
     "notes/JS/Forms/Unidade 2 - Programação Funcional.png",
     "notes/JS/Forms/Unidade 3.png",
-    "notes/JS/Forms/Unidade 2.png.md",
     "notes/JS/Forms/Unidade 4 - Interface com Usuário.png",
     "notes/JS/Forms/Linguagem Javascript.png",
     "notes/ARQ/Media/IMG_20231011_184748.jpg",

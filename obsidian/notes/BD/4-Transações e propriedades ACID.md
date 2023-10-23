@@ -1,5 +1,5 @@
 ## Transação
-É um conjunto de uma ou mais operações que contituem uma única tarefa ou unidade lógica de trabalho a ser processada. Possui como objetivo **preservar** a **integridade** e a **consistência** dos dados.
+É um conjunto de uma ou mais operações que constituem uma única tarefa ou unidade lógica de trabalho a ser processada. Possui como objetivo **preservar** a **integridade** e a **consistência** dos dados.
 Em um banco de dados temos normalmente um ambiente de concorrência, onde temos várias conexões simultâneas que acessam os mesmos dados (concorrência intercalada). 
 
 - Commit - Confirmação de uma transação;
@@ -19,7 +19,7 @@ ___
 - **Atomicidade** - cada transação é indivisível, importante para o exemplo mostrado acima, ou ele faz toda a transação ou ele não faz nada.
 - **Consistência** - toda transação preserva o estado de consistência do banco, se era consistente, permanece consistente, se era inconsistente, permanece inconsistente.
 - **Isolamento** - trasações nao devem sofrer influência de outras transações.
-- **Durabilidade** - os resultados de transações confirmadas só podem ser modificadas por outras transações confirmadas.
+- **Durabilidade** - os efeitos de uma transação são permanentes, podendo ser desfeitos somente como resultado de uma transação posterior e bem-sucedida
 ### Escalonamento
 Escalonamento válido ou serial é onde você executa integralmente uma transação e depois a outra, conserva a consistência do banco. 
 ![[Pasted image 20231009083805.png|300]]
