@@ -1,7 +1,7 @@
 ## Instância
 Atributos:
 - **Não estáticos**
-- Pertencem a cada instância (objeto)
+- Pertencem a cada instância (objeto) 
 - Cada objeto tem sua cópia dos atributos da instância. Não são compartilhados entre si.
 
 Métodos:

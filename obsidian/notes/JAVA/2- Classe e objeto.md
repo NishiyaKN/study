@@ -13,8 +13,20 @@ Exemplo:
 ___
 ## Objeto
 Uma **instância** criada a partir de uma classe, entidade dinâmica que existe em tempo de **execução**.
-Como exemplo poderiamos pegar a classe Aluno e criar um objeto chamado John.
+Exemplo:
+```java
+Carro carro1 = new Carro();
+Carro carro2 = new Carro();
 
+carro1.marca = 'Toyota';
+carro1.modelo = 'Corolla';
+
+carro2.marca = 'Honda';
+carro2.modelo = 'Civic';
+
+carro1.ligar();
+carro2.acelerar();
+```
 ___
 ### Diferença entre classe e objeto
 - A classe é apenas uma **descrição** ou **modelo** que não consome memória durante a execução do programa.

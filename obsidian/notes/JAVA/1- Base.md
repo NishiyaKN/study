@@ -1,6 +1,6 @@
 - Originalmente chamada Oak, presentemente propriedade da Oracle
 - Ganhou popularidade por poder ser executada em qualquer ambiente que possua JVM
-- Usado em apps mobile, sistemas embarcados, IOT e apps empresariais
+- Usado em apps mobile, sistemas embarcados, IOT e apps empresariais 
 ___
 ## Tipos de dados
 - Primitivos:
@@ -13,7 +13,7 @@ ___
 	- char
 	- boolean
  - de Referência:
-	Usados para criar objetos e lidar com tipos mais complexos de dados. São armazenado na memória como referências(**endereços**) para os objetos reais
+	Usados para criar objetos e lidar com tipos mais complexos de dados. São armazenados na memória como referências(**endereços**) para os objetos reais
 	 - string
 	 - classes
 	 - array
@@ -54,15 +54,15 @@ int c *=b; // 900
 Para fazer um método precisamos da Assinatura do método: tipo de retorno, nome e parâmetros, além do corpo do método.
 ```java
 public static int somar(int a, int b){
-	int resutlado = a + b;
+	int resultado = a + b;
 	return resultado;
 }
 ```
 ### Entrada de dados
-Importamos a biblioteca Scanner, a qual nos fornece os seguintes métodos:
+Importamos a classe Scanner, a qual nos fornece os seguintes métodos:
 - nextInt (para ler int)
 - nextDouble (double)
-- next (string)
+- next (string) 
 ```java
 import java.util.Scanner;
 

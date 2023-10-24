@@ -3,7 +3,7 @@ Polimorfismo é a capacidade de um objeto ser tratado de diferentes formas, depe
 ## Polimorfismo de sobrecarga (overloading)
 - Sobrecarga de métodos
 - Ocorre quando uma classe possui vários métodos com o mesmo nome, mas com parâmetros diferentes
-- O compilador seleciona o método adqueado
+- O compilador seleciona o método adequado
  ```java
 public class Calculadora{
 	public int somar(int a, int b){
@@ -17,8 +17,8 @@ public class Calculadora{
 ___
 ## Polimorfismo de sobrescrita (overriding)
 - Sobrescrita de métodos
-- Ocorre quando uma classe derivada fornce uma implementação específica para um método que é definido em sua classe base
-- Usa a mesma assinatura mas ignora a implementação do método na classe bas
+- Ocorre quando uma classe derivada fornece uma implementação específica para um método que é definido em sua classe base
+- Usa a mesma assinatura mas ignora a implementação do método na classe base
 ```java
 class Animal{
 	public void emitirSom(){
