@@ -41,7 +41,6 @@
         </thead>
         <tbody id="productsTable"></tbody>
     </table>
-            <button onclick="inicializar()">TEST</button>
     <script>
 
     // Array para armazenar produtos do servidor
@@ -133,16 +132,19 @@ console.log("New Product Data:", produto);
             })
             .then((response) => response.json())
             .then((data) => {
-            produtos.push(data);
-            document.getElementById("productForm").reset();
+            produtos.push(produto);
             <!-- location.reload(); -->
+                    console.log("data:"+ JSON.stringify(data,null,2))
+                    console.log("produto:"+ JSON.stringify(produto,null,2))
+                    console.log("produtos:"+ JSON.stringify(produtos,null,2))
             displayProducts();
-    inicializar();
+            document.getElementById("productForm").reset();
+            <!-- inicializar(); -->
             })
             .catch((error) => console.error("Error:", error));
         }
-        displayProducts();
-        inicializar();
+        <!-- displayProducts(); -->
+        <!-- inicializar(); -->
     });
     // Cancela a edição e limpa o formulário
     document .getElementById("cancelBtn") .addEventListener("click", function () {
