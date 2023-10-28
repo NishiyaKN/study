@@ -7,7 +7,7 @@ const connection = mysql.createConnection({
   host: '127.0.0.1',
   user: 'root', 
   password: 'Nobara38!', 
-  database: 'mercado_exemplo' 
+  database: 'mercado' 
 });
 
 connection.connect((err) => {
@@ -46,10 +46,10 @@ app.get("/produtos", (req,res) =>{
   });
 })
 
-app.get('/produtos/:id', (req, res) => {
-    const productId = parseInt(req.params.id);
+app.get('/produtos/:id_produto', (req, res) => {
+    const productId = parseInt(req.params.id_produto);
   
-    const sqlQuery = 'SELECT * FROM produtos WHERE id = ?';
+    const sqlQuery = 'SELECT * FROM produtos WHERE id_produto = ?';
   
     connection.query(sqlQuery, [productId], (err, results) => {
       if (err) {
@@ -69,9 +69,9 @@ app.get('/produtos/:id', (req, res) => {
 
 // Rota para adicionar um novo produto
 app.post('/produtos', (req, res) => {
-    const {id, descricao, quantidade, valor } = req.body;
+    const {id_produto, nome, categoria, quantidade, preco } = req.body;
   
-    if (!id || !descricao || !quantidade || !valor) {
+    if (!id_produto || !nome || !categoria || !quantidade || !preco) {
       res.status(400).json({ error: 'Descricao, quantidade, and valor are required fields' });
       return;
     }
@@ -88,8 +88,8 @@ app.post('/produtos', (req, res) => {
       // const nextId = (maxIdResults[0].maxId || 0) + 1;
   
       // Insere os dados
-      const insertQuery = 'INSERT INTO produtos (id, descricao, quantidade, valor) VALUES (?, ?, ?, ?)';
-      const values = [id, descricao, quantidade, valor];
+      const insertQuery = 'INSERT INTO produtos (id_produto, nome, categoria, quantidade, preco) VALUES (?, ?, ?, ?, ?)';
+      const values = [id_produto, nome, categoria, quantidade, preco];
   
       connection.query(insertQuery, values, (err, insertResults) => {
         if (err) {
@@ -98,18 +98,18 @@ app.post('/produtos', (req, res) => {
           return;
         }
   
-        res.status(201).json({ message: 'Data inserted successfully', id: id});
+        res.status(201).json({ message: 'Data inserted successfully', id: id_produto});
       });
     });
   
 
 // Rota para atualizar um produto
-app.put('/produtos/:id', (req, res) => {
-    const productId = parseInt(req.params.id);
+app.put('/produtos/:id_produto', (req, res) => {
+    const productId = parseInt(req.params.id_produto);
     const updatedProduto = req.body;
   
     // Verifica se o id existe
-    const checkExistenceQuery = 'SELECT * FROM produtos WHERE id = ?';
+    const checkExistenceQuery = 'SELECT * FROM produtos WHERE id_produto = ?';
     connection.query(checkExistenceQuery, [productId], (err, results) => {
       if (err) {
         console.error('Error executing query:', err);
@@ -121,7 +121,7 @@ app.put('/produtos/:id', (req, res) => {
         res.status(404).json({ message: 'Produto não encontrado' });
       } else {
         // Query pra fazer o update
-        const updateQuery = 'UPDATE produtos SET ? WHERE id = ?';
+        const updateQuery = 'UPDATE produtos SET ? WHERE id_produto = ?';
         connection.query(updateQuery, [updatedProduto, productId], (err, updateResults) => {
           if (err) {
             console.error('Error executing update query:', err);
@@ -129,18 +129,18 @@ app.put('/produtos/:id', (req, res) => {
             return;
           }
 
-          res.json({ ...updatedProduto, id: productId });
+          res.json({ ...updatedProduto, id_produto: productId });
         });
       }
     });
   });
 
 // Rota para remover um produto
-app.delete('/produtos/:id', (req, res) => {
-    const productId = parseInt(req.params.id);
+app.delete('/produtos/:id_produto', (req, res) => {
+    const productId = parseInt(req.params.id_produto);
   
     // Verifica se o dado existe antes de deletar
-    const checkExistenceQuery = 'SELECT * FROM produtos WHERE id = ?';
+    const checkExistenceQuery = 'SELECT * FROM produtos WHERE id_produto = ?';
     connection.query(checkExistenceQuery, [productId], (err, results) => {
       if (err) {
         console.error('Error executing query:', err);
@@ -152,7 +152,7 @@ app.delete('/produtos/:id', (req, res) => {
         res.status(404).json({ message: 'Produto não encontrado' });
       } else {
         // Query pra deletar o dado
-        const deleteQuery = 'DELETE FROM produtos WHERE id = ?';
+        const deleteQuery = 'DELETE FROM produtos WHERE id_produto = ?';
         connection.query(deleteQuery, [productId], (err, deleteResults) => {
           if (err) {
             console.error('Error executing delete query:', err);

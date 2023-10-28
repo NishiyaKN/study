@@ -15,16 +15,19 @@
     <!-- Formulário para adicionar/editar produtos -->
     <form id="productForm">
         <div>
-            <input type="number" id="id" placeholder="ID" required />
+            <input type="number" id="id_produto" placeholder="ID" required />
         </div>
         <div>
-            <input type="text" id="descricao" placeholder="Descricao" required />
+            <input type="text" id="nome" placeholder="Nome" required />
+        </div>
+        <div>
+            <input type="text" id="categoria" placeholder="Categoria" required />
         </div>
         <div>
             <input type="number" id="quantidade" placeholder="Quantidade" required />
         </div>
         <div>
-            <input type="number" id="valor" placeholder="Valor" required />
+            <input type="number" id="preco" placeholder="Preço" required />
         </div>
         <button type="submit">Cadastrar</button>
         <button type="button" id="cancelBtn" style="display: none" > Cancelar </button>
@@ -34,9 +37,10 @@
         <thead>
         <tr>
             <th>ID</th>
-            <th>Descricao</th>
+            <th>Nome</th>
+            <th>Categoria</th>
             <th>Quantidade</th>
-            <th>Valor</th>
+            <th>Preço</th>
         </tr>
         </thead>
         <tbody id="productsTable"></tbody>
@@ -54,13 +58,14 @@
     produtos.forEach((produto) => {
         const row = document.createElement("tr");
         row.innerHTML = `
-        <td>${produto.id}</td>
-        <td>${produto.descricao}</td>
+        <td>${produto.id_produto}</td>
+        <td>${produto.nome}</td>
+        <td>${produto.categoria}</td>
         <td>${produto.quantidade}</td>
-        <td>${produto.valor}</td>
+        <td>${produto.preco}</td>
         <td>
-            <button onclick="editProduct(${produto.id})">Alterar</button>
-            <button onclick="deleteProduct(${produto.id})">Remover</button>
+            <button onclick="editProduct(${produto.id_produto})">Alterar</button>
+            <button onclick="deleteProduct(${produto.id_produto})">Remover</button>
         </td>
         `;
         tbody.appendChild(row);
@@ -68,23 +73,24 @@
     }
 
     // Função para carregar um produto no formulário para edição
-    function editProduct(id) {
-        produtoAtual = id;
-        const produto = produtos.find((p) => p.id === id);
-        document.getElementById("id").value = produto.id;
-        document.getElementById("descricao").value = produto.descricao;
+    function editProduct(id_produto) {
+        produtoAtual = id_produto;
+        const produto = produtos.find((p) => p.id_produto === id_produto);
+        document.getElementById("id_produto").value = produto.id_produto;
+        document.getElementById("nome").value = produto.nome;
+        document.getElementById("categoria").value = produto.categoria;
         document.getElementById("quantidade").value = produto.quantidade;
-        document.getElementById("valor").value = produto.valor;
+        document.getElementById("preco").value = produto.preco;
         // Mostra o botão cancelar durante a edição
         document.getElementById("cancelBtn").style.display = "inline-block";
     }
 
     // Função para remover produto do servidor e atualizar a lista
-    function deleteProduct(id) {
-        fetch("http://localhost:3000/produtos/" + id, {
+    function deleteProduct(id_produto) {
+        fetch("http://localhost:3000/produtos/" + id_produto, {
         method: "DELETE", })
         .then(() => {
-        produtos = produtos.filter((p) => p.id !== id);
+        produtos = produtos.filter((p) => p.id_produto !== id_produto);
         displayProducts();
         })
         .catch((error) => console.error("Error:", error));
@@ -95,10 +101,11 @@
         event.preventDefault();
         // Coleta os valores do formulário
         const produto = {
-            id: parseInt(document.getElementById("id").value),
-            descricao: document.getElementById("descricao").value,
+            id_produto: parseInt(document.getElementById("id_produto").value),
+            nome: document.getElementById("nome").value,
+            categoria: document.getElementById("categoria").value,
             quantidade: parseInt(document.getElementById("quantidade").value),
-            valor: parseFloat(document.getElementById("valor").value),
+            preco: parseFloat(document.getElementById("preco").value),
         };
         if (produtoAtual) {
             // Se estiver editando
@@ -111,7 +118,7 @@
             })
             .then((response) => response.json())
             .then((data) => {
-            const index = produtos.findIndex((p) => p.id === produtoAtual);
+            const index = produtos.findIndex((p) => p.id_produto === produtoAtual);
             produtos[index] = data;
             displayProducts();
             // Limpa o formulário e reseta o produto em edição
