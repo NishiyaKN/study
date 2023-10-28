@@ -31,9 +31,10 @@ app.use(express.json());
 // Configuracao do cors
 app.use(cors());
 
-// Rota para listar todos os produtos
-app.get("/produtos", (req,res) =>{
-    const sqlQuery = 'SELECT * FROM produtos';
+// ROTAS DE usuarios //
+// Rota para listar todos os usuarios
+app.get("/usuarios", (req,res) =>{
+    const sqlQuery = 'SELECT * FROM usuarios';
 
   // Query pra pegar todos os dados
   connection.query(sqlQuery, (err, results, fields) => {
@@ -46,12 +47,12 @@ app.get("/produtos", (req,res) =>{
   });
 })
 
-app.get('/produtos/:id_produto', (req, res) => {
-    const productId = parseInt(req.params.id_produto);
+app.get('/usuarios/:id_usuario', (req, res) => {
+    const usuarioId = parseInt(req.params.id_usuario);
   
-    const sqlQuery = 'SELECT * FROM produtos WHERE id_produto = ?';
+    const sqlQuery = 'SELECT * FROM usuarios WHERE id_usuario = ?';
   
-    connection.query(sqlQuery, [productId], (err, results) => {
+    connection.query(sqlQuery, [usuarioId], (err, results) => {
       if (err) {
         console.error('Error executing query:', err);
         res.status(500).json({ error: 'Internal server error' });
@@ -61,23 +62,23 @@ app.get('/produtos/:id_produto', (req, res) => {
       if (results.length === 0) {
         res.status(404).json({ message: 'Produto não encontrado' });
       } else {
-        const produtos = results[0];
-        res.json(produtos);
+        const usuarios = results[0];
+        res.json(usuarios);
       }
     });
   });
 
 // Rota para adicionar um novo produto
-app.post('/produtos', (req, res) => {
-    const {id_produto, nome, categoria, quantidade, preco } = req.body;
+app.post('/usuarios', (req, res) => {
+    const {id_usuario, nome, email, senha} = req.body;
   
-    if (!id_produto || !nome || !categoria || !quantidade || !preco) {
+    if (!id_usuario || !nome || !email || !senha) {
       res.status(400).json({ error: 'Descricao, quantidade, and valor are required fields' });
       return;
     }
   
     // Query pra pegar o maior numero de id na tabela
-    // connection.query('SELECT MAX(id) as maxId FROM produtos', (err, maxIdResults) => {
+    // connection.query('SELECT MAX(id) as maxId FROM usuarios', (err, maxIdResults) => {
     //   if (err) {
     //     console.error('Error retrieving max ID:', err);
     //     res.status(500).json({ error: 'Internal server error' });
@@ -88,8 +89,8 @@ app.post('/produtos', (req, res) => {
       // const nextId = (maxIdResults[0].maxId || 0) + 1;
   
       // Insere os dados
-      const insertQuery = 'INSERT INTO produtos (id_produto, nome, categoria, quantidade, preco) VALUES (?, ?, ?, ?, ?)';
-      const values = [id_produto, nome, categoria, quantidade, preco];
+      const insertQuery = 'INSERT INTO usuarios (id_usuario, nome, email, senha) VALUES (?, ?, ?, ?)';
+      const values = [id_usuario, nome, email, senha];
   
       connection.query(insertQuery, values, (err, insertResults) => {
         if (err) {
@@ -98,19 +99,19 @@ app.post('/produtos', (req, res) => {
           return;
         }
   
-        res.status(201).json({ message: 'Data inserted successfully', id: id_produto});
+        res.status(201).json({ message: 'Data inserted successfully', id: id_usuario});
       });
     });
   
 
 // Rota para atualizar um produto
-app.put('/produtos/:id_produto', (req, res) => {
-    const productId = parseInt(req.params.id_produto);
-    const updatedProduto = req.body;
+app.put('/usuarios/:id_usuario', (req, res) => {
+    const usuarioId = parseInt(req.params.id_usuario);
+    const updatedUsuario = req.body;
   
     // Verifica se o id existe
-    const checkExistenceQuery = 'SELECT * FROM produtos WHERE id_produto = ?';
-    connection.query(checkExistenceQuery, [productId], (err, results) => {
+    const checkExistenceQuery = 'SELECT * FROM usuarios WHERE id_usuario = ?';
+    connection.query(checkExistenceQuery, [usuarioId], (err, results) => {
       if (err) {
         console.error('Error executing query:', err);
         res.status(500).json({ error: 'Internal server error' });
@@ -121,27 +122,27 @@ app.put('/produtos/:id_produto', (req, res) => {
         res.status(404).json({ message: 'Produto não encontrado' });
       } else {
         // Query pra fazer o update
-        const updateQuery = 'UPDATE produtos SET ? WHERE id_produto = ?';
-        connection.query(updateQuery, [updatedProduto, productId], (err, updateResults) => {
+        const updateQuery = 'UPDATE usuarios SET ? WHERE id_usuario = ?';
+        connection.query(updateQuery, [updatedUsuario, usuarioId], (err, updateResults) => {
           if (err) {
             console.error('Error executing update query:', err);
             res.status(500).json({ error: 'Internal server error' });
             return;
           }
 
-          res.json({ ...updatedProduto, id_produto: productId });
+          res.json({ ...updatedUsuario, id_usuario: usuarioId });
         });
       }
     });
   });
 
 // Rota para remover um produto
-app.delete('/produtos/:id_produto', (req, res) => {
-    const productId = parseInt(req.params.id_produto);
+app.delete('/usuarios/:id_usuario', (req, res) => {
+    const usuarioId = parseInt(req.params.id_usuario);
   
     // Verifica se o dado existe antes de deletar
-    const checkExistenceQuery = 'SELECT * FROM produtos WHERE id_produto = ?';
-    connection.query(checkExistenceQuery, [productId], (err, results) => {
+    const checkExistenceQuery = 'SELECT * FROM usuarios WHERE id_usuario = ?';
+    connection.query(checkExistenceQuery, [usuarioId], (err, results) => {
       if (err) {
         console.error('Error executing query:', err);
         res.status(500).json({ error: 'Internal server error' });
@@ -152,8 +153,8 @@ app.delete('/produtos/:id_produto', (req, res) => {
         res.status(404).json({ message: 'Produto não encontrado' });
       } else {
         // Query pra deletar o dado
-        const deleteQuery = 'DELETE FROM produtos WHERE id_produto = ?';
-        connection.query(deleteQuery, [productId], (err, deleteResults) => {
+        const deleteQuery = 'DELETE FROM usuarios WHERE id_usuario = ?';
+        connection.query(deleteQuery, [usuarioId], (err, deleteResults) => {
           if (err) {
             console.error('Error executing delete query:', err);
             res.status(500).json({ error: 'Internal server error' });
@@ -166,7 +167,6 @@ app.delete('/produtos/:id_produto', (req, res) => {
     });
   });
   
-
 // Inicia o servidor
 app.listen(port,() => {
     console.log(`Servidor iniciado na porta ${port}`);
