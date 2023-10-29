@@ -94,6 +94,13 @@
             login: document.getElementById("login").value,
             senha: document.getElementById("senha").value,
         };
+
+        const idExiste = admins.some((a) => a.id_admin === admin.id_admin);
+        if (idExiste && adminAtual === null) {
+            alert("ID já cadastrado no banco de dados, tente outro");
+            return;
+        }
+
         if (adminAtual) {
             // Se estiver editando
             fetch("http://localhost:3000/admins/" + adminAtual, {

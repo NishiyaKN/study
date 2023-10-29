@@ -72,6 +72,10 @@
         tbody.appendChild(row);
     });
     }
+    function idExiste(produtos,produto){
+        return produtos.find((p)=>p.id_produto === produto)
+    }
+
     // Função para carregar um produto no formulário para edição
     function editProduct(id_produto) {
         produtoAtual = id_produto;
@@ -107,13 +111,16 @@
             quantidade: parseInt(document.getElementById("quantidade").value),
             preco: parseFloat(document.getElementById("preco").value),
         };
+        console.log(produto)
+        console.log(produtos)
 
-        const idExiste = produtos.some((p) => p.id_produto === produto.id_produto);
-        if (idExiste && produtoAtual === null) {
-            alert("ID já cadastrado no banco de dados, tente outro");
-            return;
+        const idExists = produtos.some(idExiste(produtos,produto));
+        console.log(idExists)
+
+        if (idExists) {
+            alert("ID already exists in the database. Please use a different ID.");
+            return; // Don't proceed further
         }
-
         if (produtoAtual) {
             // Se estiver editando
             fetch("http://localhost:3000/produtos/" + produtoAtual, {

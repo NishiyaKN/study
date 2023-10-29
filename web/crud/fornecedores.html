@@ -101,6 +101,14 @@
             endereco: document.getElementById("endereco").value,
             cnpj: parseInt(document.getElementById("cnpj").value),
         };
+
+        const idExiste = fornecedores.some((f) => f.id_forn === fornecedor.id_forn);
+        console.log(idExiste, fornAtual)
+        if (idExiste && fornAtual === null) {
+            alert("ID já cadastrado no banco de dados, tente outro");
+            return;
+        }
+
         if (fornAtual) {
             // Se estiver editando
             fetch("http://localhost:3000/fornecedores/" + fornAtual, {

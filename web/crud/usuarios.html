@@ -101,6 +101,13 @@
             email: document.getElementById("email").value,
             senha: document.getElementById("senha").value,
         };
+
+        const idExiste = usuarios.some((u) => u.id_usuario === usuario.id_usuario);
+        if (idExiste && usuarioAtual === null) {
+            alert("ID já cadastrado no banco de dados, tente outro");
+            return;
+        }
+
         if (usuarioAtual) {
             // Se estiver editando
             fetch("http://localhost:3000/usuarios/" + usuarioAtual, {
