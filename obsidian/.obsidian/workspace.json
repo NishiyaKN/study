@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/PY/Untitled.md",
+                "file": "notes/C/5- Ponteiros.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/PY/Untitled.md",
+                "file": "notes/C/5- Ponteiros.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/PY/Untitled.md",
+                "file": "notes/C/5- Ponteiros.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/PY/Untitled.md"
+                "file": "notes/C/5- Ponteiros.md"
               }
             }
           }
@@ -148,6 +148,12 @@
   },
   "active": "386136a2b4015174",
   "lastOpenFiles": [
+    "notes/C/4- Recursividade.md",
+    "notes/C/1- Arrays e matrizes.md",
+    "notes/C/2- Funções e Modularidade.md",
+    "notes/C/3- Estruturas.md",
+    "notes/C/5- Ponteiros.md",
+    "TODO.md",
     "notes/PY/Untitled.md",
     "notes/JAVA/Conceitos principais.md",
     "notes/JAVA/8.1 Coleções.md",
@@ -166,16 +172,10 @@
     "notes/ARQ/Main.md",
     "notes/ARQ/N1.md",
     "notes/ARQ/Cap 1.md",
-    "notes/C/3- Estruturas.md",
-    "notes/C/2- Funções e Modularidade.md",
-    "notes/C/1- Arrays e matrizes.md",
     "notes/JAVA/Media/Pasted image 20231010112657.png",
-    "notes/C/5- Ponteiros.md",
     "notes/JAVA/FORMS/FORMS.md",
     "notes/BD/5-Controle de concorrência.md",
     "notes/BD/Untitled 1.md",
-    "notes/BD/4-Transações e propriedades ACID.md",
-    "notes/BD/Controle Exemplo.md",
     "notes/BD/Media/Pasted image 20231009083754.png",
     "notes/BD/Media/Pasted image 20231009083805.png",
     "notes/PY",
