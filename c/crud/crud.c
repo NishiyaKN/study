@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include </usr/include/mysql/mysql.h>
+
+/* TODO */
+/* - Separar as operacoes em funcoes distintas */
+/* - Proibir insercao de id repetido */
+/* - Update dinamico */
+/* - Interface Grafica (?) */
+
 /* typedef struct produto{ */
 /*     int id; */
 /*     char nome[50]; */
@@ -10,9 +17,9 @@
 /* }produto; */
 
 /* int read(MYSQL *conn); */
-/* int insert(produto); */
-/* int delete(int id); */
-/* int update(produto); */
+/* int insert(produto, MYSQL *conn); */
+/* int delete(int id, MYSQL *conn); */
+/* int update(produto, MYSQL *conn); */
 
 int main() {
 	MYSQL *conn;
@@ -23,13 +30,15 @@ int main() {
 
 	char *server = "localhost";
 	char *user = "root";
-	char *password = "Fedora38!"; /* set me first */
+	char *password = "Fedora38!";
 	char *database = "loja";
+
     int input;
 	
 	conn = mysql_init(NULL);
 	
-	/* Connect to database */
+    /* Conectando ao banco de dados */
+    /* mysql_real_connect, se falhar ele retorna 0, e a condicao vira true pelo ! e imprime o erro */
 	if (!mysql_real_connect(conn, server, user, password, database, 0, NULL, 0)) {
 		fprintf(stderr, "%s\n", mysql_error(conn));
 		exit(1);
@@ -45,28 +54,35 @@ int main() {
 
         switch (input){
             case 1:
-                /* send SQL query */
                 printf("-------LISTA DOS PRODUTOS-------\n");
+
+                /* mysql_query retorna um valor diferente de 0 caso falhe */
                 if (mysql_query(conn, "select * from produtos")) {
                     fprintf(stderr, "%s\n", mysql_error(conn));
                     exit(1);
                 }
                
+                /* res pega o resultado da ultima query */
                 res = mysql_store_result(conn);
                 int num_fields = mysql_num_fields(res);
                
                 while ((row = mysql_fetch_row(res)) != NULL){
                     for(int i = 0; i < num_fields; i++){
                         if(i == 0){
+                            /* pega os metadados da coluna, imprime o header */ 
                             while(field = mysql_fetch_field(res)){
                                 printf("%s ", field->name);
                             }
                             printf("\n");
                         }
+                        /* operaror ternario (condition ? iftrue : iffalse) */
+                        /* se row[i] existir imprime ela, se nao imprime NULL */
                         printf("%s ", row[i] ? row [i] : "NULL");
                     }
                 }
+                /* libera a memoria associada ao resultado */
                 mysql_free_result(res);
+
                 printf("\n--------------------------------\n");
                 break;
             case 2:{
@@ -83,7 +99,6 @@ int main() {
                 scanf("%s",categoria);
                 printf("Digite o preco: ");
                 scanf("%lf",&preco);
-                /* send SQL query */
 
                 snprintf(query, sizeof(query), "INSERT INTO produtos (id, nome, categoria, preco) VALUES (%d, '%s', '%s', %lf)", id, nome, categoria, preco);
 
@@ -110,7 +125,6 @@ int main() {
                 printf("3- Preco\n");
 
                 scanf("%d",&input);
-                /* send SQL query */
                 switch(input){
                     case 1:
                         printf("Digite o novo nome: ");
@@ -141,7 +155,6 @@ int main() {
                 int id;
                 printf("Digite o id para deletar: ");
                 scanf("%d",&id);
-                /* send SQL query */
                 snprintf(query, sizeof(query), "delete from produtos where id = %d",id);
 
                 if (mysql_real_query(conn, query, strlen(query)) != 0) {
@@ -152,7 +165,8 @@ int main() {
             }
         }
     }
-	/* close connection */
+	/* fecha conexao */
 	mysql_close(conn);
     return 0;
 }
+
