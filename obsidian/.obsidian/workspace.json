@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8235ec5c577364d2",
+        "id": "ea6e00efc6370a59",
         "type": "tabs",
         "children": [
           {
-            "id": "386136a2b4015174",
+            "id": "4c4b24f186584c51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/C/5- Ponteiros.md",
+                "file": "notes/PY/Strings.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/C/5- Ponteiros.md",
+                "file": "notes/PY/Strings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/C/5- Ponteiros.md",
+                "file": "notes/PY/Strings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/C/5- Ponteiros.md"
+                "file": "notes/PY/Strings.md"
               }
             }
           }
@@ -146,15 +146,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "386136a2b4015174",
+  "active": "4c4b24f186584c51",
   "lastOpenFiles": [
+    "notes/PY/Modulos.md",
+    "notes/PY/Strings.md",
+    "notes/PY/Untitled.md",
+    "TODO.md",
+    "notes/C/3- Estruturas.md",
+    "notes/C/5- Ponteiros.md",
     "notes/C/4- Recursividade.md",
     "notes/C/1- Arrays e matrizes.md",
     "notes/C/2- Funções e Modularidade.md",
-    "notes/C/3- Estruturas.md",
-    "notes/C/5- Ponteiros.md",
-    "TODO.md",
-    "notes/PY/Untitled.md",
     "notes/JAVA/Conceitos principais.md",
     "notes/JAVA/8.1 Coleções.md",
     "notes/JAVA/8- Polimorfismo.md",
@@ -174,8 +176,6 @@
     "notes/ARQ/Cap 1.md",
     "notes/JAVA/Media/Pasted image 20231010112657.png",
     "notes/JAVA/FORMS/FORMS.md",
-    "notes/BD/5-Controle de concorrência.md",
-    "notes/BD/Untitled 1.md",
     "notes/BD/Media/Pasted image 20231009083754.png",
     "notes/BD/Media/Pasted image 20231009083805.png",
     "notes/PY",

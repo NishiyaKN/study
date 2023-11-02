@@ -4,9 +4,13 @@
 #include </usr/include/mysql/mysql.h>
 
 /* TODO */
+/* - Carga dos dados a partir de um txt */
+/* - Opcao para sair */ 
+
 /* - Separar as operacoes em funcoes distintas */
 /* - Proibir insercao de id repetido */
 /* - Update dinamico */
+
 /* - Interface Grafica (?) */
 
 /* typedef struct produto{ */
@@ -30,7 +34,7 @@ int main() {
 
 	char *server = "localhost";
 	char *user = "root";
-	char *password = "Fedora38!";
+	char *password = "Nobara38!";
 	char *database = "loja";
 
     int input;
