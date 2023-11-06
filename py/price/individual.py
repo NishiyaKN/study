@@ -48,7 +48,10 @@ def get_price(num):
         exit()
     else: 
         print("Price found, writing...")
-        data = data.split(" ")[1].replace(".","").replace(",",".")
+        try:
+            data = data.split(" ")[1].replace(".","").replace(",",".")
+        except Exception as e:
+            print(f"Erro: {e}")
         time.sleep(10)
         new_data = {
                 "date":today,
