@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "notes/JAVA/3- Modificador de acesso.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
+                "file": "notes/JAVA/3- Modificador de acesso.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO.md",
+                "file": "notes/JAVA/3- Modificador de acesso.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md"
+                "file": "notes/JAVA/3- Modificador de acesso.md"
               }
             }
           }
@@ -148,9 +148,11 @@
   },
   "active": "4c4b24f186584c51",
   "lastOpenFiles": [
+    "notes/JAVA/2- Classe e objeto.md",
+    "notes/PY/virtualenv.md",
     "notes/PY/Strings.md",
-    "notes/PY/Modulos.md",
     "notes/PY/Untitled.md",
+    "notes/PY/Modulos.md",
     "TODO.md",
     "notes/C/3- Estruturas.md",
     "notes/C/5- Ponteiros.md",
@@ -167,7 +169,6 @@
     "notes/JAVA/4- 4 Pilares de DOO.md",
     "notes/JAVA/3.1 - Construtor.md",
     "notes/JAVA/3- Modificador de acesso.md",
-    "notes/JAVA/2- Classe e objeto.md",
     "notes/JAVA/1- Base.md",
     "notes/JAVA/9- Exceções.md",
     "notes/JAVA/Media/Unidade 02.png",
@@ -175,7 +176,6 @@
     "notes/ARQ/N1.md",
     "notes/ARQ/Cap 1.md",
     "notes/JAVA/Media/Pasted image 20231010112657.png",
-    "notes/JAVA/FORMS/FORMS.md",
     "notes/BD/Media/Pasted image 20231009083754.png",
     "notes/BD/Media/Pasted image 20231009083805.png",
     "notes/PY",
