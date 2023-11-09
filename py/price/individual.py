@@ -17,7 +17,7 @@ except:
     print(filename,"file exists")
 
 options = Options()
-options.add_argument("--headless")
+# options.add_argument("--headless")
 
 def get_price(num):
     browser = webdriver.Firefox(options=options)
@@ -42,33 +42,36 @@ def get_price(num):
     time.sleep(10)
     data = browser.find_element(By.ID, 'valVista')
     data = data.text
-    if data == "R$ 0,00":
+    print("preco: ", data)
+    if data == "R$ 0,00" or data == "":
         print("Error retrieving",component," price. Try again later")
         browser.close()
         exit()
     else: 
         print("Price found, writing...")
+        # time.sleep(10)
         try:
+            print("preco: ", data)
             data = data.split(" ")[1].replace(".","").replace(",",".")
+            new_data = {
+                    "date":today,
+                    "price":data
+            }
+            file = open(filename)
+            file_data = json.load(file)
+            # if component not in file_data:
+            #     file_data[component] = []  # Create an empty list if it doesn't exist
+            file_data[component].append(new_data)
+
+            new_file_data = open(filename, 'w')
+            json.dump(file_data,new_file_data, indent=4, separators=(',',': '))
+
+            print("Price recorded successfully")
+            file.close()
+            new_file_data.close()
         except Exception as e:
+            print("data:", data)
             print(f"Erro: {e}")
-        time.sleep(10)
-        new_data = {
-                "date":today,
-                "price":data
-        }
-        file = open(filename)
-        file_data = json.load(file)
-        # if component not in file_data:
-        #     file_data[component] = []  # Create an empty list if it doesn't exist
-        file_data[component].append(new_data)
-
-        new_file_data = open(filename, 'w')
-        json.dump(file_data,new_file_data, indent=4, separators=(',',': '))
-
-        print("Price recorded successfully")
-        file.close()
-        new_file_data.close()
         browser.close()
 
 today = datetime.today().strftime('%Y-%m-%d')
