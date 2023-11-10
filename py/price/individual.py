@@ -17,7 +17,7 @@ except:
     print(filename,"file exists")
 
 options = Options()
-# options.add_argument("--headless")
+options.add_argument("--headless")
 
 def get_price(num):
     browser = webdriver.Firefox(options=options)
@@ -42,7 +42,6 @@ def get_price(num):
     time.sleep(10)
     data = browser.find_element(By.ID, 'valVista')
     data = data.text
-    print("preco: ", data)
     if data == "R$ 0,00" or data == "":
         print("Error retrieving",component," price. Try again later")
         browser.close()
@@ -51,12 +50,13 @@ def get_price(num):
         print("Price found, writing...")
         # time.sleep(10)
         try:
-            print("preco: ", data)
             data = data.split(" ")[1].replace(".","").replace(",",".")
             new_data = {
                     "date":today,
                     "price":data
             }
+            print("preco: ", data)
+            print("new data:", new_data)
             file = open(filename)
             file_data = json.load(file)
             # if component not in file_data:
@@ -70,7 +70,6 @@ def get_price(num):
             file.close()
             new_file_data.close()
         except Exception as e:
-            print("data:", data)
             print(f"Erro: {e}")
         browser.close()
 

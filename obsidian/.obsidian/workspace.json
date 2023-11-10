@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/JAVA/3- Modificador de acesso.md",
+                "file": "notes/PY/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/JAVA/3- Modificador de acesso.md",
+                "file": "notes/PY/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/JAVA/3- Modificador de acesso.md",
+                "file": "notes/PY/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/JAVA/3- Modificador de acesso.md"
+                "file": "notes/PY/Untitled.md"
               }
             }
           }
@@ -148,11 +148,13 @@
   },
   "active": "4c4b24f186584c51",
   "lastOpenFiles": [
-    "notes/JAVA/2- Classe e objeto.md",
+    "notes/PY/Modulos.md",
+    "notes/PY/Pandas.md",
     "notes/PY/virtualenv.md",
+    "notes/JAVA/3- Modificador de acesso.md",
+    "notes/JAVA/2- Classe e objeto.md",
     "notes/PY/Strings.md",
     "notes/PY/Untitled.md",
-    "notes/PY/Modulos.md",
     "TODO.md",
     "notes/C/3- Estruturas.md",
     "notes/C/5- Ponteiros.md",
@@ -168,13 +170,11 @@
     "notes/JAVA/4.1- Encapsulamento.md",
     "notes/JAVA/4- 4 Pilares de DOO.md",
     "notes/JAVA/3.1 - Construtor.md",
-    "notes/JAVA/3- Modificador de acesso.md",
     "notes/JAVA/1- Base.md",
     "notes/JAVA/9- Exceções.md",
     "notes/JAVA/Media/Unidade 02.png",
     "notes/ARQ/Main.md",
     "notes/ARQ/N1.md",
-    "notes/ARQ/Cap 1.md",
     "notes/JAVA/Media/Pasted image 20231010112657.png",
     "notes/BD/Media/Pasted image 20231009083754.png",
     "notes/BD/Media/Pasted image 20231009083805.png",
