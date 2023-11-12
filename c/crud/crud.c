@@ -53,6 +53,7 @@ int main() {
         printf("2- Insert produtos\n");
         printf("3- Update produtos\n");
         printf("4- Delete produtos\n");
+        printf("5- Sair\n");
         printf("--------------------------------\n");
         scanf("%d",&input);
 
@@ -166,6 +167,9 @@ int main() {
                     exit(1);
                 }
                 break;
+            }
+            case 5:{
+                exit(0);
             }
         }
     }
