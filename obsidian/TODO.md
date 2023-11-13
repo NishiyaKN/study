@@ -1,6 +1,14 @@
 ### Submit
-- [ ] LDP - Atividade 5 - 16/10
-- [ ] LDP - Apresentacao - 16/11
+### C 24/11
+- [ ] CRUD
+### Java 25/11
+- [ ] Atividade 7
+- [ ] Atividade 8 
+- [ ] Atividade 9
+
+### BD 30/11
+- [ ] SQL
+
 ___
 ### N1
 **BDD - Metade vai ser transactions, metade query sql, sobre controle de concorrencia cai mais até a parte do protocolo bifásico e timestamp, mas nada muito a fundo, exercicios capitulo 17 do silverschatz**
