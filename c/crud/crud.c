@@ -96,12 +96,18 @@ int main() {
                 int id;
                 char nome[50], categoria[50];
                 double preco;
+
                 printf("Digite o id: ");
                 scanf("%d",&id);
+                getchar();
+
                 printf("Digite o nome: ");
-                scanf("%s",nome);
+                fgets(nome,50,stdin);
+                nome[strcspn(nome,"\n")] = '\0'; // remove o \n enviado no final do fgets
+
                 printf("Digite a categoria: ");
                 scanf("%s",categoria);
+
                 printf("Digite o preco: ");
                 scanf("%lf",&preco);
 

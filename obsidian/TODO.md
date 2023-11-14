@@ -1,7 +1,9 @@
 ### Submit
 ### C 24/11
 - [ ] CRUD
-### Java 25/11
+	- [ ] Load from txt
+	- [x] Composite name for product
+### Javascript 25/11
 - [ ] Atividade 7
 - [ ] Atividade 8 
 - [ ] Atividade 9
