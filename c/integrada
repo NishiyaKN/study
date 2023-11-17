@@ -1,0 +1,22 @@
+1- algoritmo iterativo (i,j) e algoritmo recursivo (funcao que chama a si msm) fibonacci vai cair, mas nao e mto eficiente
+
+2- matriz
+int tab[4][3] // linhas e depois colunas
+
+3- escopo
+area do programa que uma variavel e visivel
+
+4- passagem de parametros
+ * por valor : copia do dado
+ * por referencia : endereco da variavel 
+
+5- struct
+struct cadastro{
+    char nome[50];
+    int idade;
+    int id;
+};
+nao pode comparar uma struct com outra struct (struct1 == struct2 e invalido)
+
+6- ponteiro
+variavel cujo conteudo e um endereco de memoria

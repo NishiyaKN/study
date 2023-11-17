@@ -162,7 +162,7 @@ int main() {
 
                 FILE *fp = fopen("a.txt","r");
                
-                while(fscanf(fp, "%d %s %s %lf", &id, nome, categoria, &preco) == 4){
+                while(fscanf(fp, "%d %s %s %lf", &id, nome, categoria, &preco) != EOF){
                     snprintf(query, sizeof(query), "INSERT INTO produtos (id, nome, categoria, preco) VALUES (%d, '%s', '%s', %lf)", id, nome, categoria, preco);
 
                     if (mysql_real_query(conn, query, strlen(query)) != 0) {
@@ -182,4 +182,3 @@ int main() {
     }
     return 0;
 }
-
