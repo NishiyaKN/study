@@ -130,4 +130,15 @@ where id_curso in
 where titulo like '%database%')
 
 5-
+-- Consulta com OUTER JOIN
+select e.ID
+from empregado e
+left join gerencia g ON e.ID = g.ID
+where g.id_gerente is null or g.id_gerente = '';
 
+-- Consulta sem OUTER JOIN
+select e.ID
+from empregado e
+where e.ID not in (select ID from gerencia where id_gerente is not null and id_gerente <> '');
+
+6-

@@ -3,28 +3,6 @@
 #include <string.h>
 #include </usr/include/mysql/mysql.h>
 
-/* TODO */
-/* - Carga dos dados a partir de um txt */
-/* - Opcao para sair */ 
-
-/* - Separar as operacoes em funcoes distintas */
-/* - Proibir insercao de id repetido */
-/* - Update dinamico */
-
-/* - Interface Grafica (?) */
-
-/* typedef struct produto{ */
-/*     int id; */
-/*     char nome[50]; */
-/*     char categoria[50]; */
-/*     double preco; */
-/* }produto; */
-
-/* int read(MYSQL *conn); */
-/* int insert(produto, MYSQL *conn); */
-/* int delete(int id, MYSQL *conn); */
-/* int update(produto, MYSQL *conn); */
-
 int main() {
 	MYSQL *conn;
 	
@@ -53,7 +31,8 @@ int main() {
         printf("2- Insert produtos\n");
         printf("3- Update produtos\n");
         printf("4- Delete produtos\n");
-        printf("5- Sair\n");
+        printf("5- Load produtos\n");
+        printf("6- Sair\n");
         printf("--------------------------------\n");
         scanf("%d",&input);
 
@@ -175,12 +154,32 @@ int main() {
                 break;
             }
             case 5:{
+                printf("----LOAD A PARTIR DE UM TXT----\n");
+                int id,i;
+                char nome[20], categoria[20];
+                double preco;
+                char query[256];
+
+                FILE *fp = fopen("a.txt","r");
+               
+                while(fscanf(fp, "%d %s %s %lf", &id, nome, categoria, &preco) == 4){
+                    snprintf(query, sizeof(query), "INSERT INTO produtos (id, nome, categoria, preco) VALUES (%d, '%s', '%s', %lf)", id, nome, categoria, preco);
+
+                    if (mysql_real_query(conn, query, strlen(query)) != 0) {
+                        fprintf(stderr, "Insertion failed: %s\n", mysql_error(conn));
+                        exit(1);
+                    }
+                }
+                fclose(fp);
+                break;
+            }
+            case 6:{
+                /* fecha conexao */
+                mysql_close(conn);
                 exit(0);
             }
         }
     }
-	/* fecha conexao */
-	mysql_close(conn);
     return 0;
 }
 
