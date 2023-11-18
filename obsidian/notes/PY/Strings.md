@@ -29,6 +29,7 @@ print("abcabc".count("b")) # 2 conta as ocorrencias do caractere especificado
 print("aBcD".capitalize()) # Abcd
 print('[' + 'alpha'.center(9) + ']') # [  alpha  ]
 print('[' + 'gamma'.center(20, '*') + ']') # [*******gamma********]
+print("zeta".startswith("z")) # True
 print("zeta".endswith("ta")) # True
 print("Eta".find("ta")) # 1
 print("Eta".find("mma")) # -1 if it doesn't exist, prints -1
@@ -46,13 +47,25 @@ print("Oi".islower()) # False
 print("oi".islower()) # True
 print(" ".isspace()) # True
 print("AAAA".issupper()) # True
-
 print(",".join(["omicron", "pi", "rho"])) # omicron,pi,rh
-print("SiGmA".lower()) # sigma
 
 print("[" + " tau ".lstrip() + "]") # [tau ]
 print("[" + " tau ".rstrip() + "]") # [ tau]
 print("www.cisco.com".lstrip("w.")) #  cisco.com
-print("Apple juice".replace("Apple", "Budou")) # Budou juice
+print("[" + "   aleph   ".strip() + "]") # [aleph]
 
+print("Apple juice".replace("Apple", "Budou")) # Budou juice
+print("bom dia meu caro".split()) # ['bom','dia','meu','caro']
+
+print("Bom Dia".swapcase()) # bOM dIA
+print("eu sEila o QUE faZER".title()) # Eu Seila O Que Fazer
+print("SiGmA".upper()) # SIGMA
+print("SiGmA".lower()) # sigma
+
+list2 = sorted(list1) # cria uma nova lista
+list2.sort() # nao cria uma nova lista, altera a propria lista
+
+a = str(29) # transforma em string
+b = int('1') 
+c = float('2.5')
 ```

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/PY/Strings.md",
+                "file": "notes/PY/OOP.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/PY/Strings.md",
+                "file": "notes/PY/OOP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/PY/Strings.md",
+                "file": "notes/PY/OOP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/PY/Strings.md"
+                "file": "notes/PY/OOP.md"
               }
             }
           }
@@ -148,9 +148,11 @@
   },
   "active": "4c4b24f186584c51",
   "lastOpenFiles": [
+    "notes/PY/Exception.md",
+    "notes/PY/OOP.md",
+    "notes/PY/Strings.md",
     "notes/PY/Pandas.md",
     "notes/PY/Modulos.md",
-    "notes/PY/Strings.md",
     "notes/PY/Untitled.md",
     "TODO.md",
     "notes/PY/virtualenv.md",
@@ -173,8 +175,6 @@
     "notes/JAVA/1- Base.md",
     "notes/JAVA/9- Exceções.md",
     "notes/JAVA/Media/Unidade 02.png",
-    "notes/ARQ/Main.md",
-    "notes/ARQ/N1.md",
     "notes/JAVA/Media/Pasted image 20231010112657.png",
     "notes/BD/Media/Pasted image 20231009083754.png",
     "notes/BD/Media/Pasted image 20231009083805.png",
