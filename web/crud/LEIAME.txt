@@ -7,11 +7,12 @@ Vitor Hugo Alvarenga Facciolo
 Instruções:
 1. Inicialize o serviço do MySQL 
 2. Abra o MySQL Workbench
-3. Clique em import
-4. Selecione o arquivo dump
-5. Realize a importação do banco de dados
-6. Abra o VS Code
-7. Abra a pasta contendo os arquivos do projeto
-8. Abra um terminal e digite 'node server.js'
-9. Clique no arquivo 'index.html'
-10. Clique no ícone do Live Server
+3. Clique em 'Data Import/Restore' na aba 'Administration'
+4. Selecione 'Import from Self-Contained File'
+5. Selecione o arquivo 'mercadao.sql' e clique em 'Start Import'
+6. Abra o VSCode ou VSCodium
+7. Instale Live Server caso não esteja já instalado.
+8. Abra o diretório contendo os arquivos do projeto
+9. Abra um terminal e digite 'node server.js'
+10. Clique no arquivo 'index.html'
+11. Clique no ícone do Live Server e a página será aberta em seu navegador padrão
