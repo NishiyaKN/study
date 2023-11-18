@@ -9,18 +9,8 @@
     <!-- rel="stylesheet" -->
     <!-- href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" -->
     <!-- /> -->
-    <style>
-        .Usuarios {
-          margin: auto;
-          width: 50%;
-          border: 3px solid #73AD21;
-          padding: 10px;
-          text-align: center;
-        }
-        </style>
 </head>
 <body>
-    <div class = "Usuarios">
     <h2>Cadastramento de usuarios</h2>
     <a href="/index.html">Voltar</a>
     <!-- Formulário para adicionar/editar usuarios -->
@@ -54,7 +44,6 @@
     </table>
     <script>
 
-
     // Array para armazenar usuarios do servidor
     let usuarios = [];
     // ID do usuario em edição
@@ -79,7 +68,6 @@
     });
     }
 
-
     // Função para carregar um usuario no formulário para edição
     function editUsuario(id_usuario) {
         usuarioAtual = id_usuario;
@@ -92,7 +80,6 @@
         document.getElementById("cancelBtn").style.display = "inline-block";
     }
 
-
     // Função para remover usuario do servidor e atualizar a lista
     function deleteUsuario(id_usuario) {
         fetch("http://localhost:3000/usuarios/" + id_usuario, {
@@ -103,7 +90,6 @@
         })
         .catch((error) => console.error("Error:", error));
     }
-
 
     // Evento para lidar com o envio do formulário
     document .getElementById("usuarioForm") .addEventListener("submit", function (event) {
@@ -116,13 +102,11 @@
             senha: document.getElementById("senha").value,
         };
 
-
         const idExiste = usuarios.some((u) => u.id_usuario === usuario.id_usuario);
         if (idExiste && usuarioAtual === null) {
             alert("ID já cadastrado no banco de dados, tente outro");
             return;
         }
-
 
         if (usuarioAtual) {
             // Se estiver editando
@@ -195,7 +179,5 @@ console.log("New usuario Data:", usuario);
     <!-- src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
     <!-- <script -->
     <!-- src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-    </div>
 </body>
 </html>
-

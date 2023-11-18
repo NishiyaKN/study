@@ -9,18 +9,8 @@
     <!-- rel="stylesheet" -->
     <!-- href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" -->
     <!-- /> -->
-    <style>
-        .Produtos {
-          margin: auto;
-          width: 50%;
-          border: 3px solid #73AD21;
-          padding: 10px;
-          text-align: center;
-        }
-        </style>
 </head>
 <body>
-    <div class = "Produtos">
     <h2>Cadastramento de Produtos</h2>
     <a href="/index.html">Voltar</a>
     <!-- Formulário para adicionar/editar produtos -->
@@ -57,7 +47,6 @@
         <tbody id="productsTable"></tbody>
     </table>
     <script>
-
 
     // Array para armazenar produtos do servidor
     let produtos = [];
@@ -96,7 +85,6 @@
         document.getElementById("cancelBtn").style.display = "inline-block";
     }
 
-
     // Função para remover produto do servidor e atualizar a lista
     function deleteProduct(id_produto) {
         fetch("http://localhost:3000/produtos/" + id_produto, {
@@ -107,7 +95,6 @@
         })
         .catch((error) => console.error("Error:", error));
     }
-
 
     // Evento para lidar com o envio do formulário
     document .getElementById("productForm") .addEventListener("submit", function (event) {
@@ -121,13 +108,11 @@
             preco: parseFloat(document.getElementById("preco").value),
         };
 
-
         const idExiste = produtos.some((p) => p.id_produto === produto.id_produto);
         if (idExiste && produtoAtual === null) {
             alert("ID já cadastrado no banco de dados, tente outro");
             return;
         }
-
 
         if (produtoAtual) {
             // Se estiver editando
@@ -193,7 +178,6 @@ console.log("New Product Data:", produto);
     }
     inicializar();
 
-
     </script>
     <!-- Bibliotecas JS auxiliares (Bootstrap requer jQuery e Popper.js) -->
     <!-- <script -->
@@ -202,7 +186,5 @@ console.log("New Product Data:", produto);
     <!-- src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
     <!-- <script -->
     <!-- src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-    </div>
 </body>
 </html>
-

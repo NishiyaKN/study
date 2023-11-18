@@ -9,18 +9,8 @@
     <!-- rel="stylesheet" -->
     <!-- href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" -->
     <!-- /> -->
-    <style>
-        .Fornecedores {
-          margin: auto;
-          width: 50%;
-          border: 3px solid #73AD21;
-          padding: 10px;
-          text-align: center;
-        }
-        </style>
 </head>
 <body>
-    <div class = "Fornecedores">
     <h2>Cadastramento de fornecedores</h2>
     <a href="/index.html">Voltar</a>
     <!-- Formulário para adicionar/editar fornecedores -->
@@ -54,7 +44,6 @@
     </table>
     <script>
 
-
     // Array para armazenar fornecedores do servidor
     let fornecedores = [];
     // ID do fornecedor em edição
@@ -79,7 +68,6 @@
     });
     }
 
-
     // Função para carregar um fornecedor no formulário para edição
     function editForn(id_forn) {
         fornAtual = id_forn;
@@ -92,7 +80,6 @@
         document.getElementById("cancelBtn").style.display = "inline-block";
     }
 
-
     // Função para remover fornecedor do servidor e atualizar a lista
     function deleteForn(id_forn) {
         fetch("http://localhost:3000/fornecedores/" + id_forn, {
@@ -103,7 +90,6 @@
         })
         .catch((error) => console.error("Error:", error));
     }
-
 
     // Evento para lidar com o envio do formulário
     document .getElementById("fornForm") .addEventListener("submit", function (event) {
@@ -116,14 +102,12 @@
             cnpj: parseInt(document.getElementById("cnpj").value),
         };
 
-
         const idExiste = fornecedores.some((f) => f.id_forn === fornecedor.id_forn);
         console.log(idExiste, fornAtual)
         if (idExiste && fornAtual === null) {
             alert("ID já cadastrado no banco de dados, tente outro");
             return;
         }
-
 
         if (fornAtual) {
             // Se estiver editando
@@ -196,7 +180,5 @@ console.log("New fornecedor Data:", fornecedor);
     <!-- src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
     <!-- <script -->
     <!-- src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-    </div>
 </body>
 </html>
-

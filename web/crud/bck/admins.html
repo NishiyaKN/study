@@ -9,18 +9,8 @@
     <!-- rel="stylesheet" -->
     <!-- href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" -->
     <!-- /> -->
-    <style>
-        .Admins {
-          margin: auto;
-          width: 50%;
-          border: 3px solid #73AD21;
-          padding: 10px;
-          text-align: center;
-        }
-        </style>
 </head>
 <body>
-    <div class = "Admins">
     <h2>Cadastramento de Admins</h2>
     <!-- Formulário para adicionar/editar admins -->
     <a href="/index.html">Voltar</a>
@@ -50,7 +40,6 @@
     </table>
     <script>
 
-
     // Array para armazenar admins do servidor
     let admins = [];
     // ID do admin em edição
@@ -74,7 +63,6 @@
     });
     }
 
-
     // Função para carregar um admin no formulário para edição
     function editAdmin(id_admin) {
         adminAtual = id_admin;
@@ -85,7 +73,6 @@
         // Mostra o botão cancelar durante a edição
         document.getElementById("cancelBtn").style.display = "inline-block";
     }
-
 
     // Função para remover admin do servidor e atualizar a lista
     function deleteAdmin(id_admin) {
@@ -98,7 +85,6 @@
         .catch((error) => console.error("Error:", error));
     }
 
-
     // Evento para lidar com o envio do formulário
     document .getElementById("adminForm") .addEventListener("submit", function (event) {
         event.preventDefault();
@@ -109,13 +95,11 @@
             senha: document.getElementById("senha").value,
         };
 
-
         const idExiste = admins.some((a) => a.id_admin === admin.id_admin);
         if (idExiste && adminAtual === null) {
             alert("ID já cadastrado no banco de dados, tente outro");
             return;
         }
-
 
         if (adminAtual) {
             // Se estiver editando
@@ -188,7 +172,5 @@ console.log("New Admin Data:", admin);
     <!-- src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
     <!-- <script -->
     <!-- src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-</div>
 </body>
 </html>
-
