@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "notes/PY/Strings.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
+                "file": "notes/PY/Strings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO.md",
+                "file": "notes/PY/Strings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md"
+                "file": "notes/PY/Strings.md"
               }
             }
           }
@@ -148,14 +148,14 @@
   },
   "active": "4c4b24f186584c51",
   "lastOpenFiles": [
-    "notes/PY/Untitled.md",
-    "notes/PY/Modulos.md",
     "notes/PY/Pandas.md",
+    "notes/PY/Modulos.md",
+    "notes/PY/Strings.md",
+    "notes/PY/Untitled.md",
+    "TODO.md",
     "notes/PY/virtualenv.md",
     "notes/JAVA/3- Modificador de acesso.md",
     "notes/JAVA/2- Classe e objeto.md",
-    "notes/PY/Strings.md",
-    "TODO.md",
     "notes/C/3- Estruturas.md",
     "notes/C/5- Ponteiros.md",
     "notes/C/4- Recursividade.md",

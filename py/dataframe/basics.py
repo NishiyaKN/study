@@ -60,5 +60,18 @@ vendas_df = vendas_df.drop(0, axis=0) # axis 0 = row, delete row 0
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
 
-### DELETE ALL EMPTY COLUMNS
+### DELETE ALL EMPTY ROWS 
 vendas_df = vendas_df.dropna(how='all')
+
+### DELETE ALL EMPTY COLUMNS 
+vendas_df = vendas_df.dropna(how='all', axis=1)
+
+### DELETE ROW IF THERE IS AT LEAST ONE EMPTY VALUE
+vendas_df = vendas_df.dropna()
+
+### FILL EMPTY FIELDS
+# FILL WITH COLUMN AVERAGE
+vendas_df['Comissao'] = vendas_df['Comissao'].fillna(vendas_df['Comissao'].mean())
+
+### FILL WITH LAST VALUE ABOVE 
+vendas_df = vendas_df.ffill()

@@ -25,4 +25,34 @@ print(max(line)) # t eu acho
 print(line.index(t)) # 1
 print(list("abc")) # ['a','b','c'] crie uma lista de caracteres
 print("abcabc".count("b")) # 2 conta as ocorrencias do caractere especificado
+
+print("aBcD".capitalize()) # Abcd
+print('[' + 'alpha'.center(9) + ']') # [  alpha  ]
+print('[' + 'gamma'.center(20, '*') + ']') # [*******gamma********]
+print("zeta".endswith("ta")) # True
+print("Eta".find("ta")) # 1
+print("Eta".find("mma")) # -1 if it doesn't exist, prints -1
+print("tau tau tau".rfind("ta")) #8 starts from right to left
+
+print('lambda30'.isalnum()) # True
+print('30'.isalnum()) # True
+print('@'.isalnum()) # False
+print('o i'.isalnum()) # False pois ha um espaco
+
+print("aaaa".isalpha()) # True
+print("202".isdigit()) # True
+
+print("Oi".islower()) # False
+print("oi".islower()) # True
+print(" ".isspace()) # True
+print("AAAA".issupper()) # True
+
+print(",".join(["omicron", "pi", "rho"])) # omicron,pi,rh
+print("SiGmA".lower()) # sigma
+
+print("[" + " tau ".lstrip() + "]") # [tau ]
+print("[" + " tau ".rstrip() + "]") # [ tau]
+print("www.cisco.com".lstrip("w.")) #  cisco.com
+print("Apple juice".replace("Apple", "Budou")) # Budou juice
+
 ```
