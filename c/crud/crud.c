@@ -160,7 +160,7 @@ int main() {
                 double preco;
                 char query[256];
 
-                FILE *fp = fopen("a.txt","r");
+                FILE *fp = fopen("load.txt","r");
                
                 while(fscanf(fp, "%d %s %s %lf", &id, nome, categoria, &preco) != EOF){
                     snprintf(query, sizeof(query), "INSERT INTO produtos (id, nome, categoria, preco) VALUES (%d, '%s', '%s', %lf)", id, nome, categoria, preco);
