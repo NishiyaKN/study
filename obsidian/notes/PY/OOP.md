@@ -90,3 +90,18 @@ for i in range(5):
 ```
 
 3.3.1.1
+### Variaveis de instancia
+Todo objeto possui a variavel `__dict__` que contem os nomes e valores de todas as variaveis que o objeto possui no momento.
+
+```python
+class ExampleClass:
+    def __init__(self, val = 1):
+        self.first = val
+
+example_object_1 = ExampleClass()
+example_object_2 = ExampleClass(2)
+
+print(example_object_1.__dict__) # {'first:' 1}
+print(example_object_2.__dict__) # {'first:' 2}
+```
+No codigo acima, ao inicializar a classe podemos passar um valor padrao inicial `val = 1`, que podera ser sobrescrita na criacao de um objeto `e = ExampleClass(2)`
