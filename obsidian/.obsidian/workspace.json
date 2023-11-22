@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/PY/OOP.md",
+                "file": "notes/PY/Geradores e closure.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/PY/OOP.md",
+                "file": "notes/PY/Geradores e closure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/PY/OOP.md",
+                "file": "notes/PY/Geradores e closure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/PY/OOP.md"
+                "file": "notes/PY/Geradores e closure.md"
               }
             }
           }
@@ -148,11 +148,12 @@
   },
   "active": "4c4b24f186584c51",
   "lastOpenFiles": [
+    "notes/PY/OOP.md",
+    "notes/PY/Geradores e closure.md",
     "notes/PY/Pandas.md",
     "notes/PY/Strings.md",
     "notes/PY/Listas.md",
     "notes/PY/Modulos.md",
-    "notes/PY/OOP.md",
     "notes/PY/Exception.md",
     "TODO.md",
     "notes/PY/virtualenv.md",
@@ -173,7 +174,6 @@
     "notes/JAVA/4- 4 Pilares de DOO.md",
     "notes/JAVA/3.1 - Construtor.md",
     "notes/JAVA/1- Base.md",
-    "notes/JAVA/9- Exceções.md",
     "notes/JAVA/Media/Unidade 02.png",
     "notes/JAVA/Media/Pasted image 20231010112657.png",
     "notes/BD/Media/Pasted image 20231009083754.png",
