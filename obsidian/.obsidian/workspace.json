@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/JAVA/7- Classes abstratas e interfaces.md",
+                "file": "notes/C/STUDY.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/JAVA/7- Classes abstratas e interfaces.md",
+                "file": "notes/C/STUDY.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/JAVA/7- Classes abstratas e interfaces.md",
+                "file": "notes/C/STUDY.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/JAVA/7- Classes abstratas e interfaces.md"
+                "file": "notes/C/STUDY.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "4c4b24f186584c51",
   "lastOpenFiles": [
+    "notes/JAVA/7- Classes abstratas e interfaces.md",
     "notes/JAVA/8- Polimorfismo.md",
     "notes/JAVA/8.1 Coleções.md",
     "notes/JAVA/9- Exceções.md",
@@ -168,7 +169,6 @@
     "notes/C/1- Arrays e matrizes.md",
     "notes/C/2- Funções e Modularidade.md",
     "notes/JAVA/Conceitos principais.md",
-    "notes/JAVA/7- Classes abstratas e interfaces.md",
     "notes/JAVA/6- Atributos e Métodos de Instância e de Classe.md",
     "notes/JAVA/5- Herança.md",
     "notes/JAVA/4.1- Encapsulamento.md",
