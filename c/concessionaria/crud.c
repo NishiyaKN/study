@@ -24,7 +24,7 @@ int main() {
     conexao = mysql_init(NULL);
 
     // Conecta ao servidor MySQL
-    if (mysql_real_connect(conexao, server, user, password, NULL, 0, NULL, 0) == NULL) {
+    if (mysql_real_connect(conexao, server, user, password, database, 0, NULL, 0) == NULL) {
         fprintf(stderr, "%s\n", mysql_error(conexao));
         mysql_close(conexao);
         exit(1);
