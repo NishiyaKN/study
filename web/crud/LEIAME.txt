@@ -19,6 +19,7 @@ Instruções para rodar em Windows:
 9. Abra um terminal e digite npm init, clicando enter até o terminar o setup inicial
 10. Digite no terminal: npm install express cors mysql2
 11. Abra o diretório contendo os arquivos do projeto
-12. No terminal digite 'node server.js'
-13. Selecione o arquivo 'index.html'
-14. Clique no ícone do Live Server e a página será aberta em seu navegador padrão
+12. No arquivo server.js modifique a senha da conexão do MySQL para a senha de sua própria conexão
+13. No terminal digite 'node server.js'
+14. Selecione o arquivo 'index.html'
+15. Clique no ícone do Live Server e a página será aberta em seu navegador padrão
