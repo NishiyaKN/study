@@ -15,8 +15,7 @@ Instruções:
 8. Instale a extensão Live Server e NPM
 9. Abra um terminal e digite npm init, clicando enter até o terminar o setup inicial
 10. Digite npm install express cors mysql2
-11. Instale Live Server caso não esteja já instalado.
-12. Abra o diretório contendo os arquivos do projeto
-13. Abra um terminal e digite 'node server.js'
-14. Clique no arquivo 'index.html'
-15. Clique no ícone do Live Server e a página será aberta em seu navegador padrão
+11. Abra o diretório contendo os arquivos do projeto
+12. Abra um terminal e digite 'node server.js'
+13. Clique no arquivo 'index.html'
+14. Clique no ícone do Live Server e a página será aberta em seu navegador padrão
