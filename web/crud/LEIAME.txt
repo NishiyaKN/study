@@ -5,7 +5,7 @@ Kaick Kenithi Nishiya
 Vitor Hugo Alvarenga Facciolo
 
 Instruções:
-1. Instale MySQL Server, MySQL Server, Nodejs, VS Code (ou VS Codium)
+1. Instale MySQL Server, MySQL Workbench, Nodejs e VS Code (ou VS Codium)
 2. Inicialize o serviço do MySQL 
 3. Abra o MySQL Workbench
 4. Clique em 'Data Import/Restore' na aba 'Administration'
