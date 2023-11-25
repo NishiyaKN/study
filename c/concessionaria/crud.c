@@ -6,7 +6,6 @@
 #include <stdbool.h>
 
 int main() {
-    setlocale(LC_ALL, "Portuguese");
 
     MYSQL *conexao;
     MYSQL_RES *res;
@@ -47,7 +46,7 @@ int main() {
             case 1:
                 // Inserir um novo carro na tabela "carros"
                 printf("----- Inserir novo carro -----\n");
-                char query[200];
+                char query[256];
                 int id;
                 char nome[50], marca[50];
                 double preco;
@@ -65,6 +64,8 @@ int main() {
 
                 printf("Digite o preco do carro: ");
                 scanf("%lf", &preco);
+
+                printf("%d,%s,%s,%lf",id,nome,marca,preco);
 
                 snprintf(query, sizeof(query), "INSERT INTO carros (id, nome, marca, preco) VALUES (%d, '%s', '%s', %lf)", id, nome, marca, preco);
 
@@ -108,7 +109,7 @@ int main() {
                 break;
 
             case 3:
-                // Atualizar informacoes de um carro na tabela "carros"
+                // Atualizar informaes de um carro na tabela "carros"
                 printf("------ Atualizar carro ------\n");
                 char update_query[200];
                 int update_id, update_choice;
@@ -141,7 +142,7 @@ int main() {
                     case 3:
                         printf("Digite o novo preco: ");
                         scanf("%lf", &update_preco);
-                        snprintf(update_query, sizeof(update_query), "update carros set preco = '%lf' where id = %d ", update_preco, update_id);
+                        snprintf(update_query, sizeof(update_query), "update carros set preco = %lf where id = %d ", update_preco, update_id);
                         break;
                 }
 
@@ -174,18 +175,17 @@ int main() {
                 double load_preco;
                 char load_query[256];
 
-                FILE *file = fopen("carros.txt", "r");
+                FILE *fp = fopen("carros.txt", "r");
 
-                while (fscanf(file, "%d %s %s %lf", &load_id, load_nome, load_marca, &load_preco) != EOF) {
-                    snprintf(load_query, "INSERT INTO carros (id, nome, marca, preco) VALUES (%d, '%s', '%s', %lf)", load_id, load_nome, load_marca, load_preco);
-                    
+                while (fscanf(fp, "%d %s %s %lf", &load_id, load_nome, load_marca, &load_preco) != EOF) {
+                    snprintf(load_query, sizeof(load_query), "INSERT INTO carros (id, nome, marca, preco) VALUES (%d, '%s', '%s', %lf)", load_id, load_nome, load_marca, load_preco);
                     if (mysql_real_query(conexao, load_query, strlen(load_query)) != 0) {
                         fprintf(stderr, "Falha ao carregar dados: %s\n", mysql_error(conexao));
                         exit(1);
                     }
                 }
 
-                fclose(file);
+                fclose(fp);
                 break;
 
             case 6:
