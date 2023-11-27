@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/JS/6- POO.md",
+                "file": "notes/JS/9- Backend.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/JS/6- POO.md",
+                "file": "notes/JS/9- Backend.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/JS/6- POO.md",
+                "file": "notes/JS/9- Backend.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/JS/6- POO.md"
+                "file": "notes/JS/9- Backend.md"
               }
             }
           }
@@ -148,8 +148,16 @@
   },
   "active": "4c4b24f186584c51",
   "lastOpenFiles": [
-    "notes/JS/5- Modularidade.md",
+    "notes/JS/Media/Pasted image 20231126204627.png",
+    "notes/JS/9- Backend.md",
+    "notes/JS/Media/Pasted image 20231126204640.png",
+    "notes/JS/8- Aplicações Web.md",
+    "notes/JS/Media/Pasted image 20231126204717.png",
+    "notes/JS/Media/Pasted image 20231126204707.png",
+    "notes/JS/Media/Pasted image 20231126204653.png",
+    "notes/JS/7- Operações Assíncronas.md",
     "notes/JS/6- POO.md",
+    "notes/JS/5- Modularidade.md",
     "notes/JS/1- Base.md",
     "notes/JS/Media/Untitled.md",
     "notes/JS/4- User Interface.md",
@@ -170,21 +178,12 @@
     "notes/PY/Exception.md",
     "TODO.md",
     "notes/PY/virtualenv.md",
-    "notes/JAVA/3- Modificador de acesso.md",
-    "notes/JAVA/2- Classe e objeto.md",
-    "notes/C/3- Estruturas.md",
-    "notes/C/5- Ponteiros.md",
     "notes/JAVA/Media/Unidade 02.png",
     "notes/JAVA/Media/Pasted image 20231010112657.png",
     "notes/BD/Media/Pasted image 20231009083754.png",
     "notes/BD/Media/Pasted image 20231009083805.png",
     "notes/PY",
     "notes/JS/Forms/Unidade 2 - Programação Funcional.png",
-    "notes/JS/Forms/Unidade 3.png",
-    "notes/JS/Forms/Unidade 4 - Interface com Usuário.png",
-    "notes/JS/Forms/Linguagem Javascript.png",
-    "notes/ARQ/Media/IMG_20231011_184748.jpg",
-    "notes/ARQ/Media/Pasted image 20231017190324.png",
     "notes/ARQ/Media",
     "notes/JAVA/FORMS",
     "notes/JS/Forms",
