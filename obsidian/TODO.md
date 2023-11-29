@@ -1,20 +1,10 @@
-### Submit
-### C 24/11
-- [ ] CRUD
-	- [ ] Load from txt
-	- [x] Composite name for product
-### Javascript 25/11
-- [ ] Atividade 7
-- [ ] Atividade 8 
-- [ ] Atividade 9
+O CORS (Cross-origin Resource Sharing) é um **mecanismo usado para adicionar cabeçalhos HTTP** que informam aos navegadores para permitir que uma aplicação Web seja executada em uma origem e acesse recursos de outra origem diferente. Esse tipo de ação é chamada de **requisição cross-origin HTTP**.
 
-### BD 30/11
-- [ ] SQL
+O Express.js é um framework para Node.js que simplifica o desenvolvimento de aplicativos web e APIs. Ele fornece uma camada fina de recursos essenciais para facilitar a criação de servidores web robustos e escaláveis. 
 
-___
-### N1
-**BDD - Metade vai ser transactions, metade query sql, sobre controle de concorrencia cai mais até a parte do protocolo bifásico e timestamp, mas nada muito a fundo, exercicios capitulo 17 do silverschatz**
-**DOO - 5 objetivas, 5 dissertativas, tem snippet de códigos mas não precisa escrever nada**
+USCS Noturno
+19h20 ate 22h50
+
 ___
 ### Cyber
 nathalia x

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/JS/5- Modularidade.md",
+                "file": "TODO.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/JS/9- Backend.md",
+                "file": "TODO.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/JS/9- Backend.md",
+                "file": "TODO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/JS/9- Backend.md",
+                "file": "TODO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/JS/9- Backend.md"
+                "file": "TODO.md"
               }
             }
           }
@@ -159,17 +158,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "56ea5e91bb166c0a",
+  "active": "4c4b24f186584c51",
   "lastOpenFiles": [
-    "notes/JS/Media/Untitled 1.md",
-    "notes/JS/5- Modularidade.md",
-    "notes/JS/9- Backend.md",
-    "notes/JS/7- Operações Assíncronas.md",
-    "notes/JS/6- POO.md",
-    "notes/JS/STUDY.md",
-    "TODO.md",
     "notes/JS/10- Frontend.md",
+    "notes/JS/9- Backend.md",
     "notes/JS/8- Aplicações Web.md",
+    "notes/JS/7- Operações Assíncronas.md",
+    "notes/JS/5- Modularidade.md",
+    "notes/JS/6- POO.md",
+    "TODO.md",
+    "notes/JS/STUDY.md",
+    "notes/JS/Media/Untitled 1.md",
     "notes/JS/Media/Pasted image 20231126204627.png",
     "notes/JS/Media/Pasted image 20231126204640.png",
     "notes/JS/Media/Pasted image 20231126204717.png",

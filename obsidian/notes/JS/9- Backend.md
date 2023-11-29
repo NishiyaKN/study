@@ -4,7 +4,7 @@ Frameworks:
 - Ruby on Rails
 - Spring Boot
 
-- Geralmente código backend é executado em servers, como o apache, Ngnx e Tomcat.
+- Geralmente código backend é executado em servers, como o apache, Nginx e Tomcat.
 - Frequentemente interage com o banco de dados (MySQL, PostgreSQL, MongoDB, Cassandra)
 ___
 ### APIs
@@ -36,7 +36,10 @@ Representational State Transfer, é um estilo arquitetural para criar serviços 
 - As respostas da API podem ser armazenadas em cache para melhorar o desempenho.
 
 5. Interface uniforme
+- Interface uniforme para acessar e manipular recursos
+
 6. Sistema Cliente-Servidor
+- Separação clara entre o cliente e o servidor
 
 #### Implementação
 Envolve a criação de **ENDPOINTS** que correspondem a diferentes recursos e operações (GET,POST,PUT,DELETE), seguindo os princípios da arquitetura RESTful

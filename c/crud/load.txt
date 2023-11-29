@@ -1,5 +1,0 @@
-1 Suco Refrescos 5.99
-2 Sorvete Laticinios 15.99
-3 Laranja Frutas 3.50
-4 Brocolis Legumes 4.95
-5 Doritos Salgadinhos 12.00 

@@ -1,5 +1,5 @@
-Em JS, é uma coleção de pares chave-valor, onde cada chave é uma string que identifica um valor associado a ela.
-### Criação de uma função
+Em JS, um objeto é uma coleção de pares chave-valor, onde cada chave é uma string que identifica um valor associado a ela.
+### Criação de um objeto
 ```js
 const pessoa = {
 	nome: "Joao",
@@ -63,7 +63,7 @@ Os construtores são chamados quando se utiliza a keyword `new` para criar um no
 - Se não existir um construtor, cria apenas um objeto vazio.
 ___
 ### Herança
-A herança em JS é baseada em protótipos, cada objeto opssui um protótipo associado a ele.
+A herança em JS é baseada em protótipos, cada objeto possui um protótipo associado a ele.
 Uma classe ou função construtora pode herdar propriedades e métodos de outra classe através da cadeia de protótipos.
 Para isso, antigamente era preciso que a subclasse chame a superclasse pela função `call()` ou `apply()`.
 No ES6 usamos a keyword `extends`:

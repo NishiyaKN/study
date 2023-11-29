@@ -28,8 +28,8 @@ new Promise((resolve: Function, reject: Function )=> void)
 Exemplo:
 ```js
 function somaAssinc(a,b){
-j	return new Promise((resolve,reject) =>{
-j	setTimeout(()=>{
+	return new Promise((resolve,reject) =>{
+	setTimeout(()=>{
 		const result = a + b;
 		resolve(result);
 		}, 1000);	
