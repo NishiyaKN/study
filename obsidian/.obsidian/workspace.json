@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/JS/Media/Untitled 1.md",
+                "file": "notes/JS/5- Modularidade.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/JS/Media/Untitled 1.md",
+                "file": "notes/JS/5- Modularidade.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/JS/Media/Untitled 1.md"
+                "file": "notes/JS/5- Modularidade.md"
               }
             }
           }
@@ -159,11 +158,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "56ea5e91bb166c0a",
+  "active": "4c4b24f186584c51",
   "lastOpenFiles": [
+    "notes/JS/Media/Untitled 1.md",
     "notes/JS/5- Modularidade.md",
     "notes/JS/9- Backend.md",
-    "notes/JS/Media/Untitled 1.md",
     "notes/JS/7- Operações Assíncronas.md",
     "notes/JS/6- POO.md",
     "notes/JS/STUDY.md",
