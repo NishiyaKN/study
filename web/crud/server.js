@@ -73,7 +73,7 @@ app.post('/produtos', (req, res) => {
     const {id_produto, nome, categoria, quantidade, preco } = req.body;
   
     if (!id_produto || !nome || !categoria || !quantidade || !preco) {
-      res.status(400).json({ error: 'Descricao, quantidade, and valor are required fields' });
+      res.status(400).json({ error: 'Id, nome, categoria, quantidade, and preco are required fields' });
       return;
     }
   
