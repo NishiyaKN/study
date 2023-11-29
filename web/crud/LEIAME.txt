@@ -15,7 +15,7 @@ Instruções para rodar em Windows:
 5. Selecione 'Import from Self-Contained File'
 6. Selecione o arquivo 'mercadao.sql' e clique em 'Start Import'
 7. Abra o VSCode ou VSCodium
-8. Instale a extensão Live Server e NPM
+8. Instale a extensão Live Server
 9. Abra um terminal e digite npm init, clicando enter até o terminar o setup inicial
 10. Digite no terminal: npm install express cors mysql2
 11. Abra o diretório contendo os arquivos do projeto
