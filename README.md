@@ -1,2 +1,2 @@
 # study
-Repository created to host projects for studying purposes
+Repository used to host small study projects which does not require a repo of it's own. 
