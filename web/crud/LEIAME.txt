@@ -9,17 +9,17 @@ Vitor Hugo Alvarenga Facciolo
 
 Instruções para rodar em Windows:
 1. Instale o MySQL Server, MySQL Workbench, Nodejs e VS Code (ou VS Codium) caso não os possua
-2. Inicialize o serviço do MySQL 
+2. Inicialize o serviço do MySQL
 3. Abra o MySQL Workbench
 4. Clique em 'Data Import/Restore' na aba 'Administration'
 5. Selecione 'Import from Self-Contained File'
-6. Selecione o arquivo 'mercadao.sql' e clique em 'Start Import'
+6. Selecione o arquivo 'mercadao.sql' e clique em 'Start Import' (esse arquivo possui compatibilidade para os PCs da USCS, o arquivo mercadao.sql.bak funcionou em todos os PCs menos nos da USCS)
 7. Abra o VSCode ou VSCodium
 8. Instale a extensão Live Server
 9. Abra um terminal e digite npm init, clicando enter até o terminar o setup inicial
 10. Digite no terminal: npm install express cors mysql2
 11. Abra o diretório contendo os arquivos do projeto
-12. No arquivo server.js modifique a senha da conexão do MySQL para a senha de sua própria conexão
+12. No arquivo server.js modifique a senha da conexão do MySQL para a senha de sua própria conexão (senha no arquivo é Nobara38!)
 13. No terminal digite 'node server.js'
 14. Selecione o arquivo 'index.html'
 15. Clique no ícone do Live Server e a página será aberta em seu navegador padrão
