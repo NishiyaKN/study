@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/JS/5- Modularidade.md",
+                "file": "notes/JS/STUDY.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/JS/5- Modularidade.md",
+                "file": "notes/JS/STUDY.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/JS/5- Modularidade.md",
+                "file": "notes/JS/STUDY.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/JS/5- Modularidade.md"
+                "file": "notes/JS/STUDY.md"
               }
             }
           }
@@ -161,6 +161,7 @@
   },
   "active": "56ea5e91bb166c0a",
   "lastOpenFiles": [
+    "notes/JS/5- Modularidade.md",
     "notes/JS/6- POO.md",
     "notes/JS/7- Operações Assíncronas.md",
     "notes/JS/Media/Untitled 1.md",
@@ -172,7 +173,6 @@
     "notes/JS/Media/Pasted image 20231126204717.png",
     "notes/JS/Media/Pasted image 20231126204707.png",
     "notes/JS/Media/Pasted image 20231126204653.png",
-    "notes/JS/5- Modularidade.md",
     "notes/JS/1- Base.md",
     "notes/JS/Media/Untitled.md",
     "notes/JS/4- User Interface.md",
