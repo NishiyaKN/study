@@ -10,7 +10,7 @@ ___
 - Feita por meio de APIs, normalmente no formato REST ou GraphQL.
 ___
 ### Requisições HTTP (Hypertext Transfer Protocol)
-A comunicação entre o cliente e o servidor normalmente ocorre por meio do protocole HTTP, através de **requisições e respostas**. (Para comunicação em tempo real, WebSockets ou Server-Sent Events são usadas)
+A comunicação entre o cliente e o servidor normalmente ocorre por meio do protocolo HTTP, através de **requisições e respostas**. (Para comunicação em tempo real, WebSockets ou Server-Sent Events são usadas)
 
 As requisições HTTP são ações **iniciados por um cliente** com o **objetivo de obter informações de um servidor da web ou enviar informações para ele.**
 
