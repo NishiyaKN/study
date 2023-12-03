@@ -2,8 +2,8 @@ from bs4 import BeautifulSoup
 import requests
 import pandas as pd
 
-filename = 'counter_normal.txt'
-file_counter = 0
+filename = '/home/yori/study/py/soup/counter_normal.txt'
+auth_file = '/home/yori/.config/tk/dc'
 
 def main():
     url = 'https://bluearchive.wiki/wiki/Banner_List_(Global)'
@@ -59,7 +59,23 @@ def create_dataframe():
         length = len(df)
         df.loc[length] = individual_row_data
 
-    print(df.loc[file_counter:])
+    notify_discord()
+    # print(df.loc[file_counter:])
+
+def notify_discord():
+    with open(auth_file,'r') as f:
+        auth = f.read()
+    url = 'https://discord.com/api/v9/channels/1180832500403155095/messages' 
+    headers = {
+            "Authorization" : auth.strip()
+    }
+    for i in range(file_counter, counter_today - 1):
+        character = df.loc[i]['Character'].rstrip('rerun')
+        period = df.loc[i]['Period']
+        payload = {
+                "content": "New banner: " + character + ". Period: " + period
+        }
+        res = requests.post(url, payload, headers=headers)
 
 if __name__ == '__main__':
     main()
