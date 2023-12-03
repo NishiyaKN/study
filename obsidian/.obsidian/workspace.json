@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/JS/10- Frontend.md",
+                "file": "notes/PY/Pandas.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/JS/10- Frontend.md",
+                "file": "notes/PY/Pandas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/JS/10- Frontend.md",
+                "file": "notes/PY/Pandas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/JS/10- Frontend.md"
+                "file": "notes/PY/Pandas.md"
               }
             }
           }
@@ -160,6 +160,7 @@
   },
   "active": "4c4b24f186584c51",
   "lastOpenFiles": [
+    "notes/JS/10- Frontend.md",
     "notes/JS/9- Backend.md",
     "notes/JS/8- Aplicações Web.md",
     "notes/JS/7- Operações Assíncronas.md",
@@ -168,7 +169,6 @@
     "notes/JS/5- Modularidade.md",
     "notes/JS/4- User Interface.md",
     "notes/JS/STUDY.md",
-    "notes/JS/10- Frontend.md",
     "notes/JS/Media/Untitled 1.md",
     "notes/JS/Media/Pasted image 20231126204627.png",
     "notes/JS/Media/Pasted image 20231126204640.png",
