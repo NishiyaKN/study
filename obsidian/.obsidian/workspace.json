@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/PY/Pandas.md",
+                "file": "notes/JS/8- Aplicações Web.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/PY/Pandas.md",
+                "file": "notes/JS/8- Aplicações Web.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/PY/Pandas.md",
+                "file": "notes/JS/8- Aplicações Web.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/PY/Pandas.md"
+                "file": "notes/JS/8- Aplicações Web.md"
               }
             }
           }
@@ -160,6 +160,7 @@
   },
   "active": "4c4b24f186584c51",
   "lastOpenFiles": [
+    "notes/PY/Pandas.md",
     "notes/JS/10- Frontend.md",
     "notes/JS/9- Backend.md",
     "notes/JS/8- Aplicações Web.md",
@@ -186,7 +187,6 @@
     "notes/JAVA/9- Exceções.md",
     "notes/PY/Geradores e closure.md",
     "notes/PY/OOP.md",
-    "notes/PY/Pandas.md",
     "notes/PY/Strings.md",
     "notes/PY/Listas.md",
     "notes/PY/Modulos.md",
