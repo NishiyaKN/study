@@ -20,6 +20,30 @@
             }
           },
           {
+            "id": "db533b4c72b52d27",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "TODO.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3623a3a3f4e0e505",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ASAAS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "56ea5e91bb166c0a",
             "type": "leaf",
             "state": {
@@ -31,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -97,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/JS/8- Aplicações Web.md",
+                "file": "ASAAS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/JS/8- Aplicações Web.md",
+                "file": "ASAAS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/JS/8- Aplicações Web.md"
+                "file": "ASAAS.md"
               }
             }
           }
@@ -158,14 +183,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4c4b24f186584c51",
+  "active": "3623a3a3f4e0e505",
   "lastOpenFiles": [
-    "notes/PY/Pandas.md",
-    "notes/JS/10- Frontend.md",
-    "notes/JS/9- Backend.md",
-    "notes/JS/8- Aplicações Web.md",
-    "notes/JS/7- Operações Assíncronas.md",
     "TODO.md",
+    "ASAAS.md",
+    "notes/JS/10- Frontend.md",
+    "notes/JS/Untitled.md",
+    "notes/JS/8- Aplicações Web.md",
+    "notes/PY/Pandas.md",
+    "notes/JS/9- Backend.md",
+    "notes/JS/7- Operações Assíncronas.md",
     "notes/JS/6- POO.md",
     "notes/JS/5- Modularidade.md",
     "notes/JS/4- User Interface.md",
@@ -189,8 +216,6 @@
     "notes/PY/OOP.md",
     "notes/PY/Strings.md",
     "notes/PY/Listas.md",
-    "notes/PY/Modulos.md",
-    "notes/PY/Exception.md",
     "notes/JAVA/Media/Unidade 02.png",
     "notes/JAVA/Media/Pasted image 20231010112657.png",
     "notes/BD/Media/Pasted image 20231009083754.png",
