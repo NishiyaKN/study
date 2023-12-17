@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Cobrança - Etapa 1</title>
+</head>
+<body>
+
+<h1>Etapa 1: Informações de Pagamento</h1>
+
+<form action="#" method="post">
+  <!-- Campo para o valor em reais -->
+  <label for="valor">Valor em Reais:</label>
+  <input type="number" step="0.01" min="0" id="valor" name="valor" required>
+
+  <br>
+
+  <!-- Campo para a descrição (opcional) -->
+  <label for="descricao">Descrição:</label>
+  <input type="text" id="descricao" name="descricao">
+
+  <br>
+
+  <!-- Opção de pagamento à vista ou parcelado -->
+  <label>Forma de Pagamento:</label>
+  <select id="formaPagamento" name="formaPagamento" required>
+    <option value="avista">À Vista</option>
+    <option value="parcelado">Parcelado</option>
+  </select>
+
+  <br>
+
+  <!-- Se escolher parcelado, mostrar opções de parcelas -->
+  <div id="opcoesParcelamento" style="display: none;">
+    <label for="numParcelas">Número de Parcelas:</label>
+    <select id="numParcelas" name="numParcelas">
+      <!-- As opções de parcelamento serão geradas dinamicamente usando JavaScript com base no valor -->
+    </select>
+  </div>
+
+  <br>
+
+  <!-- Escolha entre boleto bancário e cartão de crédito -->
+  <label>Forma de Pagamento:</label>
+  <div>
+    <input type="radio" id="boleto" name="formaPagamentoEscolhida" value="boleto" required>
+    <label for="boleto">Boleto Bancário</label>
+
+    <input type="radio" id="cartao" name="formaPagamentoEscolhida" value="cartao" required>
+    <label for="cartao">Cartão de Crédito</label>
+  </div>
+
+  <br>
+
+  <input type="submit" value="Avançar para a Etapa 2">
+</form>
+
+<script>
+  // Adicione aqui o código JavaScript para mostrar/ocultar o campo de parcelamento conforme necessário
+  // e para gerar dinamicamente as opções do dropdown de parcelas com base no valor inserido.
+</script>
+
+</body>
+</html>
+

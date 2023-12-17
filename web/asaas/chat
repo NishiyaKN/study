@@ -1,0 +1,10 @@
+crie um html para um website simple de cobranca. ele possui 5 etapas, cada etapa possui uma serie de inputs que o usuario deve fornecer:
+etapa 1:
+valor em reais (double com 2 decimais)
+descricao (string, opcional)
+a vista ou parcelado em ate 12 vezes sem juros (dropdown menu com as opcoes obtidas apartir do valor)
+boleto bancario/ pix ou cartao de credito (radio button para escolher entre ambos)
+
+por enquanto so crie a etapa 1
+
+
