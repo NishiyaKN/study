@@ -40,6 +40,7 @@ Deixar marcado o dia que o cliente estiver agendado, após esse dia/horário ver
 3. Caso demonstre interesse, enviar o link de adesão:  
 	https://shre.ink/formularionipomed
 4. Após o cliente preencher as informações do link, elas estarão disponíveis no site, a partir disso copia e cola no ASAAS para criar a cobrança. 
+5. Após confirmação do pagamento, libera o cartão pelo website. 
 
 Verificar se foi pago no portal do ASAAS (o icone de relogio na coluna de data fica azul), e então libera no portal de vendas o cartão. 
 Boleto pode demorar para aparecer no ASAAS.
@@ -48,6 +49,10 @@ Se for pagar a vista de preferencia fazer pix.
 
 - Pode ter clientes que entram em contato que já possuem plano e entram em contato para marcar alguma coisa, nesse caso só repassar o número da central de atendimento 
 	Gentileza entrar em contato pelo telefone 11 5587-3000 ou no WhatsApp
+
+### Cartão virtual
+Entrar no site https://nipomed.app/login e entrar com o cpf e data de nascimento
+Aperta esc e clica no cartão virtual > baixar
 #### Websites
 - https://nipomedsaude.com.br/blog/
 - https://portalvendas.nipomed.app/auth/
