@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/PY/Pandas.md",
+                "file": "notes/NIPOMED.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/PY/Pandas.md",
+                "file": "notes/NIPOMED.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/PY/Pandas.md",
+                "file": "notes/NIPOMED.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/PY/Pandas.md"
+                "file": "notes/NIPOMED.md"
               }
             }
           }
@@ -148,11 +148,12 @@
   },
   "active": "56ea5e91bb166c0a",
   "lastOpenFiles": [
-    "notes/PY/Strings.md",
     "TODO.md",
+    "notes/NIPOMED.md",
+    "notes/PY/Pandas.md",
+    "notes/PY/Strings.md",
     "notes/PY/Listas.md",
     "notes/PY/Exception.md",
-    "notes/PY/Pandas.md",
     "Linux.md",
     "ASAAS.md",
     "notes/JS/10- Frontend.md",
@@ -178,7 +179,6 @@
     "notes/JAVA/7- Classes abstratas e interfaces.md",
     "notes/JAVA/8- Polimorfismo.md",
     "notes/JAVA/8.1 Coleções.md",
-    "notes/JAVA/9- Exceções.md",
     "notes/JAVA/Media/Unidade 02.png",
     "notes/JAVA/Media/Pasted image 20231010112657.png",
     "notes/BD/Media/Pasted image 20231009083754.png",
