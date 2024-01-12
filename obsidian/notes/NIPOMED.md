@@ -193,3 +193,6 @@ Já foi atendida?
 Vencimento da cobrança
 Ativar negativação de clientes
 Sempre coloca as informações opcionais? Grupo de cliente?
+
+
+Boa tarde, tem um cliente que quer saber se é possível fazer cirurgia de ombro. Disse que já fez ressonância e tem o laudo e imagem, ainda não confirmou ao certo com o médico mas disse que provavelmente será necessário cirurgia.
