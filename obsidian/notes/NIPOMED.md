@@ -21,7 +21,7 @@ ___
 	- Idade
 	- Local onde mora
 
-Avaliação para todas as cirurgias somente das 14h as 16h de segunda a sexta, mandar mensagem para TerezaDr Fernando (secretária) para verificar disponibilidade. 
+Avaliação para todas as cirurgias somente das 14h as 16h de terça a sexta (segunda apenas das 15h as 16h), mandar mensagem para TerezaDr Fernando (secretária) para verificar disponibilidade. 
 Se a Tereza confirmar disponibilidade, retornar para o cliente confirmando o agendamento, verificar se já mandou endereço do local.
 
 Dr. FERNANDO CABRAL DE MENEZES
@@ -41,12 +41,25 @@ Deixar marcado o dia que o cliente estiver agendado, após esse dia/horário ver
 	https://shre.ink/formularionipomed
 	
 	Dados necessários:
-	- Nome completo 
+	TITULAR
+	- ⁠Nome Completo
 	- CPF
-	- Data de nascimento 
-	- Profissão
-	- Endereço completo com CEP
-	- E-mail
+	- ⁠RG
+	- ⁠Data de nascimento
+	- ⁠Gênero 
+	- ⁠Estado Civil
+	- ⁠Profissão 
+	- ⁠Celular
+	- ⁠E-mail
+	- ⁠CEP
+	- ⁠Endereço 
+	
+	DEPENDENTES
+	- ⁠Nome 
+	- ⁠CPF
+	- ⁠Data de nascimento
+	- ⁠Gênero 
+	- ⁠Parentesco
 	
 4. Após o cliente preencher as informações do link, elas estarão disponíveis no site, a partir disso copia e cola no ASAAS para criar a cobrança. 
 5. Após confirmação do pagamento, libera o cartão pelo website. 
@@ -58,7 +71,7 @@ Se for pagar a vista de preferencia fazer pix.
 
 - Pode ter clientes que entram em contato que já possuem plano e entram em contato para marcar alguma coisa, nesse caso só repassar o número da central de atendimento 
 	Gentileza entrar em contato pelo telefone 11 5587-3000 ou no WhatsApp
-	
+- Pode ter clientes que mandam mensagem para a Heloísa, enviar o contato dela para eles.
 ___
 ### Cartão virtual
 Entrar no site https://nipomed.app/login e entrar com o cpf e data de nascimento
@@ -81,6 +94,8 @@ ___
 - A taxa anual da Nipomed seria para ter acesso a consultas e exames particulares com os profissionais e laboratórios credenciados com valores mais em conta.
 - O preço das cirurgias é uma estimativa do pacote, sem intercorrências
 - Cirurgia a laser de hemorróida tem que avaliar primeiro
+- Quanto tempo depois de adquirir o plano pode fazer cirurgia? Tem que ver com o doutor
+- Quais exames serão pedidos antes de fazer a cirurgia? Tem que ver com o doutor
 
 ___
 ### yy Win+h Ctrl+v
@@ -98,21 +113,16 @@ Sobre os planos, temos duas modalidades:
 - Plano Consultas, onde você pode realizar consultas e exames nos mais diversos laboratórios e clínicas, tudo por um baixo custo. 
 - Plano Master, que além dos benefícios do Plano Consultas, consta com preços acessíveis para cirurgia de hemorróida, hérnia (menos de disco), vesícula e catarata.
 
+###### Rede credenciada
 Para realizar uma busca de todos os nossos estabelecimentos credenciados, pode acessar este link https://nipomed.com.br/buscarede/ e procurar a partir de sua localização
 
+###### Preço planos
 O Plano Master individual está por R$1100,00 no Pix ou boleto. Fazemos também em até 4x no cartão
 O Plano Consultas individual está por R$548,00 no Pix ou boleto. Fazemos também em até 4x no cartão
-
 O preço é anual, após a aquisição do plano, poderá utilizar todos os benefícios durante um ano inteiro.
-
-Para realizar a cirurgia com o preço citado acima, é necessário adquirir o nosso Plano Master.
 
 A efetivação da adesão e liberação da carteirinha digital é realizada em até 24h após a confirmação do pagamento.
 
-Hérnia, vesícula e hemorroida:
-Dr. FERNANDO CABRAL DE MENEZES
-RUA MINISTRO GABRIEL DE REZENDE PASSOS, 500 - CONJ. 1313 - MOEMA - SÃO PAULO	
-11 5051-2424
 
 Para a cirurgia de vesícula, através da Nipomed nossos associados pagam em média R$8.500,00 com tudo incluso.
 Cirurgia realizada no Hospital Santa Rita.
@@ -129,11 +139,16 @@ ___
 
 O valor médio estimado para cirurgia de hérnia através da Nipomed é de R$5.000,00 incluindo anestesia, honorários médicos, taxas hospitalares e internação para o procedimento.
 
-Cirurgia realizada no Hospital Santa Rita (localizado perto das avenidas Paulista e 23 de Maio).
+Para realizar a cirurgia pelo valor citado acima é necessário adquirir o nosso Plano Master, que possui uma taxa anual de R$1100,00 no boleto ou pix, podendo parcelar em até 4x no cartão.
 
-Antes de realizar a cirurgia, é necessário passar por uma consulta de avaliação com o cirurgião especialista. O valor da consulta particular é de R$300,00 mas através da Nipomed custa R$90,00.
+A cirurgia é realizada no Hospital Santa Rita (localizado perto das avenidas Paulista e 23 de Maio).
 
-Para realizar a cirurgia com o preço citado acima, é necessário adquirir o Plano Master
+Antes de realizar a cirurgia, é necessário passar por uma consulta de avaliação com o cirurgião especialista localizado em Moema. O valor da consulta particular é de R$300,00 mas através da Nipomed custa R$90,00.
+
+Para a consulta de avaliação, podemos oferecer o preço de associado antes mesmo de você adquirir o plano, gostaria de agendar a consulta?
+
+
+Para a realização da cirurgia de hérnia, será necessário adquirir o nosso Plano Master, que individual está por R$1100,00. Essa é uma taxa anual que pode ser paga a vista por boleto ou pix, e dividada em até 4x no cartão.
 ___
 ### Hemorróidas
 
@@ -143,9 +158,19 @@ Para realizar a cirurgia pelo valor citado acima é necessário adquirir o nosso
 
 A cirurgia é realizada no Hospital Santa Rita (localizado perto das avenidas Paulista e 23 de Maio).
 
-Antes de realizar a cirurgia, é necessário passar por uma consulta de avaliação com o cirurgião especialista em Moema. O valor da consulta particular é de R$300,00 mas através da Nipomed custa R$90,00.
+Antes de realizar a cirurgia, é necessário passar por uma consulta de avaliação com o cirurgião especialista localizado em Moema. O valor da consulta particular é de R$300,00 mas através da Nipomed custa R$90,00.
 
 Gostaria de marcar a consulta de avaliação?
+___
+### Agendamento de avaliação 
+Dr. Fernando atende segunda-feira (a partir das 15h) e de terça-feira a sexta-feira (a partir das 14h)
+
+Certo então, confirmado agendamento para availiação com o Dr. FERNANDO CABRAL DE MENEZES no dia 15/01/2024 (segunda-feira) a partir das 15h.
+
+Valor: R$90,00
+
+Endereço:
+RUA MINISTRO GABRIEL DE REZENDE PASSOS, 500 - CONJ. 1313 - MOEMA - SÃO PAULO
 ___
 - Não tem carência
 - Não tem limite de utilização
@@ -158,11 +183,13 @@ ___
 - https://portalvendas.nipomed.app/auth/
 - https://asaas.com/
 
+https://wa.me/5562982004027
 ___
 Enviar os contratos por email para a amanda
 
+Bom dia Adiana! Sou o Kaick da Nipomed retornando seu contato!
+Já foi atendida?
 
 Vencimento da cobrança
 Ativar negativação de clientes
 Sempre coloca as informações opcionais? Grupo de cliente?
-
