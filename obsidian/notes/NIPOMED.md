@@ -41,11 +41,12 @@ Deixar marcado o dia que o cliente estiver agendado, após esse dia/horário ver
 	https://shre.ink/formularionipomed
 	
 	Dados necessários:
-	Nome completo 
-	Data de nascimento 
-	Profissão.
-	Endereço completo com cep.
-	E-mail.
+	- Nome completo 
+	- CPF
+	- Data de nascimento 
+	- Profissão
+	- Endereço completo com CEP
+	- E-mail
 	
 4. Após o cliente preencher as informações do link, elas estarão disponíveis no site, a partir disso copia e cola no ASAAS para criar a cobrança. 
 5. Após confirmação do pagamento, libera o cartão pelo website. 
@@ -70,6 +71,10 @@ ___
 - Boleto á vista
 - Até 4x no cartão
 - Valor da taxa anual para usufruir de todos os benefícios e ter acesso a realização de cirurgias, 1100,00 a vista ou 4 x 275,00 no cartão de crédito.
+Prazo de 2 dias para vencimento
+Desativa negativação, juras e multas
+Envia o link da cobraça pelo whatsapp somente se o cliente disser que não chegou por email ou sms
+Boleto demora um pouco para aparecer na plataforma, pode pedir para o cliente enviar o comprovante pra liberar no portal
 ___
 ### Outras info
 - Tempo de recuperação de cirurgia de hérnia inguinal é de aproximadamente 2 dias (internação). Dúvidas relacionadas a cirurgia é melhor tirar diretamente com o doutor.
@@ -78,16 +83,86 @@ ___
 - Cirurgia a laser de hemorróida tem que avaliar primeiro
 
 ___
-A Nipomed não é plano de saúde, é uma alternativa para quem não tem plano de saúde e precisa de acesso a exames, consulta e cirurgias programadas.
-O uso é imediato após a adesão não tem reajuste por idade, o valor da taxa anual para usufruir dos benefícios de associado é igual pra todas as faixas etária.
+### yy Win+h Ctrl+v
+Bom dia! Posso te ajudar?
+De que parte do Brasil você é?
+Atendemos somente na região de São Paulo.
 
-Temos dois planos disponíveis:
-O Plano Consultas, onde você terá acesso 
+A Nipomed não é plano de saúde, é uma alternativa para quem não tem plano de saúde e precisa de acesso a exames, consulta e cirurgias programadas.
+
+A Nipomed é uma assistência médica por credenciamento voltado para quem não possui plano de saúde e precisa de acesso a exames, consultas e cirurgias programadas.
+
+O uso é imediato após a adesão e não tem reajuste por idade, o valor da taxa anual para usufruir dos benefícios de associado é igual para todas as faixas etária.
+
+Sobre os planos, temos duas modalidades:
+- Plano Consultas, onde você pode realizar consultas e exames nos mais diversos laboratórios e clínicas, tudo por um baixo custo. 
+- Plano Master, que além dos benefícios do Plano Consultas, consta com preços acessíveis para cirurgia de hemorróida, hérnia (menos de disco), vesícula e catarata.
+
+Para realizar uma busca de todos os nossos estabelecimentos credenciados, pode acessar este link https://nipomed.com.br/buscarede/ e procurar a partir de sua localização
+
+O Plano Master individual está por R$1100,00 no Pix ou boleto. Fazemos também em até 4x no cartão
+O Plano Consultas individual está por R$548,00 no Pix ou boleto. Fazemos também em até 4x no cartão
+
+O preço é anual, após a aquisição do plano, poderá utilizar todos os benefícios durante um ano inteiro.
+
+Para realizar a cirurgia com o preço citado acima, é necessário adquirir o nosso Plano Master.
+
+A efetivação da adesão e liberação da carteirinha digital é realizada em até 24h após a confirmação do pagamento.
+
+Hérnia, vesícula e hemorroida:
+Dr. FERNANDO CABRAL DE MENEZES
+RUA MINISTRO GABRIEL DE REZENDE PASSOS, 500 - CONJ. 1313 - MOEMA - SÃO PAULO	
+11 5051-2424
+
+Para a cirurgia de vesícula, através da Nipomed nossos associados pagam em média R$8.500,00 com tudo incluso.
+Cirurgia realizada no Hospital Santa Rita.
+É necessário antes realizar uma consulta de avaliação com o cirurgião especialista, que pela Nipomed está por R$90,00.
+
+Aqui é a parte de adesão de plano. Por gentileza entrar em contato com a Central de Atendimento ao Cliente.
+Ou ligue para 5587-3000
+
+___
+### Plano master
+O Plano Master fornece aos nossos associados todos os benefícios do Plano Consultas (preços baixos para a realização de consultas e exames em diversas clínicas e laboratórios de nossa rede credenciada, sem carência, sem limite de utilização, etc) e também consta com preços acessíveis para cirurgias de hemorróida, hérnia (menos de disco) e vesícula.
+___
+### Hérnia (exceção hérnia de disco)
+
+O valor médio estimado para cirurgia de hérnia através da Nipomed é de R$5.000,00 incluindo anestesia, honorários médicos, taxas hospitalares e internação para o procedimento.
+
+Cirurgia realizada no Hospital Santa Rita (localizado perto das avenidas Paulista e 23 de Maio).
+
+Antes de realizar a cirurgia, é necessário passar por uma consulta de avaliação com o cirurgião especialista. O valor da consulta particular é de R$300,00 mas através da Nipomed custa R$90,00.
+
+Para realizar a cirurgia com o preço citado acima, é necessário adquirir o Plano Master
+___
+### Hemorróidas
+
+O valor médio estimado para cirurgia de hemorroidas através da Nipomed é de R$5.000,00 incluindo anestesia, honorários médicos, taxas hospitalares e internação para o procedimento.
+
+Para realizar a cirurgia pelo valor citado acima é necessário adquirir o nosso Plano Master, que possui uma taxa anual de R$1100,00 no boleto ou pix, podendo parcelar em até 4x no cartão.
+
+A cirurgia é realizada no Hospital Santa Rita (localizado perto das avenidas Paulista e 23 de Maio).
+
+Antes de realizar a cirurgia, é necessário passar por uma consulta de avaliação com o cirurgião especialista em Moema. O valor da consulta particular é de R$300,00 mas através da Nipomed custa R$90,00.
+
+Gostaria de marcar a consulta de avaliação?
+___
+- Não tem carência
+- Não tem limite de utilização
+- Não tem restrição de doenças pré existentes
+- Não tem limite nem restrição de idade
+- Não tem mensalidade
 ___
 #### Websites
 - https://nipomedsaude.com.br/blog/
 - https://portalvendas.nipomed.app/auth/
 - https://asaas.com/
 
-
+___
 Enviar os contratos por email para a amanda
+
+
+Vencimento da cobrança
+Ativar negativação de clientes
+Sempre coloca as informações opcionais? Grupo de cliente?
+
