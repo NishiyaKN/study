@@ -1,9 +1,10 @@
 ### Nipomed não é plano de saúde, é uma assistência médica por credenciamento.
-- Não atende fora de São Paulo, se não for DDD 11 é necessário perguntar de onde é.
+- Não atende fora de São Paulo, se não for DDD 11-19 é necessário perguntar de onde é.
 ___
 #### Planos
+
 **Plano Consultas e Exames**
-- Consultas e exames com profissionais da rede credenciada
+- Consultas e exames com profissionais da rede credenciada 
 - Uso ilimitado e imediato
 - Sem carência nem limite de idade
 
@@ -11,7 +12,6 @@ ___
 - Todos os benefícios do Plano Consultas e Exames
 - Inclui cirurgias eletivas programadas de hérnia (exceção de disco), hemorroida, vesícula e catarata.
 
-Plano familiar inclui
 ___
 ### Workflow
 1. Apresentação, envio do pdf
@@ -25,7 +25,7 @@ Avaliação para todas as cirurgias somente das 14h as 16h de terça a sexta (se
 Se a Tereza confirmar disponibilidade, retornar para o cliente confirmando o agendamento, verificar se já mandou endereço do local.
 
 Dr. FERNANDO CABRAL DE MENEZES
-RUA MINISTRO GABRIEL DE REZENDE PASSOS, 500 - CONJ. 1313 - MOEMA - SÃO PAULO	
+RUA MINISTRO GABRIEL DE REZENDE PASSOS, 500 - CONJ. 1313 - MOEMA - SÃO PAULO
 11 5051-2424
 
 A cirurgia em si é realizada no Hospital Santa Rita, fica perto das avenidas Paulista e 23 de Maio, ao lado da estação Ana Rosa (Linha Azul) do Metrô.
@@ -133,7 +133,7 @@ Ou ligue para 5587-3000
 
 ___
 ### Plano master
-O Plano Master fornece aos nossos associados todos os benefícios do Plano Consultas (preços baixos para a realização de consultas e exames em diversas clínicas e laboratórios de nossa rede credenciada, sem carência, sem limite de utilização, etc) e também consta com preços acessíveis para cirurgias de hemorróida, hérnia (menos de disco) e vesícula.
+O Plano Master fornece aos nossos associados todos os benefícios do Plano Consultas (preços baixos para a realização de consultas e exames em diversas clínicas e laboratórios de nossa rede credenciada, sem carência, sem limite de utilização, etc) e também consta com preços acessíveis para cirurgias de hemorróida, hérnia (menos de disco), vesícula e catarata.
 ___
 ### Hérnia (exceção hérnia de disco)
 
@@ -146,7 +146,6 @@ A cirurgia é realizada no Hospital Santa Rita (localizado perto das avenidas Pa
 Antes de realizar a cirurgia, é necessário passar por uma consulta de avaliação com o cirurgião especialista localizado em Moema. O valor da consulta particular é de R$300,00 mas através da Nipomed custa R$90,00.
 
 Para a consulta de avaliação, podemos oferecer o preço de associado antes mesmo de você adquirir o plano, gostaria de agendar a consulta?
-
 
 Para a realização da cirurgia de hérnia, será necessário adquirir o nosso Plano Master, que individual está por R$1100,00. Essa é uma taxa anual que pode ser paga a vista por boleto ou pix, e dividada em até 4x no cartão.
 ___
@@ -165,7 +164,7 @@ ___
 ### Agendamento de avaliação 
 Dr. Fernando atende segunda-feira (a partir das 15h) e de terça-feira a sexta-feira (a partir das 14h)
 
-Certo então, confirmado agendamento para availiação com o Dr. FERNANDO CABRAL DE MENEZES no dia 15/01/2024 (segunda-feira) a partir das 15h.
+Confirmado agendamento para availiação com o Dr. FERNANDO CABRAL DE MENEZES no dia 15/01/2024 (segunda-feira) a partir das 15h.
 
 Valor: R$90,00
 
