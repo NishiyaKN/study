@@ -96,6 +96,8 @@ ___
 - Cirurgia a laser de hemorróida tem que avaliar primeiro
 - Quanto tempo depois de adquirir o plano pode fazer cirurgia? Tem que ver com o doutor
 - Quais exames serão pedidos antes de fazer a cirurgia? Tem que ver com o doutor
+- Não existe local físico para adesão
+- Não há tratamentos na área da oncologia (câncer), somente consulta com clínico oncológico
 
 ___
 ### yy Win+h Ctrl+v
@@ -123,7 +125,6 @@ O preço é anual, após a aquisição do plano, poderá utilizar todos os benef
 
 A efetivação da adesão e liberação da carteirinha digital é realizada em até 24h após a confirmação do pagamento.
 
-
 Para a cirurgia de vesícula, através da Nipomed nossos associados pagam em média R$8.500,00 com tudo incluso.
 Cirurgia realizada no Hospital Santa Rita.
 É necessário antes realizar uma consulta de avaliação com o cirurgião especialista, que pela Nipomed está por R$90,00.
@@ -137,7 +138,7 @@ O Plano Master fornece aos nossos associados todos os benefícios do Plano Consu
 ___
 ### Hérnia (exceção hérnia de disco)
 
-O valor médio estimado para cirurgia de hérnia através da Nipomed é de R$5.000,00 incluindo anestesia, honorários médicos, taxas hospitalares e internação para o procedimento.
+O valor médio estimado para cirurgia de hérnia (exceção hérnia de disco) através da Nipomed é de R$5.000,00 incluindo anestesia, honorários médicos, taxas hospitalares e internação para o procedimento.
 
 Para realizar a cirurgia pelo valor citado acima é necessário adquirir o nosso Plano Master, que possui uma taxa anual de R$1100,00 no boleto ou pix, podendo parcelar em até 4x no cartão.
 
@@ -164,7 +165,7 @@ ___
 ### Agendamento de avaliação 
 Dr. Fernando atende segunda-feira (a partir das 15h) e de terça-feira a sexta-feira (a partir das 14h)
 
-Confirmado agendamento para availiação com o Dr. FERNANDO CABRAL DE MENEZES no dia 15/01/2024 (segunda-feira) a partir das 15h.
+Confirmado agendamento para avaliação com o Dr. FERNANDO CABRAL DE MENEZES no dia 22/01/2024 (segunda-feira) a partir das 15h.
 
 Valor: R$90,00
 
@@ -182,16 +183,33 @@ ___
 - https://portalvendas.nipomed.app/auth/
 - https://asaas.com/
 
-https://wa.me/5562982004027
+https://wa.me/5511994939165
+
 ___
 Enviar os contratos por email para a amanda
-
-Bom dia Adiana! Sou o Kaick da Nipomed retornando seu contato!
-Já foi atendida?
 
 Vencimento da cobrança
 Ativar negativação de clientes
 Sempre coloca as informações opcionais? Grupo de cliente?
 
+___
 
-Boa tarde, tem um cliente que quer saber se é possível fazer cirurgia de ombro. Disse que já fez ressonância e tem o laudo e imagem, ainda não confirmou ao certo com o médico mas disse que provavelmente será necessário cirurgia.
+Bom dia! Consulta de avaliação para cirurgia de hemorróida na segunda-feira temos à partir das 15h até 16h com o Dr. FERNANDO CABRAL DE MENEZES
+Local: RUA MINISTRO GABRIEL DE REZENDE PASSOS, 500 - CONJ. 1313 - MOEMA - SÃO PAULO
+
+
+Olá, boa tarde! A Nipomed é uma assistência médica por credenciamento voltado para quem não possui plano de saúde e precisa de acesso a exames, consultas e cirurgias programadas, nossos planos não são para emergências. 
+
+Boa tarde Tereza, teria como agendar uma consulta de avaliação para
+Nome:
+Nascimento: 
+Telefone:
+
+O nosso Plano Consultas e Exames para 2 pessoa está por R$872,00 no Pix ou boleto, podendo ser parcelado em até 4x no cartão.
+___
+### Drogarias
+Hoje temos convênio com as farmácias Drograria São Paulo, Drogaria Pacheco, Drogasil, Drogaraia, Pague Menos, Extrafarma. 
+
+Para utilizar o benefício, é necessário informar que é convênio NIPOMED e informar a matrícula/CPF.
+___
+Vocês teriam alguma lista/tabela/banco de dados contendo todos os procedimentos, cirurgias, etc. realizadas pela Nipomed?
