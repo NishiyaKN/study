@@ -125,10 +125,6 @@ O preço é anual, após a aquisição do plano, poderá utilizar todos os benef
 
 A efetivação da adesão e liberação da carteirinha digital é realizada em até 24h após a confirmação do pagamento.
 
-Para a cirurgia de vesícula, através da Nipomed nossos associados pagam em média R$8.500,00 com tudo incluso.
-Cirurgia realizada no Hospital Santa Rita.
-É necessário antes realizar uma consulta de avaliação com o cirurgião especialista, que pela Nipomed está por R$90,00.
-
 Aqui é a parte de adesão de plano. Por gentileza entrar em contato com a Central de Atendimento ao Cliente.
 Ou ligue para 5587-3000
 
@@ -148,7 +144,6 @@ Antes de realizar a cirurgia, é necessário passar por uma consulta de avaliaç
 
 Para a consulta de avaliação, podemos oferecer o preço de associado antes mesmo de você adquirir o plano, gostaria de agendar a consulta?
 
-Para a realização da cirurgia de hérnia, será necessário adquirir o nosso Plano Master, que individual está por R$1100,00. Essa é uma taxa anual que pode ser paga a vista por boleto ou pix, e dividada em até 4x no cartão.
 ___
 ### Hemorróidas
 
