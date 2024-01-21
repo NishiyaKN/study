@@ -113,7 +113,7 @@ O uso é imediato após a adesão e não tem reajuste por idade, o valor da taxa
 
 Sobre os planos, temos duas modalidades:
 - Plano Consultas, onde você pode realizar consultas e exames nos mais diversos laboratórios e clínicas, tudo por um baixo custo. 
-- Plano Master, que além dos benefícios do Plano Consultas, consta com preços acessíveis para cirurgia de hemorróida, hérnia (menos de disco), vesícula e catarata.
+- Plano Master, que além dos benefícios do Plano Consultas, consta com preços acessíveis para cirurgia eletivas programadas
 
 ###### Rede credenciada
 Para realizar uma busca de todos os nossos estabelecimentos credenciados, pode acessar este link https://nipomed.com.br/buscarede/ e procurar a partir de sua localização
