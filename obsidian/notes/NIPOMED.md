@@ -98,6 +98,7 @@ ___
 - Quais exames serão pedidos antes de fazer a cirurgia? Tem que ver com o doutor
 - Não existe local físico para adesão
 - Não há tratamentos na área da oncologia (câncer), somente consulta com clínico oncológico
+- Não há casa de internação
 
 ___
 ### yy Win+h Ctrl+v
@@ -105,7 +106,7 @@ Bom dia! Posso te ajudar?
 De que parte do Brasil você é?
 Atendemos somente na região de São Paulo.
 
-A Nipomed não é plano de saúde, é uma alternativa para quem não tem plano de saúde e precisa de acesso a exames, consulta e cirurgias programadas.
+A Nipomed não é plano de saúde, é uma alternativa para quem não tem plano de saúde e precisa de acesso a exames, consultas e cirurgias programadas.
 
 A Nipomed é uma assistência médica por credenciamento voltado para quem não possui plano de saúde e precisa de acesso a exames, consultas e cirurgias programadas.
 
@@ -207,4 +208,4 @@ Hoje temos convênio com as farmácias Drograria São Paulo, Drogaria Pacheco, D
 
 Para utilizar o benefício, é necessário informar que é convênio NIPOMED e informar a matrícula/CPF.
 ___
-Vocês teriam alguma lista/tabela/banco de dados contendo todos os procedimentos, cirurgias, etc. realizadas pela Nipomed?
+Vocês teriam alguma lista/tabela contendo todos os procedimentos, cirurgias, etc. realizadas pela Nipomed e que poderiam estar me repassando aqui?
