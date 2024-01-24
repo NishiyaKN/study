@@ -90,7 +90,8 @@ Envia o link da cobraça pelo whatsapp somente se o cliente disser que não cheg
 Boleto demora um pouco para aparecer na plataforma, pode pedir para o cliente enviar o comprovante pra liberar no portal
 ___
 ### Outras info
-- Tempo de recuperação de cirurgia de hérnia inguinal é de aproximadamente 2 dias (internação). Dúvidas relacionadas a cirurgia é melhor tirar diretamente com o doutor.
+- Tempo de recuperação de cirurgia de hérnia inguinal é de aproximadamente 2 dias (internação). 
+- Dúvidas relacionadas a cirurgia é melhor tirar diretamente com o doutor.
 - A taxa anual da Nipomed seria para ter acesso a consultas e exames particulares com os profissionais e laboratórios credenciados com valores mais em conta.
 - O preço das cirurgias é uma estimativa do pacote, sem intercorrências
 - Cirurgia a laser de hemorróida tem que avaliar primeiro
@@ -99,7 +100,7 @@ ___
 - Não existe local físico para adesão
 - Não há tratamentos na área da oncologia (câncer), somente consulta com clínico oncológico
 - Não há casa de internação
-
+- Pós operatório têm internação de 1 a 2 dias e retorno pós cirúrgico (consulta cobrada) para ver como está a recuperação.
 ___
 ### yy Win+h Ctrl+v
 Bom dia! Posso te ajudar?
@@ -161,7 +162,7 @@ ___
 ### Agendamento de avaliação 
 Dr. Fernando atende segunda-feira (a partir das 15h) e de terça-feira a sexta-feira (a partir das 14h)
 
-Confirmado agendamento para avaliação com o Dr. FERNANDO CABRAL DE MENEZES no dia 22/01/2024 (segunda-feira) a partir das 15h.
+Confirmado agendamento para avaliação com o Dr. FERNANDO CABRAL DE MENEZES no dia 24/01/2024 (quarta-feira) a partir das 15h.
 
 Valor: R$90,00
 
@@ -193,7 +194,6 @@ ___
 Bom dia! Consulta de avaliação para cirurgia de hemorróida na segunda-feira temos à partir das 15h até 16h com o Dr. FERNANDO CABRAL DE MENEZES
 Local: RUA MINISTRO GABRIEL DE REZENDE PASSOS, 500 - CONJ. 1313 - MOEMA - SÃO PAULO
 
-
 Olá, boa tarde! A Nipomed é uma assistência médica por credenciamento voltado para quem não possui plano de saúde e precisa de acesso a exames, consultas e cirurgias programadas, nossos planos não são para emergências. 
 
 Boa tarde Tereza, teria como agendar uma consulta de avaliação para
@@ -208,4 +208,3 @@ Hoje temos convênio com as farmácias Drograria São Paulo, Drogaria Pacheco, D
 
 Para utilizar o benefício, é necessário informar que é convênio NIPOMED e informar a matrícula/CPF.
 ___
-Vocês teriam alguma lista/tabela contendo todos os procedimentos, cirurgias, etc. realizadas pela Nipomed e que poderiam estar me repassando aqui?
