@@ -100,7 +100,7 @@ ___
 - Não existe local físico para adesão
 - Não há tratamentos na área da oncologia (câncer), somente consulta com clínico oncológico
 - Não há casa de internação
-- Pós operatório têm internação de 1 a 2 dias e retorno pós cirúrgico (consulta cobrada) para ver como está a recuperação.
+- Pós operatório tem sim, é necessário falar com o cirurgião sobre mais detalhes
 ___
 ### yy Win+h Ctrl+v
 Bom dia! Posso te ajudar?
