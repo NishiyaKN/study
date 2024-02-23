@@ -151,9 +151,9 @@ ___
 
 O valor médio estimado para cirurgia de hemorroidas através da Nipomed é de R$5.000,00 incluindo anestesia, honorários médicos, taxas hospitalares e internação para o procedimento.
 
-Para realizar a cirurgia pelo valor citado acima é necessário adquirir o nosso Plano Master, que possui uma taxa anual de R$1100,00 no boleto ou pix, podendo parcelar em até 4x no cartão.
+Para realizar a cirurgia pelo valor citado acima é necessário adquirir o nosso Plano Master, que possui um custo anual de R$1100 no boleto ou Pix, podendo parcelar em até 4x no cartão.
 
-A cirurgia é realizada no Hospital Santa Rita (localizado perto das avenidas Paulista e 23 de Maio).
+A cirurgia é realizada no Hospital Santa Rita (localizado perto das avenidas Paulista e 23 de Maio)
 
 Antes de realizar a cirurgia, é necessário passar por uma consulta de avaliação com o cirurgião especialista localizado em Moema. O valor da consulta particular é de R$300,00 mas através da Nipomed custa R$90,00.
 

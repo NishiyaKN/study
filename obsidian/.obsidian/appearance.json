@@ -4,5 +4,6 @@
   "cssTheme": "Catppuccin",
   "interfaceFontFamily": "Inter",
   "textFontFamily": "Inter",
-  "monospaceFontFamily": "JetBrainsMonoNL NF"
+  "monospaceFontFamily": "JetBrainsMonoNL NF",
+  "theme": "obsidian"
 }
