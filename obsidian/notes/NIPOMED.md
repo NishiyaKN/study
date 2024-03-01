@@ -112,8 +112,7 @@ Antes de realizar a cirurgia, é necessário passar por uma consulta de avaliaç
 Para a consulta de avaliação, podemos oferecer o preço de associado antes mesmo de você adquirir o plano.  *O Dr. atende de segunda-feira das 15h às 16h, de terça à quinta-feira das 14h às 16h e de sexta-feira das 13h ás 15h*. Gostaria de agendar a consulta? Em caso afirmativo, preciso que me envie os seguintes dados:
 - Nome Completo
 - Data de Nascimento
-- Data e hora que gostaria de marcar a consulta
-Após isso, será verificado a disponibilidade do dia, e retornarei aqui confirmando o agendamento ou avisando que será necessário escolher outra data. 
+- Data e hora que gostaria de marcar a consulta (será verificado a disponibilidade da data)
 
 (Não faz por videolaparoscopia, somente convencional, o preço inclui a tela)
 ___
@@ -130,8 +129,7 @@ Antes de realizar a cirurgia, é necessário passar por uma consulta de avaliaç
 Para a consulta de avaliação, podemos oferecer o preço de associado antes mesmo de você adquirir o plano.  *O Dr. atende de segunda-feira das 15h às 16h, de terça à quinta-feira das 14h às 16h e de sexta-feira das 13h ás 15h*. Gostaria de agendar a consulta? Em caso afirmativo, preciso que me envie os seguintes dados:
 - Nome Completo
 - Data de Nascimento
-- Data e hora que gostaria de marcar a consulta
-Após isso, será verificado a disponibilidade do dia, e retornarei aqui confirmando o agendamento ou avisando que será necessário escolher outra data. 
+- Data e hora que gostaria de marcar a consulta (será verificado a disponibilidade da data)
 
 ___
 ### VESÍCULA
@@ -147,8 +145,7 @@ Antes de realizar a cirurgia, é necessário passar por uma consulta de avaliaç
 Para a consulta de avaliação, podemos oferecer o preço de associado antes mesmo de você adquirir o plano.  *O Dr. atende de segunda-feira das 15h às 16h, de terça à quinta-feira das 14h às 16h e de sexta-feira das 13h ás 15h*. Gostaria de agendar a consulta? Em caso afirmativo, preciso que me envie os seguintes dados:
 - Nome Completo
 - Data de Nascimento
-- Data e hora que gostaria de marcar a consulta
-Após isso, será verificado a disponibilidade do dia, e retornarei aqui confirmando o agendamento ou avisando que será necessário escolher outra data. 
+- Data e hora que gostaria de marcar a consulta (será verificado a disponibilidade da data)
 
 ___
 ### Agendamento de avaliação 

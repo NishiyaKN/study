@@ -1,0 +1,4 @@
+- [[função|Função]] associada à um objeto ou classe.
+- São definidos dentro de uma classe e operam em instâncias dessa classe
+- Podem acessar e modificar os atributos do objeto ao qual estão ligados
+- Invocados pela notação de ponto, e.g. `console.log`

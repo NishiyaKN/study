@@ -1,0 +1,1 @@
+Permite a criação de objetos, herança e encapsulamento. No caso do JS, seu modelo é baseado em protótipos em vez de classes

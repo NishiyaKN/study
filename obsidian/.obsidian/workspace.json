@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASAAS.md",
+                "file": "notes/NIPOMED.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASAAS.md",
+                "file": "notes/NIPOMED.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASAAS.md",
+                "file": "notes/NIPOMED.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASAAS.md"
+                "file": "notes/NIPOMED.md"
               }
             }
           }
@@ -148,52 +148,51 @@
   },
   "active": "56ea5e91bb166c0a",
   "lastOpenFiles": [
-    "notes/NIPOMED.md",
     "ASAAS.md",
-    "notes/KT/BASICS.md",
-    "notes/KT",
-    "Pasted image 20240111163528.jpg",
-    "TODO.md",
-    "notes/PY/Pandas.md",
-    "notes/PY/Strings.md",
-    "notes/PY/Listas.md",
-    "notes/PY/Exception.md",
     "Linux.md",
-    "notes/JS/10- Frontend.md",
+    "Pasted image 20240226103523.png",
+    "sc-2024-02-26T09-18-02.png",
+    "sc-2024-02-26T09-13-56.png",
+    "sc-2024-02-26T09-13-17.png",
+    "sc-2024-02-26T09-08-09.png",
+    "sc-2024-02-26T09-07-29.png",
+    "sc-2024-02-26T08-48-23.png",
+    "sc-2024-02-26T08-41-08.png",
+    "Pasted image 20240226103553.png",
+    "notes/NIPOMED.md",
+    "notes/EDS/Aula 2.md",
+    "Pasted image 20240226095757.png",
+    "notes/EDS/0226.md",
+    "notes/SEM02/C/3- Estruturas.md",
+    "notes/SEM02/JAVA/1- Base.md",
+    "notes/SEM02/JAVA/3- Modificador de acesso.md",
+    "notes/SEM02/JAVA/4- 4 Pilares de DOO.md",
+    "notes/SEM02/JAVA/5- Herança.md",
+    "notes/SEM02/JAVA/FORMS/FORMS.md",
+    "notes/EDS",
+    "TODO.md",
+    "notes/SEM02",
+    "notes/SEM02/KT/BASICS.md",
+    "notes/SEM02/KT",
+    "PY/Pandas.md",
+    "PY/Strings.md",
+    "PY/Listas.md",
+    "PY/Exception.md",
+    "notes/SEM02/JS/10- Frontend.md",
     "notes/JS/Untitled.md",
-    "notes/JS/8- Aplicações Web.md",
-    "notes/JS/9- Backend.md",
-    "notes/JS/7- Operações Assíncronas.md",
-    "notes/JS/6- POO.md",
-    "notes/JS/5- Modularidade.md",
-    "notes/JS/4- User Interface.md",
-    "notes/JS/STUDY.md",
-    "notes/JS/Media/Untitled 1.md",
-    "notes/JS/Media/Pasted image 20231126204627.png",
-    "notes/JS/Media/Pasted image 20231126204640.png",
-    "notes/JS/Media/Pasted image 20231126204717.png",
-    "notes/JS/Media/Pasted image 20231126204707.png",
-    "notes/JS/Media/Pasted image 20231126204653.png",
-    "notes/JS/1- Base.md",
-    "notes/JS/Media/Untitled.md",
-    "notes/JS/3- Coleções.md",
-    "notes/JS/2- Programação funcional.md",
-    "notes/C/STUDY.md",
-    "notes/JAVA/7- Classes abstratas e interfaces.md",
-    "notes/JAVA/8- Polimorfismo.md",
-    "notes/JAVA/Media/Unidade 02.png",
-    "notes/JAVA/Media/Pasted image 20231010112657.png",
-    "notes/BD/Media/Pasted image 20231009083754.png",
-    "notes/BD/Media/Pasted image 20231009083805.png",
-    "notes/PY",
-    "notes/ARQ/Media",
-    "notes/JAVA/FORMS",
-    "notes/JS/Forms",
-    "notes/JAVA/Media",
-    "notes/BD/Media",
-    "notes/JAVA",
-    "notes/C/Untitled",
-    "notes/C/Media",
+    "notes/SEM02/JS/8- Aplicações Web.md",
+    "notes/SEM02/JS/9- Backend.md",
+    "notes/SEM02/JS/7- Operações Assíncronas.md",
+    "notes/SEM02/JS/6- POO.md",
+    "notes/SEM02/JS/5- Modularidade.md",
+    "notes/SEM02/JS/4- User Interface.md",
+    "PY",
+    "notes/SEM02/ARQ/Media",
+    "notes/SEM02/JAVA/FORMS",
+    "notes/SEM02/JS/Forms",
+    "notes/SEM02/JAVA/Media",
+    "notes/SEM02/BD/Media",
+    "notes/SEM02/JAVA",
     "Untitled.canvas"
   ]
 }
