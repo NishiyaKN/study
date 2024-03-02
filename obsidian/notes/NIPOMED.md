@@ -81,13 +81,13 @@ Para realizar uma busca de todos os nossos estabelecimentos credenciados, pode a
 Para fazer parte da Rede Credenciada, entrar em contato com o telefone (11) 5587-3000
 ___
 ###### Preço 
-O Plano Master Individual está por R$1100,00 no Pix ou boleto. Fazemos também em até 4x no cartão
-O Plano Master Duplo está por R$1746,00 no Pix ou boleto. Fazemos também em até 4x no cartão
-O Plano Master Familiar está por R$2332,00 no Pix ou boleto. Fazemos também em até 4x no cartão
+O Plano Master Individual está por R$1100,00 anual no Pix ou boleto. Fazemos também em até 4x no cartão
+O Plano Master Duplo está por R$1746,00 anual no Pix ou boleto. Fazemos também em até 4x no cartão
+O Plano Master Familiar está por R$2332,00 anual no Pix ou boleto. Fazemos também em até 4x no cartão
 
-O Plano Consultas Individual está por R$548,00 no Pix ou boleto. Fazemos também em até 4x no cartão
-O Plano Consultas Duplo está por R$872,00 no Pix ou boleto. Fazemos também em até 4x no cartão
-O Plano Consultas Familiar está por R$1164,00 no Pix ou boleto. Fazemos também em até 4x no cartão
+O Plano Consultas Individual está por R$548,00 anual no Pix ou boleto. Fazemos também em até 4x no cartão
+O Plano Consultas Duplo está por R$872,00 anual no Pix ou boleto. Fazemos também em até 4x no cartão
+O Plano Consultas Familiar está por R$1164,00 anual no Pix ou boleto. Fazemos também em até 4x no cartão
 
 O Plano Duplo é para duas pessoas.
 O Plano Familiar é para os pais e filhos, inclui todos os filhos que tiver. Para incluir outros familiares (tios, primos, netos, avôs) é um adicional de R$432,00 no Master ou R$217,00 no Consultas por pessoa.
@@ -282,4 +282,5 @@ Luiz Carlos dos santos
 
 sobre exames a central agenda sim, porém a orientação é informar a cotação e orientar o cliente entrar em contato com o local p/ agendar conforme a disponibilidade dele, já que nao temos acesso as agendas dos locais
 
+O acesso ao portal se dá por meio desse link: https://nipomed.app/login
 abdominosplastia tem que ver qual porte da cirurgia, pequeno medio ou grande
