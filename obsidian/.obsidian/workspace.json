@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/NIPOMED.md",
+                "file": "notes/MAD/0305.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/NIPOMED.md",
+                "file": "notes/MAD/0305.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/NIPOMED.md",
+                "file": "notes/MAD/0305.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/NIPOMED.md"
+                "file": "notes/MAD/0305.md"
               }
             }
           }
@@ -138,16 +138,22 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "56ea5e91bb166c0a",
   "lastOpenFiles": [
+    "notes/EDS/0226.md",
+    "notes/MAD/0305.md",
+    "notes/MAD",
+    "notes/Untitled.md",
+    "notes/EDS/Aula 2.md",
+    "notes/NIPOMED.md",
     "ASAAS.md",
     "Linux.md",
     "Pasted image 20240226103523.png",
@@ -159,10 +165,7 @@
     "sc-2024-02-26T08-48-23.png",
     "sc-2024-02-26T08-41-08.png",
     "Pasted image 20240226103553.png",
-    "notes/NIPOMED.md",
-    "notes/EDS/Aula 2.md",
     "Pasted image 20240226095757.png",
-    "notes/EDS/0226.md",
     "notes/SEM02/C/3- Estruturas.md",
     "notes/SEM02/JAVA/1- Base.md",
     "notes/SEM02/JAVA/3- Modificador de acesso.md",
@@ -185,14 +188,12 @@
     "notes/SEM02/JS/7- Operações Assíncronas.md",
     "notes/SEM02/JS/6- POO.md",
     "notes/SEM02/JS/5- Modularidade.md",
-    "notes/SEM02/JS/4- User Interface.md",
     "PY",
     "notes/SEM02/ARQ/Media",
     "notes/SEM02/JAVA/FORMS",
     "notes/SEM02/JS/Forms",
     "notes/SEM02/JAVA/Media",
     "notes/SEM02/BD/Media",
-    "notes/SEM02/JAVA",
     "Untitled.canvas"
   ]
 }
