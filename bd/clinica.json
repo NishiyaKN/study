@@ -1,0 +1,877 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "collectionName": "Medico",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "crm",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "error": {},
+                    "primaryKey": true,
+                    "required": true,
+                    "GUID": "77770748-4452-4394-8d9e-a5d41ad910ce",
+                    "childRelationships": [
+                        "5cba947c-4af0-4e4f-a567-ded378986cc3"
+                    ]
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "f1da4585-06e1-41af-9b97-8efe561f83c9",
+                    "name": "nome",
+                    "required": true,
+                    "error": {},
+                    "childRelationships": [
+                        "22255165-784b-4a4f-a195-ef7a475361ee"
+                    ]
+                },
+                {
+                    "name": "especialidade",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "730e2326-22c8-44bf-9df0-71ee55938bf2",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "c9ab691f-f739-45bd-a61c-e857ae6c04a9"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "f563d9ed-6207-421c-92b6-22d5a77f31b8",
+            "bucketId": "8f3776bb-603c-45ee-a5d9-7cc18fa0a68c"
+        },
+        {
+            "collectionName": "Receita",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "fef47f7d-52c8-4116-9b01-ccf178d4c4fe",
+                    "required": true,
+                    "primaryKey": true,
+                    "error": {}
+                },
+                {
+                    "name": "emissao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "00635024-369f-4723-bd72-bb5b20a8ba9d",
+                    "error": {}
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "cpf",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "3c072520-c480-47c2-b0f5-56ac36f7f3e9",
+                            "error": {},
+                            "relationshipType": "Foreign Key",
+                            "foreignCollection": "64300aba-bd34-4b7f-99b4-2f14d1cdbff3",
+                            "foreignField": [
+                                "64300aba-bd34-4b7f-99b4-2f14d1cdbff3",
+                                "56f261ae-5a91-49dd-b86e-3892c1d613a2"
+                            ],
+                            "parentRelationship": "2e65db02-611f-4327-a128-bbd2cf44ed28"
+                        },
+                        {
+                            "name": "nome",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "d83d59d3-05c3-4efb-a657-65c4f73b0845",
+                            "relationshipType": "Foreign Master",
+                            "foreignCollection": "64300aba-bd34-4b7f-99b4-2f14d1cdbff3",
+                            "foreignField": [
+                                "64300aba-bd34-4b7f-99b4-2f14d1cdbff3",
+                                "981180a5-ddf8-4d6c-9d9f-445153053812"
+                            ],
+                            "parentRelationship": "4c6f1445-0fdb-482b-aa01-05d78075d68d",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "e457bd8c-cfe7-4637-a4dd-e6134b54145c",
+                    "name": "paciente",
+                    "error": {}
+                },
+                {
+                    "name": "medicamento",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "objectId",
+                                    "GUID": "b8f5927b-66c1-4a0e-bd86-5ae8d6dd1188",
+                                    "name": "_id",
+                                    "error": {},
+                                    "relationshipType": "Foreign Key",
+                                    "foreignCollection": "762c49dc-b2d7-4fad-ac7f-5d88f73a3923",
+                                    "foreignField": [
+                                        "762c49dc-b2d7-4fad-ac7f-5d88f73a3923",
+                                        "9adcb83d-5c93-4632-87a2-2e4f9ceb58e5"
+                                    ],
+                                    "parentRelationship": "18b00b9e-2644-4625-83df-fc0ead689c4e"
+                                },
+                                {
+                                    "name": "descricao",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "e11878bc-aca5-420a-b01b-2ce00fd23b4e",
+                                    "relationshipType": "Foreign Master",
+                                    "foreignCollection": "762c49dc-b2d7-4fad-ac7f-5d88f73a3923",
+                                    "foreignField": [
+                                        "762c49dc-b2d7-4fad-ac7f-5d88f73a3923",
+                                        "2b3346c7-b28b-4eca-96b6-b96f0e14ffca"
+                                    ],
+                                    "parentRelationship": "857a1c21-0ad4-4348-8269-30cf82815529",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "orientecao_uso",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "c40ce99c-5d04-4e2b-ae5f-63e70a76ed4e",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "error": {},
+                            "GUID": "404da616-1383-4a9a-908b-4cff9e5154ca",
+                            "arrayItem": true
+                        }
+                    ],
+                    "additionalItems": true,
+                    "GUID": "c9da6d54-6f3b-4de3-85a3-82f70dc9bf26",
+                    "error": {}
+                },
+                {
+                    "name": "medico",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "crm",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "GUID": "ab29830e-583e-4e00-9b16-50c5391f31cc",
+                            "error": {},
+                            "relationshipType": "Foreign Key",
+                            "foreignCollection": "f563d9ed-6207-421c-92b6-22d5a77f31b8",
+                            "foreignField": [
+                                "f563d9ed-6207-421c-92b6-22d5a77f31b8",
+                                "77770748-4452-4394-8d9e-a5d41ad910ce"
+                            ],
+                            "parentRelationship": "5cba947c-4af0-4e4f-a567-ded378986cc3"
+                        },
+                        {
+                            "name": "nome",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "c3f7b9e4-b499-40db-8328-b19d249bde50",
+                            "relationshipType": "Foreign Master",
+                            "foreignCollection": "f563d9ed-6207-421c-92b6-22d5a77f31b8",
+                            "foreignField": [
+                                "f563d9ed-6207-421c-92b6-22d5a77f31b8",
+                                "f1da4585-06e1-41af-9b97-8efe561f83c9"
+                            ],
+                            "parentRelationship": "22255165-784b-4a4f-a195-ef7a475361ee",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "755c840c-ef3f-4de0-80f4-fee3a168762d",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "3250dfd6-5128-47fb-a939-583f572984dc"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "ec0efc73-30b0-455d-8bf4-21d29917f247",
+            "bucketId": "8f3776bb-603c-45ee-a5d9-7cc18fa0a68c"
+        },
+        {
+            "collectionName": "Paciente",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "cpf",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "56f261ae-5a91-49dd-b86e-3892c1d613a2",
+                    "required": true,
+                    "primaryKey": true,
+                    "minLength": 13,
+                    "maxLength": 13,
+                    "error": {},
+                    "childRelationships": [
+                        "2e65db02-611f-4327-a128-bbd2cf44ed28"
+                    ]
+                },
+                {
+                    "name": "nome",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "981180a5-ddf8-4d6c-9d9f-445153053812",
+                    "required": true,
+                    "error": {},
+                    "childRelationships": [
+                        "4c6f1445-0fdb-482b-aa01-05d78075d68d"
+                    ]
+                },
+                {
+                    "name": "nascimento",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "867eea72-efe5-4406-92ce-11ac7ce7e60e",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "49939e51-b449-448c-b0b1-893068ded9bb"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "64300aba-bd34-4b7f-99b4-2f14d1cdbff3",
+            "bucketId": "8f3776bb-603c-45ee-a5d9-7cc18fa0a68c"
+        },
+        {
+            "collectionName": "Medicamento",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "9adcb83d-5c93-4632-87a2-2e4f9ceb58e5",
+                    "required": true,
+                    "primaryKey": true,
+                    "error": {},
+                    "childRelationships": [
+                        "18b00b9e-2644-4625-83df-fc0ead689c4e"
+                    ]
+                },
+                {
+                    "name": "descricao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "2b3346c7-b28b-4eca-96b6-b96f0e14ffca",
+                    "required": true,
+                    "error": {},
+                    "childRelationships": [
+                        "857a1c21-0ad4-4348-8269-30cf82815529"
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "1930fe45-6528-48ac-8aa0-3ec2be5f3c61"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "762c49dc-b2d7-4fad-ac7f-5d88f73a3923",
+            "bucketId": "8f3776bb-603c-45ee-a5d9-7cc18fa0a68c"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "Hospital - referenca",
+            "type": "bucket",
+            "collectionIds": [
+                "f563d9ed-6207-421c-92b6-22d5a77f31b8",
+                "ec0efc73-30b0-455d-8bf4-21d29917f247",
+                "64300aba-bd34-4b7f-99b4-2f14d1cdbff3",
+                "762c49dc-b2d7-4fad-ac7f-5d88f73a3923"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "8f3776bb-603c-45ee-a5d9-7cc18fa0a68c",
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "name": true
+                }
+            }
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk Receita.paciente.cpf to Paciente.cpf",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "64300aba-bd34-4b7f-99b4-2f14d1cdbff3",
+                    "56f261ae-5a91-49dd-b86e-3892c1d613a2"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "ec0efc73-30b0-455d-8bf4-21d29917f247",
+                    "e457bd8c-cfe7-4637-a4dd-e6134b54145c",
+                    "3c072520-c480-47c2-b0f5-56ac36f7f3e9"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "64300aba-bd34-4b7f-99b4-2f14d1cdbff3",
+            "childCollection": "ec0efc73-30b0-455d-8bf4-21d29917f247",
+            "GUID": "2e65db02-611f-4327-a128-bbd2cf44ed28",
+            "hackoladeStyles": {
+                "GUID": "bc65b76d-2325-46c4-a675-86ba55fdb95f",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1487.3333333333358,
+                        "y": 1411.8571428571422
+                    },
+                    {
+                        "x": 1431.166666666668,
+                        "y": 1411.8571428571422
+                    },
+                    {
+                        "x": 1431.166666666668,
+                        "y": 1396.666666666666
+                    },
+                    {
+                        "x": 1375.0000000000005,
+                        "y": 1396.666666666666
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "fk Receita.paciente.nome to Paciente.nome",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "64300aba-bd34-4b7f-99b4-2f14d1cdbff3",
+                    "981180a5-ddf8-4d6c-9d9f-445153053812"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "ec0efc73-30b0-455d-8bf4-21d29917f247",
+                    "e457bd8c-cfe7-4637-a4dd-e6134b54145c",
+                    "d83d59d3-05c3-4efb-a657-65c4f73b0845"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "64300aba-bd34-4b7f-99b4-2f14d1cdbff3",
+            "childCollection": "ec0efc73-30b0-455d-8bf4-21d29917f247",
+            "GUID": "4c6f1445-0fdb-482b-aa01-05d78075d68d",
+            "hackoladeStyles": {
+                "GUID": "868e1927-5d3a-46ff-9d3a-5e0d0cb60f22",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1487.3333333333358,
+                        "y": 1451.1428571428564
+                    },
+                    {
+                        "x": 1431.166666666668,
+                        "y": 1451.1428571428564
+                    },
+                    {
+                        "x": 1431.166666666668,
+                        "y": 1435.9999999999995
+                    },
+                    {
+                        "x": 1375.0000000000005,
+                        "y": 1435.9999999999995
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "fk Receita.medicamento.[0]._id to Medicamento._id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "762c49dc-b2d7-4fad-ac7f-5d88f73a3923",
+                    "9adcb83d-5c93-4632-87a2-2e4f9ceb58e5"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "ec0efc73-30b0-455d-8bf4-21d29917f247",
+                    "c9da6d54-6f3b-4de3-85a3-82f70dc9bf26",
+                    "404da616-1383-4a9a-908b-4cff9e5154ca",
+                    "b8f5927b-66c1-4a0e-bd86-5ae8d6dd1188"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "762c49dc-b2d7-4fad-ac7f-5d88f73a3923",
+            "childCollection": "ec0efc73-30b0-455d-8bf4-21d29917f247",
+            "GUID": "18b00b9e-2644-4625-83df-fc0ead689c4e",
+            "hackoladeStyles": {
+                "GUID": "f327f1d9-0de2-4d78-9b06-e15c9cccb16d",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1487.3333333333358,
+                        "y": 1490.4285714285706
+                    },
+                    {
+                        "x": 1425.1666666666674,
+                        "y": 1490.4285714285706
+                    },
+                    {
+                        "x": 1425.1666666666674,
+                        "y": 1544.999999999999
+                    },
+                    {
+                        "x": 1362.9999999999993,
+                        "y": 1544.999999999999
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "fk Receita.medicamento.[0].descricao to Medicamento.descricao",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "762c49dc-b2d7-4fad-ac7f-5d88f73a3923",
+                    "2b3346c7-b28b-4eca-96b6-b96f0e14ffca"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "ec0efc73-30b0-455d-8bf4-21d29917f247",
+                    "c9da6d54-6f3b-4de3-85a3-82f70dc9bf26",
+                    "404da616-1383-4a9a-908b-4cff9e5154ca",
+                    "e11878bc-aca5-420a-b01b-2ce00fd23b4e"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "762c49dc-b2d7-4fad-ac7f-5d88f73a3923",
+            "childCollection": "ec0efc73-30b0-455d-8bf4-21d29917f247",
+            "GUID": "857a1c21-0ad4-4348-8269-30cf82815529",
+            "hackoladeStyles": {
+                "GUID": "853606a3-5cd1-4b4c-ac7c-9405bb9bb5f8",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1487.3333333333358,
+                        "y": 1529.714285714285
+                    },
+                    {
+                        "x": 1425.1666666666674,
+                        "y": 1529.714285714285
+                    },
+                    {
+                        "x": 1425.1666666666674,
+                        "y": 1587.3333333333326
+                    },
+                    {
+                        "x": 1362.9999999999993,
+                        "y": 1587.3333333333326
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "fk Receita.medico.crm to Medico.crm",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "f563d9ed-6207-421c-92b6-22d5a77f31b8",
+                    "77770748-4452-4394-8d9e-a5d41ad910ce"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "ec0efc73-30b0-455d-8bf4-21d29917f247",
+                    "755c840c-ef3f-4de0-80f4-fee3a168762d",
+                    "ab29830e-583e-4e00-9b16-50c5391f31cc"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "f563d9ed-6207-421c-92b6-22d5a77f31b8",
+            "childCollection": "ec0efc73-30b0-455d-8bf4-21d29917f247",
+            "GUID": "5cba947c-4af0-4e4f-a567-ded378986cc3",
+            "hackoladeStyles": {
+                "GUID": "e0b2007f-9720-444e-96d7-028f48690adf",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1487.3333333333358,
+                        "y": 1372.571428571428
+                    },
+                    {
+                        "x": 1432.6666666666683,
+                        "y": 1372.571428571428
+                    },
+                    {
+                        "x": 1432.6666666666683,
+                        "y": 1302.6666666666674
+                    },
+                    {
+                        "x": 1378.000000000001,
+                        "y": 1302.6666666666674
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "fk Receita.medico.nome to Medico.nome",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "f563d9ed-6207-421c-92b6-22d5a77f31b8",
+                    "f1da4585-06e1-41af-9b97-8efe561f83c9"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "ec0efc73-30b0-455d-8bf4-21d29917f247",
+                    "755c840c-ef3f-4de0-80f4-fee3a168762d",
+                    "c3f7b9e4-b499-40db-8328-b19d249bde50"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "f563d9ed-6207-421c-92b6-22d5a77f31b8",
+            "childCollection": "ec0efc73-30b0-455d-8bf4-21d29917f247",
+            "GUID": "22255165-784b-4a4f-a195-ef7a475361ee",
+            "hackoladeStyles": {
+                "GUID": "87b8ee46-f1fd-4666-a0ff-c0b65bc4cd71",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1487.3333333333358,
+                        "y": 1333.2857142857135
+                    },
+                    {
+                        "x": 1432.6666666666683,
+                        "y": 1333.2857142857135
+                    },
+                    {
+                        "x": 1432.6666666666683,
+                        "y": 1256.6666666666674
+                    },
+                    {
+                        "x": 1378.000000000001,
+                        "y": 1256.6666666666674
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "8f3776bb-603c-45ee-a5d9-7cc18fa0a68c": "Hospital - referenca",
+        "f563d9ed-6207-421c-92b6-22d5a77f31b8": "Medico",
+        "ec0efc73-30b0-455d-8bf4-21d29917f247": "Receita",
+        "64300aba-bd34-4b7f-99b4-2f14d1cdbff3": "Paciente",
+        "77770748-4452-4394-8d9e-a5d41ad910ce": "crm",
+        "56f261ae-5a91-49dd-b86e-3892c1d613a2": "cpf",
+        "fef47f7d-52c8-4116-9b01-ccf178d4c4fe": "_id",
+        "f1da4585-06e1-41af-9b97-8efe561f83c9": "nome",
+        "981180a5-ddf8-4d6c-9d9f-445153053812": "nome",
+        "762c49dc-b2d7-4fad-ac7f-5d88f73a3923": "Medicamento",
+        "730e2326-22c8-44bf-9df0-71ee55938bf2": "especialidade",
+        "867eea72-efe5-4406-92ce-11ac7ce7e60e": "nascimento",
+        "9adcb83d-5c93-4632-87a2-2e4f9ceb58e5": "_id",
+        "2b3346c7-b28b-4eca-96b6-b96f0e14ffca": "descricao",
+        "00635024-369f-4723-bd72-bb5b20a8ba9d": "emissao",
+        "e457bd8c-cfe7-4637-a4dd-e6134b54145c": "paciente",
+        "3c072520-c480-47c2-b0f5-56ac36f7f3e9": "cpf",
+        "d83d59d3-05c3-4efb-a657-65c4f73b0845": "nome",
+        "2e65db02-611f-4327-a128-bbd2cf44ed28": "fk Receita.paciente.cpf to Paciente.cpf",
+        "4c6f1445-0fdb-482b-aa01-05d78075d68d": "fk Receita.paciente.nome to Paciente.nome",
+        "c9da6d54-6f3b-4de3-85a3-82f70dc9bf26": "medicamento",
+        "b8f5927b-66c1-4a0e-bd86-5ae8d6dd1188": "_id",
+        "e11878bc-aca5-420a-b01b-2ce00fd23b4e": "descricao",
+        "18b00b9e-2644-4625-83df-fc0ead689c4e": "fk Receita.medicamento.[0]._id to Medicamento._id",
+        "857a1c21-0ad4-4348-8269-30cf82815529": "fk Receita.medicamento.[0].descricao to Medicamento.descricao",
+        "755c840c-ef3f-4de0-80f4-fee3a168762d": "medico",
+        "ab29830e-583e-4e00-9b16-50c5391f31cc": "crm",
+        "c3f7b9e4-b499-40db-8328-b19d249bde50": "nome",
+        "5cba947c-4af0-4e4f-a567-ded378986cc3": "fk Receita.medico.crm to Medico.crm",
+        "22255165-784b-4a4f-a195-ef7a475361ee": "fk Receita.medico.nome to Medico.nome",
+        "c40ce99c-5d04-4e2b-ae5f-63e70a76ed4e": "orientecao_uso"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "7e393ee6-e8a5-4f3c-af30-8d3351470bd6"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "851d2897-2d16-4f92-819b-b06685160725"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "173bc603-6f34-4276-9eff-5ed5dd10e886"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v7.x",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2024-03-06T18:06:22.107Z",
+    "GUID": "7cbe514b-8bbe-4ecc-8aec-f35596f2b9ff",
+    "isLineageEnabled": false,
+    "lastModifTS": "2024-03-11T23:28:59.456Z",
+    "persistenceSchemaVersion": "7",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "7.3.2"
+    },
+    "hackoladeMeta": {},
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "f563d9ed-6207-421c-92b6-22d5a77f31b8",
+                        "x": 1168.000000000001,
+                        "y": 1210.6666666666674,
+                        "width": 210,
+                        "height": 138,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "ec0efc73-30b0-455d-8bf4-21d29917f247",
+                        "x": 1487.3333333333358,
+                        "y": 1293.9999999999993,
+                        "width": 311,
+                        "height": 275,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "64300aba-bd34-4b7f-99b4-2f14d1cdbff3",
+                        "x": 1172.0000000000005,
+                        "y": 1357.3333333333328,
+                        "width": 203,
+                        "height": 118,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "762c49dc-b2d7-4fad-ac7f-5d88f73a3923",
+                        "x": 1163.9999999999993,
+                        "y": 1502.6666666666658,
+                        "width": 199,
+                        "height": 127,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1123.9999999999993,
+                        "y": 1170.6666666666674,
+                        "GUID": "8f3776bb-603c-45ee-a5d9-7cc18fa0a68c"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "ec0efc73-30b0-455d-8bf4-21d29917f247"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "f563d9ed-6207-421c-92b6-22d5a77f31b8"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "64300aba-bd34-4b7f-99b4-2f14d1cdbff3"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "762c49dc-b2d7-4fad-ac7f-5d88f73a3923"
+                    }
+                ],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

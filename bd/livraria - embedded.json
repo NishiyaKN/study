@@ -1,0 +1,1321 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "collectionName": "Livro",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_isbn",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "101e853f-54e3-4905-8a9c-8e63fb43546b",
+                    "error": {},
+                    "childRelationships": [
+                        "591e12c9-2f21-4fb3-8aab-ed5125aa2c7f",
+                        "594fb796-3948-41af-8231-7911589f1815"
+                    ]
+                },
+                {
+                    "name": "titulo",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "712bde9c-6315-455b-ad79-249aef3f4ddd",
+                    "error": {}
+                },
+                {
+                    "name": "categoria",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "d2b89bfc-6dfd-4e8a-b4f9-75172d1d37bf",
+                    "error": {},
+                    "childRelationships": [
+                        "1f2dec14-abdf-42a3-8093-6d544a5107e1"
+                    ]
+                },
+                {
+                    "name": "autor",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "id_autor",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "objectId",
+                            "GUID": "637bf0ea-aae7-467a-a173-e6653350a5f3",
+                            "error": {},
+                            "childRelationships": [
+                                "8616f252-2074-4a00-a894-ed5862ce959d"
+                            ],
+                            "relationshipType": "Foreign Key",
+                            "foreignCollection": "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+                            "foreignField": [
+                                "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+                                "cc8bdf54-112b-47e0-9bc0-4e68cff06812"
+                            ],
+                            "parentRelationship": "a5a75860-3070-4b9f-8865-5f41af362f6e"
+                        },
+                        {
+                            "name": "nome",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "aa80ac3a-c82f-4e80-b069-1c9da059d4e5",
+                            "relationshipType": "Foreign Master",
+                            "foreignCollection": "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+                            "foreignField": [
+                                "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+                                "6064330d-290f-4035-b078-ca837cfd4a2b"
+                            ],
+                            "parentRelationship": "4a980bdc-aa0a-4ac2-8b0d-6639784c1277",
+                            "error": {}
+                        },
+                        {
+                            "name": "biografia",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "506620f8-548d-4036-9a03-e6ae7f57ad3d",
+                            "relationshipType": "Foreign Master",
+                            "foreignCollection": "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+                            "foreignField": [
+                                "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+                                "1da4f5b8-ed3c-438c-9845-de3e5c51b733"
+                            ],
+                            "parentRelationship": "e5bf7e94-f510-4b1f-bbc8-92fbf3347329",
+                            "error": {}
+                        },
+                        {
+                            "name": "nascimento",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "GUID": "a2a48dae-cd51-4cdd-b8c7-a355f2f25a47",
+                            "relationshipType": "Foreign Master",
+                            "foreignCollection": "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+                            "foreignField": [
+                                "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+                                "94de5be1-861f-480b-86ba-e7f7d25ce174"
+                            ],
+                            "parentRelationship": "645f0876-e19b-4213-a920-7bdb167c519a",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "0c79ae46-79f9-4443-b3b7-8dc0cb88cabf",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "f18c4b8f-a4d3-4ebb-b424-30dab3b6165e"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+            "bucketId": "be71d230-d78f-4426-bb87-4df656f0db50"
+        },
+        {
+            "collectionName": "Autor",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "cc8bdf54-112b-47e0-9bc0-4e68cff06812",
+                    "error": {},
+                    "childRelationships": [
+                        "a5a75860-3070-4b9f-8865-5f41af362f6e"
+                    ]
+                },
+                {
+                    "name": "nome",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "6064330d-290f-4035-b078-ca837cfd4a2b",
+                    "error": {},
+                    "childRelationships": [
+                        "4a980bdc-aa0a-4ac2-8b0d-6639784c1277"
+                    ]
+                },
+                {
+                    "name": "biografia",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "1da4f5b8-ed3c-438c-9845-de3e5c51b733",
+                    "error": {},
+                    "childRelationships": [
+                        "e5bf7e94-f510-4b1f-bbc8-92fbf3347329"
+                    ]
+                },
+                {
+                    "name": "nascimento",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "94de5be1-861f-480b-86ba-e7f7d25ce174",
+                    "error": {},
+                    "childRelationships": [
+                        "645f0876-e19b-4213-a920-7bdb167c519a"
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "92518ef0-6fbc-446e-b697-6c87f08880ae"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+            "bucketId": "be71d230-d78f-4426-bb87-4df656f0db50"
+        },
+        {
+            "collectionName": "Aluno",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_matricula",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "5b2218bf-c37b-4d32-a9c1-8fb083c2d7ef",
+                    "error": {},
+                    "childRelationships": [
+                        "f2a80d69-cc69-4960-b917-a93b967388a5"
+                    ]
+                },
+                {
+                    "name": "nome",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "635f01a2-1060-44f8-b162-b7557cb54358",
+                    "error": {},
+                    "childRelationships": [
+                        "5acb188f-a669-49ec-b642-4fc234eb831f"
+                    ]
+                },
+                {
+                    "name": "curso",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "e50704b9-e01b-4477-8970-86fed7830692",
+                    "error": {},
+                    "childRelationships": [
+                        "6813b547-f926-4eef-9f10-652a43a9a794"
+                    ]
+                },
+                {
+                    "name": "nascimento",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "3c54df13-5c66-43b7-b62a-a7247e87b22a",
+                    "error": {},
+                    "childRelationships": [
+                        "c3d9c079-14b5-484c-b5d5-a8f7aa872537"
+                    ]
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "04371493-814a-4790-8775-79fb8aeda96c"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+            "bucketId": "be71d230-d78f-4426-bb87-4df656f0db50",
+            "hackoladeMeta": {}
+        },
+        {
+            "collectionName": "Emprestimo",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "92307555-4320-4bff-9e1a-25443b703e10",
+                    "error": {}
+                },
+                {
+                    "name": "dt_emprestimo",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "9066168a-ffff-4af9-ba0d-d14461ddf2f8",
+                    "error": {}
+                },
+                {
+                    "name": "dt_devolucao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "b3cdea80-8ecf-4867-8c07-8b7258e0b8cc",
+                    "error": {}
+                },
+                {
+                    "name": "livro",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "_isbn_livro",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "objectId",
+                            "GUID": "cb8e45f6-ff67-4eaf-a6aa-8c3499076bf2",
+                            "error": {},
+                            "relationshipType": "Foreign Key",
+                            "foreignCollection": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                            "foreignField": [
+                                "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                                "101e853f-54e3-4905-8a9c-8e63fb43546b"
+                            ],
+                            "parentRelationship": "591e12c9-2f21-4fb3-8aab-ed5125aa2c7f"
+                        },
+                        {
+                            "name": "titulo",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "0e8b8c96-5539-4a3c-8d65-58c1d1f4773f",
+                            "relationshipType": "Foreign Master",
+                            "foreignCollection": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                            "foreignField": [
+                                "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                                "101e853f-54e3-4905-8a9c-8e63fb43546b"
+                            ],
+                            "parentRelationship": "594fb796-3948-41af-8231-7911589f1815",
+                            "error": {}
+                        },
+                        {
+                            "name": "id_autor",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "objectId",
+                            "GUID": "450781fe-3b1a-4d9b-820f-b2c1502d9157",
+                            "relationshipType": "Foreign Master",
+                            "foreignCollection": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                            "foreignField": [
+                                "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                                "0c79ae46-79f9-4443-b3b7-8dc0cb88cabf",
+                                "637bf0ea-aae7-467a-a173-e6653350a5f3"
+                            ],
+                            "parentRelationship": "8616f252-2074-4a00-a894-ed5862ce959d",
+                            "error": {}
+                        },
+                        {
+                            "name": "categoria",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "cf591100-d705-416f-ac34-676e62c0c103",
+                            "relationshipType": "Foreign Master",
+                            "foreignCollection": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                            "foreignField": [
+                                "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                                "d2b89bfc-6dfd-4e8a-b4f9-75172d1d37bf"
+                            ],
+                            "parentRelationship": "1f2dec14-abdf-42a3-8093-6d544a5107e1",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "964497d1-ff31-4d38-bb43-732afe119a80",
+                    "error": {}
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "objectId",
+                            "GUID": "b2b90a46-597f-4a50-bf80-cdd277026754",
+                            "name": "matricula_aluno",
+                            "error": {},
+                            "relationshipType": "Foreign Key",
+                            "foreignCollection": "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                            "foreignField": [
+                                "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                                "5b2218bf-c37b-4d32-a9c1-8fb083c2d7ef"
+                            ],
+                            "parentRelationship": "f2a80d69-cc69-4960-b917-a93b967388a5"
+                        },
+                        {
+                            "name": "nome",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "4ae86ea3-d81a-4716-a3cf-ffe1c47cdc2c",
+                            "relationshipType": "Foreign Master",
+                            "foreignCollection": "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                            "foreignField": [
+                                "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                                "635f01a2-1060-44f8-b162-b7557cb54358"
+                            ],
+                            "parentRelationship": "5acb188f-a669-49ec-b642-4fc234eb831f",
+                            "error": {}
+                        },
+                        {
+                            "name": "curso",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "48cf8564-4814-4f95-9158-d4a58031f781",
+                            "relationshipType": "Foreign Master",
+                            "foreignCollection": "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                            "foreignField": [
+                                "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                                "e50704b9-e01b-4477-8970-86fed7830692"
+                            ],
+                            "parentRelationship": "6813b547-f926-4eef-9f10-652a43a9a794",
+                            "error": {}
+                        },
+                        {
+                            "name": "nascimento",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "date",
+                            "primaryKey": false,
+                            "GUID": "871391d5-5350-4601-bf23-b7549925ae6d",
+                            "relationshipType": "Foreign Master",
+                            "foreignCollection": "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                            "foreignField": [
+                                "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                                "3c54df13-5c66-43b7-b62a-a7247e87b22a"
+                            ],
+                            "parentRelationship": "c3d9c079-14b5-484c-b5d5-a8f7aa872537",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "9abf5a5d-ad19-4aba-93f8-ddafb8aed89e",
+                    "name": "aluno",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "627cd9d8-4b2c-4026-b21d-ba215c40e353"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "527bd153-74f5-4540-a349-fe87d6342959",
+            "bucketId": "be71d230-d78f-4426-bb87-4df656f0db50"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "Livraria - Embedded",
+            "type": "bucket",
+            "collectionIds": [
+                "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+                "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                "527bd153-74f5-4540-a349-fe87d6342959"
+            ],
+            "backgroundColor": {
+                "r": 0,
+                "g": 138,
+                "b": 0,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "be71d230-d78f-4426-bb87-4df656f0db50",
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "name": true
+                }
+            }
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk Emprestimo.aluno.matricula_aluno to Aluno._matricula",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                    "5b2218bf-c37b-4d32-a9c1-8fb083c2d7ef"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "527bd153-74f5-4540-a349-fe87d6342959",
+                    "9abf5a5d-ad19-4aba-93f8-ddafb8aed89e",
+                    "b2b90a46-597f-4a50-bf80-cdd277026754"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+            "childCollection": "527bd153-74f5-4540-a349-fe87d6342959",
+            "GUID": "f2a80d69-cc69-4960-b917-a93b967388a5",
+            "hackoladeStyles": {
+                "GUID": "c46f150e-5c3a-443a-8d2a-a33662e2004f",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1520,
+                        "y": 1482
+                    },
+                    {
+                        "x": 1520,
+                        "y": 1538
+                    },
+                    {
+                        "x": 1513.4,
+                        "y": 1538
+                    },
+                    {
+                        "x": 1513.4,
+                        "y": 1594
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        {
+            "name": "fk Emprestimo.livro._isbn_livro to Livro._isbn",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                    "101e853f-54e3-4905-8a9c-8e63fb43546b"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "527bd153-74f5-4540-a349-fe87d6342959",
+                    "964497d1-ff31-4d38-bb43-732afe119a80",
+                    "cb8e45f6-ff67-4eaf-a6aa-8c3499076bf2"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+            "childCollection": "527bd153-74f5-4540-a349-fe87d6342959",
+            "GUID": "591e12c9-2f21-4fb3-8aab-ed5125aa2c7f",
+            "hackoladeStyles": {
+                "GUID": "79f35188-efee-4e6e-ae83-42ad8d7f3c85",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1577,
+                        "y": 1312.2
+                    },
+                    {
+                        "x": 1637,
+                        "y": 1312.2
+                    },
+                    {
+                        "x": 1637,
+                        "y": 1339.4
+                    },
+                    {
+                        "x": 1697,
+                        "y": 1339.4
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "name": "fk Emprestimo.aluno.nome to Aluno.nome",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                    "635f01a2-1060-44f8-b162-b7557cb54358"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "527bd153-74f5-4540-a349-fe87d6342959",
+                    "9abf5a5d-ad19-4aba-93f8-ddafb8aed89e",
+                    "4ae86ea3-d81a-4716-a3cf-ffe1c47cdc2c"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+            "childCollection": "527bd153-74f5-4540-a349-fe87d6342959",
+            "GUID": "5acb188f-a669-49ec-b642-4fc234eb831f",
+            "hackoladeStyles": {
+                "GUID": "4f6b9351-334c-4c38-acf6-52935f3ba717",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1349,
+                        "y": 1482
+                    },
+                    {
+                        "x": 1349,
+                        "y": 1538
+                    },
+                    {
+                        "x": 1355.6,
+                        "y": 1538
+                    },
+                    {
+                        "x": 1355.6,
+                        "y": 1594
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        {
+            "name": "fk Emprestimo.aluno.curso to Aluno.curso",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                    "e50704b9-e01b-4477-8970-86fed7830692"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "527bd153-74f5-4540-a349-fe87d6342959",
+                    "9abf5a5d-ad19-4aba-93f8-ddafb8aed89e",
+                    "48cf8564-4814-4f95-9158-d4a58031f781"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+            "childCollection": "527bd153-74f5-4540-a349-fe87d6342959",
+            "GUID": "6813b547-f926-4eef-9f10-652a43a9a794",
+            "hackoladeStyles": {
+                "GUID": "34dd8596-996f-4d1e-8898-9917ffa37241",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1406,
+                        "y": 1482
+                    },
+                    {
+                        "x": 1406,
+                        "y": 1538
+                    },
+                    {
+                        "x": 1408.2,
+                        "y": 1538
+                    },
+                    {
+                        "x": 1408.2,
+                        "y": 1594
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        {
+            "name": "fk Emprestimo.aluno.nascimento to Aluno.nascimento",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                    "3c54df13-5c66-43b7-b62a-a7247e87b22a"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "527bd153-74f5-4540-a349-fe87d6342959",
+                    "9abf5a5d-ad19-4aba-93f8-ddafb8aed89e",
+                    "871391d5-5350-4601-bf23-b7549925ae6d"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+            "childCollection": "527bd153-74f5-4540-a349-fe87d6342959",
+            "GUID": "c3d9c079-14b5-484c-b5d5-a8f7aa872537",
+            "hackoladeStyles": {
+                "GUID": "d43fe603-5f01-4b6a-a60e-fc590f9dd2d6",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1463,
+                        "y": 1482
+                    },
+                    {
+                        "x": 1463,
+                        "y": 1538
+                    },
+                    {
+                        "x": 1460.8,
+                        "y": 1538
+                    },
+                    {
+                        "x": 1460.8,
+                        "y": 1594
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        {
+            "name": "fk Emprestimo.livro.titulo to Livro._isbn",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                    "101e853f-54e3-4905-8a9c-8e63fb43546b"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "527bd153-74f5-4540-a349-fe87d6342959",
+                    "964497d1-ff31-4d38-bb43-732afe119a80",
+                    "0e8b8c96-5539-4a3c-8d65-58c1d1f4773f"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+            "childCollection": "527bd153-74f5-4540-a349-fe87d6342959",
+            "GUID": "594fb796-3948-41af-8231-7911589f1815",
+            "hackoladeStyles": {
+                "GUID": "01df3734-9a16-4a97-88a6-e3f555be32ac",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1577,
+                        "y": 1368.8
+                    },
+                    {
+                        "x": 1637,
+                        "y": 1368.8
+                    },
+                    {
+                        "x": 1637,
+                        "y": 1375.6
+                    },
+                    {
+                        "x": 1697,
+                        "y": 1375.6
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "name": "fk Emprestimo.livro.categoria to Livro.categoria",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                    "d2b89bfc-6dfd-4e8a-b4f9-75172d1d37bf"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "527bd153-74f5-4540-a349-fe87d6342959",
+                    "964497d1-ff31-4d38-bb43-732afe119a80",
+                    "cf591100-d705-416f-ac34-676e62c0c103"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+            "childCollection": "527bd153-74f5-4540-a349-fe87d6342959",
+            "GUID": "1f2dec14-abdf-42a3-8093-6d544a5107e1",
+            "hackoladeStyles": {
+                "GUID": "78bdcc7a-c32a-4bf7-a87c-c8686926c415",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1577,
+                        "y": 1255.6
+                    },
+                    {
+                        "x": 1637,
+                        "y": 1255.6
+                    },
+                    {
+                        "x": 1637,
+                        "y": 1303.2
+                    },
+                    {
+                        "x": 1697,
+                        "y": 1303.2
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "name": "fk Emprestimo.livro.id_autor to Livro.autor.id_autor",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                    "0c79ae46-79f9-4443-b3b7-8dc0cb88cabf",
+                    "637bf0ea-aae7-467a-a173-e6653350a5f3"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "527bd153-74f5-4540-a349-fe87d6342959",
+                    "964497d1-ff31-4d38-bb43-732afe119a80",
+                    "450781fe-3b1a-4d9b-820f-b2c1502d9157"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+            "childCollection": "527bd153-74f5-4540-a349-fe87d6342959",
+            "GUID": "8616f252-2074-4a00-a894-ed5862ce959d",
+            "hackoladeStyles": {
+                "GUID": "dadeabb4-81b2-48ac-9f04-a955d1263f74",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1577,
+                        "y": 1425.4
+                    },
+                    {
+                        "x": 1637,
+                        "y": 1425.4
+                    },
+                    {
+                        "x": 1637,
+                        "y": 1411.8
+                    },
+                    {
+                        "x": 1697,
+                        "y": 1411.8
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "name": "fk Livro.autor.id_autor to Autor._id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+                    "cc8bdf54-112b-47e0-9bc0-4e68cff06812"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                    "0c79ae46-79f9-4443-b3b7-8dc0cb88cabf",
+                    "637bf0ea-aae7-467a-a173-e6653350a5f3"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+            "childCollection": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+            "GUID": "a5a75860-3070-4b9f-8865-5f41af362f6e",
+            "hackoladeStyles": {
+                "GUID": "325cdff5-3d54-4ec0-b41d-9d8003dbb5c3",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1874,
+                        "y": 1448
+                    },
+                    {
+                        "x": 1874,
+                        "y": 1526.5
+                    },
+                    {
+                        "x": 1868.8,
+                        "y": 1526.5
+                    },
+                    {
+                        "x": 1868.8,
+                        "y": 1605
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        {
+            "name": "fk Livro.autor.nome to Autor.nome",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+                    "6064330d-290f-4035-b078-ca837cfd4a2b"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                    "0c79ae46-79f9-4443-b3b7-8dc0cb88cabf",
+                    "aa80ac3a-c82f-4e80-b069-1c9da059d4e5"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+            "childCollection": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+            "GUID": "4a980bdc-aa0a-4ac2-8b0d-6639784c1277",
+            "hackoladeStyles": {
+                "GUID": "cb4659a3-e27e-438e-88fb-c5cd3644cb2e",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1756,
+                        "y": 1448
+                    },
+                    {
+                        "x": 1756,
+                        "y": 1526.5
+                    },
+                    {
+                        "x": 1761.6,
+                        "y": 1526.5
+                    },
+                    {
+                        "x": 1761.6,
+                        "y": 1605
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        {
+            "name": "fk Livro.autor.biografia to Autor.biografia",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+                    "1da4f5b8-ed3c-438c-9845-de3e5c51b733"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                    "0c79ae46-79f9-4443-b3b7-8dc0cb88cabf",
+                    "506620f8-548d-4036-9a03-e6ae7f57ad3d"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+            "childCollection": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+            "GUID": "e5bf7e94-f510-4b1f-bbc8-92fbf3347329",
+            "hackoladeStyles": {
+                "GUID": "498b2743-a35a-4687-bb3e-a192c431d6a8",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1933,
+                        "y": 1448
+                    },
+                    {
+                        "x": 1933,
+                        "y": 1526.5
+                    },
+                    {
+                        "x": 1922.4,
+                        "y": 1526.5
+                    },
+                    {
+                        "x": 1922.4,
+                        "y": 1605
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        {
+            "name": "fk Livro.autor.nascimento to Autor.nascimento",
+            "relationshipType": "Foreign Master",
+            "parentField": [
+                [
+                    "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+                    "94de5be1-861f-480b-86ba-e7f7d25ce174"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                    "0c79ae46-79f9-4443-b3b7-8dc0cb88cabf",
+                    "a2a48dae-cd51-4cdd-b8c7-a355f2f25a47"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+            "childCollection": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+            "GUID": "645f0876-e19b-4213-a920-7bdb167c519a",
+            "hackoladeStyles": {
+                "GUID": "5712b250-c07e-44ae-8c67-91a5fb410e9f",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1815,
+                        "y": 1448
+                    },
+                    {
+                        "x": 1815,
+                        "y": 1526.5
+                    },
+                    {
+                        "x": 1815.2,
+                        "y": 1526.5
+                    },
+                    {
+                        "x": 1815.2,
+                        "y": 1605
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "be71d230-d78f-4426-bb87-4df656f0db50": "Livraria - Embedded",
+        "be7a8802-55a4-46d4-92cf-5c1a08647576": "Livro",
+        "0736f97b-cd7e-4c25-9fb9-deacc0788418": "Autor",
+        "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff": "Aluno",
+        "527bd153-74f5-4540-a349-fe87d6342959": "Emprestimo",
+        "101e853f-54e3-4905-8a9c-8e63fb43546b": "_isbn",
+        "712bde9c-6315-455b-ad79-249aef3f4ddd": "titulo",
+        "d2b89bfc-6dfd-4e8a-b4f9-75172d1d37bf": "categoria",
+        "cc8bdf54-112b-47e0-9bc0-4e68cff06812": "_id",
+        "6064330d-290f-4035-b078-ca837cfd4a2b": "nome",
+        "1da4f5b8-ed3c-438c-9845-de3e5c51b733": "biografia",
+        "94de5be1-861f-480b-86ba-e7f7d25ce174": "nascimento",
+        "5b2218bf-c37b-4d32-a9c1-8fb083c2d7ef": "_matricula",
+        "635f01a2-1060-44f8-b162-b7557cb54358": "nome",
+        "e50704b9-e01b-4477-8970-86fed7830692": "curso",
+        "3c54df13-5c66-43b7-b62a-a7247e87b22a": "nascimento",
+        "92307555-4320-4bff-9e1a-25443b703e10": "_id",
+        "9066168a-ffff-4af9-ba0d-d14461ddf2f8": "dt_emprestimo",
+        "b3cdea80-8ecf-4867-8c07-8b7258e0b8cc": "dt_devolucao",
+        "964497d1-ff31-4d38-bb43-732afe119a80": "livro",
+        "9abf5a5d-ad19-4aba-93f8-ddafb8aed89e": "aluno",
+        "cb8e45f6-ff67-4eaf-a6aa-8c3499076bf2": "_isbn_livro",
+        "0e8b8c96-5539-4a3c-8d65-58c1d1f4773f": "titulo",
+        "450781fe-3b1a-4d9b-820f-b2c1502d9157": "id_autor",
+        "cf591100-d705-416f-ac34-676e62c0c103": "categoria",
+        "b2b90a46-597f-4a50-bf80-cdd277026754": "matricula_aluno",
+        "4ae86ea3-d81a-4716-a3cf-ffe1c47cdc2c": "nome",
+        "48cf8564-4814-4f95-9158-d4a58031f781": "curso",
+        "871391d5-5350-4601-bf23-b7549925ae6d": "nascimento",
+        "f2a80d69-cc69-4960-b917-a93b967388a5": "fk Emprestimo.aluno.matricula_aluno to Aluno._matricula",
+        "591e12c9-2f21-4fb3-8aab-ed5125aa2c7f": "fk Emprestimo.livro._isbn_livro to Livro._isbn",
+        "5acb188f-a669-49ec-b642-4fc234eb831f": "fk Emprestimo.aluno.nome to Aluno.nome",
+        "6813b547-f926-4eef-9f10-652a43a9a794": "fk Emprestimo.aluno.curso to Aluno.curso",
+        "c3d9c079-14b5-484c-b5d5-a8f7aa872537": "fk Emprestimo.aluno.nascimento to Aluno.nascimento",
+        "594fb796-3948-41af-8231-7911589f1815": "fk Emprestimo.livro.titulo to Livro._isbn",
+        "1f2dec14-abdf-42a3-8093-6d544a5107e1": "fk Emprestimo.livro.categoria to Livro.categoria",
+        "0c79ae46-79f9-4443-b3b7-8dc0cb88cabf": "autor",
+        "637bf0ea-aae7-467a-a173-e6653350a5f3": "id_autor",
+        "aa80ac3a-c82f-4e80-b069-1c9da059d4e5": "nome",
+        "506620f8-548d-4036-9a03-e6ae7f57ad3d": "biografia",
+        "a2a48dae-cd51-4cdd-b8c7-a355f2f25a47": "nascimento",
+        "8616f252-2074-4a00-a894-ed5862ce959d": "fk Emprestimo.livro.id_autor to Livro.autor.id_autor",
+        "a5a75860-3070-4b9f-8865-5f41af362f6e": "fk Livro.autor.id_autor to Autor._id",
+        "4a980bdc-aa0a-4ac2-8b0d-6639784c1277": "fk Livro.autor.nome to Autor.nome",
+        "e5bf7e94-f510-4b1f-bbc8-92fbf3347329": "fk Livro.autor.biografia to Autor.biografia",
+        "645f0876-e19b-4213-a920-7bdb167c519a": "fk Livro.autor.nascimento to Autor.nascimento"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "7e393ee6-e8a5-4f3c-af30-8d3351470bd6"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "851d2897-2d16-4f92-819b-b06685160725"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "173bc603-6f34-4276-9eff-5ed5dd10e886"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v7.x",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2024-03-06T18:06:22.107Z",
+    "GUID": "df7b18e2-ed31-4bc0-b870-34bde8d43cba",
+    "isLineageEnabled": false,
+    "lastModifTS": "2024-03-11T16:36:03.700Z",
+    "persistenceSchemaVersion": "7",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "7.3.2"
+    },
+    "hackoladeMeta": {},
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                        "x": 1697,
+                        "y": 1267,
+                        "width": 295,
+                        "height": 181,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+                        "x": 1708,
+                        "y": 1605,
+                        "width": 268,
+                        "height": 186,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                        "x": 1303,
+                        "y": 1594,
+                        "width": 263,
+                        "height": 191,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "527bd153-74f5-4540-a349-fe87d6342959",
+                        "x": 1292,
+                        "y": 1199,
+                        "width": 285,
+                        "height": 283,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1252,
+                        "y": 1159,
+                        "GUID": "be71d230-d78f-4426-bb87-4df656f0db50"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "527bd153-74f5-4540-a349-fe87d6342959"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "be7a8802-55a4-46d4-92cf-5c1a08647576"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "0736f97b-cd7e-4c25-9fb9-deacc0788418"
+                    }
+                ],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

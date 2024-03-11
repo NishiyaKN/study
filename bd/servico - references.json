@@ -1,0 +1,677 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "collectionName": "Clientes",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "cpf",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "739246de-6cc9-40c9-b8e4-1e2123a96458",
+                    "minLength": 13,
+                    "maxLength": 13,
+                    "required": true,
+                    "primaryKey": true,
+                    "error": {},
+                    "childRelationships": [
+                        "4f1e5fe1-bd42-49ca-8c7a-ac8db976d196"
+                    ]
+                },
+                {
+                    "name": "nome",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "c39f150a-47bf-4685-a745-892e35d3a893",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "endereco",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "logradouro",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "b782c9cd-e46f-456f-9eb9-cea1e0c7782d",
+                            "error": {}
+                        },
+                        {
+                            "name": "numero",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "0c784241-cc5f-4a5f-833a-6de18671a381",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "aecc267b-d41f-4f67-8c53-a320225598e4",
+                    "error": {}
+                },
+                {
+                    "name": "email",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "2001f07e-f587-431d-85cd-e01fb77b06e9",
+                            "arrayItem": true
+                        }
+                    ],
+                    "additionalItems": true,
+                    "GUID": "eb06313f-a6ae-416f-9abe-7c455b0debc9",
+                    "error": {}
+                },
+                {
+                    "name": "telefones",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "ddd",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "GUID": "946e2048-1179-415e-8a34-d02047daecba",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "numero",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "GUID": "0026787e-d82d-41cc-a1de-548c8879e881",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "error": {},
+                            "GUID": "1c430fef-27ba-4896-928f-60e66b3af62d",
+                            "arrayItem": true
+                        }
+                    ],
+                    "additionalItems": true,
+                    "GUID": "d8566efe-fa0f-4951-9869-18caeb4174d8",
+                    "error": {}
+                },
+                {
+                    "name": "pedidos",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "objectId",
+                            "error": {},
+                            "GUID": "9d4801c0-7162-4f80-ae61-7f76909ae991",
+                            "arrayItem": true,
+                            "relationshipType": "Foreign Key",
+                            "foreignCollection": "669773e7-6345-4a0c-92fa-6a789a6bd020",
+                            "foreignField": [
+                                "669773e7-6345-4a0c-92fa-6a789a6bd020",
+                                "ea39cb00-66af-4f4f-94f6-95fed82b850d"
+                            ],
+                            "parentRelationship": "a85c5857-0cf6-43d8-a245-faebdf1667df"
+                        }
+                    ],
+                    "additionalItems": true,
+                    "GUID": "4daef7b5-b500-409f-b0e2-dee69aa28a45",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "2600362f-eca6-41f3-8af1-14ecbc0695ec"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "8b4748da-e5e6-46bb-83b7-0d1e1a51dfcb",
+            "bucketId": "12546d3f-bfd0-402c-80ca-4e47561c2f38"
+        },
+        {
+            "collectionName": "Pedidos",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "ea39cb00-66af-4f4f-94f6-95fed82b850d",
+                    "required": true,
+                    "primaryKey": true,
+                    "error": {},
+                    "childRelationships": [
+                        "a85c5857-0cf6-43d8-a245-faebdf1667df"
+                    ]
+                },
+                {
+                    "name": "data_pedido",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "c63dad8a-5880-4991-bda4-62ab31c08e3d",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "cpf_cliente",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "be9d9c2b-3fde-40d1-833a-d58aeeb4515a",
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "8b4748da-e5e6-46bb-83b7-0d1e1a51dfcb",
+                    "foreignField": [
+                        "8b4748da-e5e6-46bb-83b7-0d1e1a51dfcb",
+                        "739246de-6cc9-40c9-b8e4-1e2123a96458"
+                    ],
+                    "parentRelationship": "4f1e5fe1-bd42-49ca-8c7a-ac8db976d196",
+                    "error": {}
+                },
+                {
+                    "name": "servicos",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "array",
+                    "properties": [
+                        {
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "_id_servico",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "objectId",
+                                    "GUID": "88ff0fd9-2a67-4a0a-8d1c-31480e8314ff",
+                                    "error": {},
+                                    "relationshipType": "Foreign Key",
+                                    "foreignCollection": "99b9d8f6-6bc9-45e7-b494-1fb0cdc5cc6e",
+                                    "foreignField": [
+                                        "99b9d8f6-6bc9-45e7-b494-1fb0cdc5cc6e",
+                                        "709dd276-9178-4d55-aebd-45cb9c12bb5b"
+                                    ],
+                                    "parentRelationship": "e7eac613-c347-4cc3-8b69-7f1ebd432d2b"
+                                },
+                                {
+                                    "name": "valor_unit",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "GUID": "8f3adbac-3d39-459a-bcbd-ccb43fadcda1",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "quantidade",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "GUID": "49e4b0bd-57cd-49e9-b895-a7324d52671a",
+                                    "error": {}
+                                },
+                                {
+                                    "name": "valor_total",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "GUID": "def83564-aeea-498f-8f06-76d574183d9f",
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "error": {},
+                            "GUID": "aad71d89-e427-4fff-80d8-3f15b1df0f4b",
+                            "arrayItem": true
+                        }
+                    ],
+                    "additionalItems": true,
+                    "GUID": "0e851108-c900-4a52-b146-672db51f96ef",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "18fdf4e3-2eba-4d7d-86b4-a1b688373b9c"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "669773e7-6345-4a0c-92fa-6a789a6bd020",
+            "bucketId": "12546d3f-bfd0-402c-80ca-4e47561c2f38"
+        },
+        {
+            "collectionName": "Servicos",
+            "type": "object",
+            "properties": [
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "709dd276-9178-4d55-aebd-45cb9c12bb5b",
+                    "name": "_id",
+                    "primaryKey": true,
+                    "required": true,
+                    "error": {},
+                    "childRelationships": [
+                        "e7eac613-c347-4cc3-8b69-7f1ebd432d2b"
+                    ]
+                },
+                {
+                    "name": "descricao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "058f75a3-0f09-4528-8bd4-2abd2354dc7f",
+                    "required": true,
+                    "minLength": 5,
+                    "error": {}
+                },
+                {
+                    "name": "valor_unit",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "GUID": "5109ead1-167a-4617-a5de-c47148e55042",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "ab02b1a5-50d1-4a5c-aeee-5d38e8625a7d"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "99b9d8f6-6bc9-45e7-b494-1fb0cdc5cc6e",
+            "bucketId": "12546d3f-bfd0-402c-80ca-4e47561c2f38"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "db_servicos",
+            "type": "bucket",
+            "collectionIds": [
+                "8b4748da-e5e6-46bb-83b7-0d1e1a51dfcb",
+                "669773e7-6345-4a0c-92fa-6a789a6bd020",
+                "99b9d8f6-6bc9-45e7-b494-1fb0cdc5cc6e"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "12546d3f-bfd0-402c-80ca-4e47561c2f38"
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk Pedidos.cliente.cpf to Clientes.cpf",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "8b4748da-e5e6-46bb-83b7-0d1e1a51dfcb",
+                    "739246de-6cc9-40c9-b8e4-1e2123a96458"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "669773e7-6345-4a0c-92fa-6a789a6bd020",
+                    "be9d9c2b-3fde-40d1-833a-d58aeeb4515a"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "8b4748da-e5e6-46bb-83b7-0d1e1a51dfcb",
+            "childCollection": "669773e7-6345-4a0c-92fa-6a789a6bd020",
+            "GUID": "4f1e5fe1-bd42-49ca-8c7a-ac8db976d196",
+            "hackoladeStyles": {
+                "GUID": "c202eceb-36b1-45d3-be0c-f8ef0407cda0",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1707.9999999999995,
+                        "y": 1176.166666666669
+                    },
+                    {
+                        "x": 1741.0833333333335,
+                        "y": 1176.166666666669
+                    },
+                    {
+                        "x": 1741.0833333333335,
+                        "y": 1202.8333333333308
+                    },
+                    {
+                        "x": 1774.1666666666674,
+                        "y": 1202.8333333333308
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "name": "fk Pedidos.servicos.[0]._id_servico to Servicos._id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "99b9d8f6-6bc9-45e7-b494-1fb0cdc5cc6e",
+                    "709dd276-9178-4d55-aebd-45cb9c12bb5b"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "669773e7-6345-4a0c-92fa-6a789a6bd020",
+                    "0e851108-c900-4a52-b146-672db51f96ef",
+                    "aad71d89-e427-4fff-80d8-3f15b1df0f4b",
+                    "88ff0fd9-2a67-4a0a-8d1c-31480e8314ff"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "99b9d8f6-6bc9-45e7-b494-1fb0cdc5cc6e",
+            "childCollection": "669773e7-6345-4a0c-92fa-6a789a6bd020",
+            "GUID": "e7eac613-c347-4cc3-8b69-7f1ebd432d2b",
+            "hackoladeStyles": {
+                "GUID": "54ec40f4-dcb8-4b69-8fc7-15264671620c",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1707.9999999999995,
+                        "y": 1307.166666666669
+                    },
+                    {
+                        "x": 1732.9999999999995,
+                        "y": 1307.166666666669
+                    },
+                    {
+                        "x": 1732.9999999999995,
+                        "y": 1482.4999999999989
+                    },
+                    {
+                        "x": 1672.9999999999995,
+                        "y": 1482.4999999999989
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "fk Clientes.pedidos.[0] to Pedidos._id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "669773e7-6345-4a0c-92fa-6a789a6bd020",
+                    "ea39cb00-66af-4f4f-94f6-95fed82b850d"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "8b4748da-e5e6-46bb-83b7-0d1e1a51dfcb",
+                    "4daef7b5-b500-409f-b0e2-dee69aa28a45",
+                    "9d4801c0-7162-4f80-ae61-7f76909ae991"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "669773e7-6345-4a0c-92fa-6a789a6bd020",
+            "childCollection": "8b4748da-e5e6-46bb-83b7-0d1e1a51dfcb",
+            "GUID": "a85c5857-0cf6-43d8-a245-faebdf1667df",
+            "hackoladeStyles": {
+                "GUID": "3b03ce93-5aa2-4db4-95db-a4d5771a794a",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1774.1666666666674,
+                        "y": 1293.1666666666642
+                    },
+                    {
+                        "x": 1741.0833333333335,
+                        "y": 1293.1666666666642
+                    },
+                    {
+                        "x": 1741.0833333333335,
+                        "y": 1241.666666666669
+                    },
+                    {
+                        "x": 1707.9999999999995,
+                        "y": 1241.666666666669
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "12546d3f-bfd0-402c-80ca-4e47561c2f38": "db_servicos",
+        "8b4748da-e5e6-46bb-83b7-0d1e1a51dfcb": "Clientes",
+        "669773e7-6345-4a0c-92fa-6a789a6bd020": "Pedidos",
+        "99b9d8f6-6bc9-45e7-b494-1fb0cdc5cc6e": "Servicos",
+        "709dd276-9178-4d55-aebd-45cb9c12bb5b": "_id",
+        "058f75a3-0f09-4528-8bd4-2abd2354dc7f": "descricao",
+        "5109ead1-167a-4617-a5de-c47148e55042": "valor_unit",
+        "739246de-6cc9-40c9-b8e4-1e2123a96458": "cpf",
+        "c39f150a-47bf-4685-a745-892e35d3a893": "nome",
+        "aecc267b-d41f-4f67-8c53-a320225598e4": "endereco",
+        "b782c9cd-e46f-456f-9eb9-cea1e0c7782d": "logradouro",
+        "0c784241-cc5f-4a5f-833a-6de18671a381": "numero",
+        "eb06313f-a6ae-416f-9abe-7c455b0debc9": "email",
+        "d8566efe-fa0f-4951-9869-18caeb4174d8": "telefones",
+        "946e2048-1179-415e-8a34-d02047daecba": "ddd",
+        "0026787e-d82d-41cc-a1de-548c8879e881": "numero",
+        "ea39cb00-66af-4f4f-94f6-95fed82b850d": "_id",
+        "c63dad8a-5880-4991-bda4-62ab31c08e3d": "data_pedido",
+        "4f1e5fe1-bd42-49ca-8c7a-ac8db976d196": "fk Pedidos.cliente.cpf to Clientes.cpf",
+        "0e851108-c900-4a52-b146-672db51f96ef": "servicos",
+        "88ff0fd9-2a67-4a0a-8d1c-31480e8314ff": "_id_servico",
+        "8f3adbac-3d39-459a-bcbd-ccb43fadcda1": "valor_unit",
+        "49e4b0bd-57cd-49e9-b895-a7324d52671a": "quantidade",
+        "def83564-aeea-498f-8f06-76d574183d9f": "valor_total",
+        "e7eac613-c347-4cc3-8b69-7f1ebd432d2b": "fk Pedidos.servicos.[0]._id_servico to Servicos._id",
+        "be9d9c2b-3fde-40d1-833a-d58aeeb4515a": "cpf_cliente",
+        "4daef7b5-b500-409f-b0e2-dee69aa28a45": "pedidos",
+        "a85c5857-0cf6-43d8-a245-faebdf1667df": "fk Clientes.pedidos.[0] to Pedidos._id"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "5aa8fcff-11b4-4016-aaf0-0a0fa576dcc3"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "58e10b13-cbe6-4e12-99a0-eaa375e64a50"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "50855ecf-5680-4125-bc34-0624136a912b"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v7.x",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2024-03-11T22:36:04.335Z",
+    "GUID": "1752fe25-cf60-4ab9-b735-57cc4c0b6545",
+    "isLineageEnabled": false,
+    "lastModifTS": "2024-03-11T23:17:18.265Z",
+    "persistenceSchemaVersion": "7",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "7.3.2"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "8b4748da-e5e6-46bb-83b7-0d1e1a51dfcb",
+                        "x": 1774.1666666666674,
+                        "y": 1112.4999999999975,
+                        "width": 243,
+                        "height": 271,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "669773e7-6345-4a0c-92fa-6a789a6bd020",
+                        "x": 1451.9999999999995,
+                        "y": 1110.666666666669,
+                        "width": 256,
+                        "height": 262,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "99b9d8f6-6bc9-45e7-b494-1fb0cdc5cc6e",
+                        "x": 1471.9999999999995,
+                        "y": 1397.9999999999989,
+                        "width": 201,
+                        "height": 169,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1411.9999999999995,
+                        "y": 1070.666666666669,
+                        "GUID": "12546d3f-bfd0-402c-80ca-4e47561c2f38"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "8b4748da-e5e6-46bb-83b7-0d1e1a51dfcb"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "669773e7-6345-4a0c-92fa-6a789a6bd020"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "99b9d8f6-6bc9-45e7-b494-1fb0cdc5cc6e"
+                    }
+                ],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

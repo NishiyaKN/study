@@ -1,0 +1,622 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "collectionName": "Livro",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_isbn",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "101e853f-54e3-4905-8a9c-8e63fb43546b",
+                    "childRelationships": [
+                        "49fdef26-7dc4-4e0d-8432-b647bf849797"
+                    ],
+                    "primaryKey": true,
+                    "error": {}
+                },
+                {
+                    "name": "titulo",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "712bde9c-6315-455b-ad79-249aef3f4ddd",
+                    "error": {}
+                },
+                {
+                    "name": "id_autor",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "error": {},
+                    "GUID": "2ef4a654-2175-4344-b435-3771a02492d8",
+                    "parentRelationship": "252cec61-97a8-4518-b418-08bd99c03331",
+                    "relationshipType": "Foreign Key"
+                },
+                {
+                    "name": "categoria",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "d2b89bfc-6dfd-4e8a-b4f9-75172d1d37bf",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "f18c4b8f-a4d3-4ebb-b424-30dab3b6165e"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+            "bucketId": "be71d230-d78f-4426-bb87-4df656f0db50"
+        },
+        {
+            "collectionName": "Autor",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "cc8bdf54-112b-47e0-9bc0-4e68cff06812",
+                    "childRelationships": [
+                        "252cec61-97a8-4518-b418-08bd99c03331"
+                    ],
+                    "primaryKey": true,
+                    "error": {}
+                },
+                {
+                    "name": "nome",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "6064330d-290f-4035-b078-ca837cfd4a2b",
+                    "error": {}
+                },
+                {
+                    "name": "biografia",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "1da4f5b8-ed3c-438c-9845-de3e5c51b733",
+                    "error": {}
+                },
+                {
+                    "name": "nascimento",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "94de5be1-861f-480b-86ba-e7f7d25ce174",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "92518ef0-6fbc-446e-b697-6c87f08880ae"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+            "bucketId": "be71d230-d78f-4426-bb87-4df656f0db50"
+        },
+        {
+            "collectionName": "Aluno",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_matricula",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "5b2218bf-c37b-4d32-a9c1-8fb083c2d7ef",
+                    "childRelationships": [
+                        "9f3c06d9-a7f1-4cbe-b0c6-003c490a3b53"
+                    ],
+                    "primaryKey": true,
+                    "error": {}
+                },
+                {
+                    "name": "nome",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "635f01a2-1060-44f8-b162-b7557cb54358",
+                    "error": {}
+                },
+                {
+                    "name": "curso",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "e50704b9-e01b-4477-8970-86fed7830692",
+                    "error": {}
+                },
+                {
+                    "name": "nascimento",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "3c54df13-5c66-43b7-b62a-a7247e87b22a",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "04371493-814a-4790-8775-79fb8aeda96c"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+            "bucketId": "be71d230-d78f-4426-bb87-4df656f0db50",
+            "hackoladeMeta": {}
+        },
+        {
+            "collectionName": "Emprestimo",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "_id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "92307555-4320-4bff-9e1a-25443b703e10",
+                    "primaryKey": true,
+                    "error": {}
+                },
+                {
+                    "name": "dt_emprestimo",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "9066168a-ffff-4af9-ba0d-d14461ddf2f8",
+                    "error": {}
+                },
+                {
+                    "name": "dt_devolucao",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "b3cdea80-8ecf-4867-8c07-8b7258e0b8cc",
+                    "error": {}
+                },
+                {
+                    "name": "isbn_livro",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "b1f70738-65cd-42f9-aead-22ba3418a8c6",
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                    "foreignField": [
+                        "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                        "101e853f-54e3-4905-8a9c-8e63fb43546b"
+                    ],
+                    "parentRelationship": "49fdef26-7dc4-4e0d-8432-b647bf849797"
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "c548d36f-5b8c-4f4e-a37f-0896937f4537",
+                    "name": "matricula_aluno",
+                    "error": {},
+                    "relationshipType": "Foreign Key",
+                    "foreignCollection": "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                    "foreignField": [
+                        "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                        "5b2218bf-c37b-4d32-a9c1-8fb083c2d7ef"
+                    ],
+                    "parentRelationship": "9f3c06d9-a7f1-4cbe-b0c6-003c490a3b53"
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "627cd9d8-4b2c-4026-b21d-ba215c40e353"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "527bd153-74f5-4540-a349-fe87d6342959",
+            "bucketId": "be71d230-d78f-4426-bb87-4df656f0db50"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "Livraria - References",
+            "type": "bucket",
+            "collectionIds": [
+                "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+                "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                "527bd153-74f5-4540-a349-fe87d6342959"
+            ],
+            "backgroundColor": {
+                "r": 0,
+                "g": 138,
+                "b": 0,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "be71d230-d78f-4426-bb87-4df656f0db50",
+            "hackoladeMeta": {
+                "validationErrors": {
+                    "name": true
+                }
+            }
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk Livro.autor to Autor._id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+                    "cc8bdf54-112b-47e0-9bc0-4e68cff06812"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                    "2ef4a654-2175-4344-b435-3771a02492d8"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1..n",
+            "parentCollection": "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+            "childCollection": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+            "GUID": "252cec61-97a8-4518-b418-08bd99c03331",
+            "hackoladeStyles": {
+                "GUID": "428484de-0a5d-47b0-a09b-28bfe4c94172",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1783,
+                        "y": 1344
+                    },
+                    {
+                        "x": 1783,
+                        "y": 1420
+                    },
+                    {
+                        "x": 1810,
+                        "y": 1420
+                    },
+                    {
+                        "x": 1810,
+                        "y": 1496
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
+        },
+        {
+            "name": "fk Emprestimo.isbn_livro to Livro._isbn",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                    "101e853f-54e3-4905-8a9c-8e63fb43546b"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "527bd153-74f5-4540-a349-fe87d6342959",
+                    "b1f70738-65cd-42f9-aead-22ba3418a8c6"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+            "childCollection": "527bd153-74f5-4540-a349-fe87d6342959",
+            "GUID": "49fdef26-7dc4-4e0d-8432-b647bf849797",
+            "hackoladeStyles": {
+                "GUID": "b89ade8b-4798-40ac-858c-293fefed242d",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1577,
+                        "y": 1293.3333333333333
+                    },
+                    {
+                        "x": 1607.5,
+                        "y": 1293.3333333333333
+                    },
+                    {
+                        "x": 1607.5,
+                        "y": 1269
+                    },
+                    {
+                        "x": 1638,
+                        "y": 1269
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "name": "fk Emprestimo.matricula_aluno to Aluno._matricula",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                    "5b2218bf-c37b-4d32-a9c1-8fb083c2d7ef"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "527bd153-74f5-4540-a349-fe87d6342959",
+                    "c548d36f-5b8c-4f4e-a37f-0896937f4537"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "0..n",
+            "parentCollection": "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+            "childCollection": "527bd153-74f5-4540-a349-fe87d6342959",
+            "GUID": "9f3c06d9-a7f1-4cbe-b0c6-003c490a3b53",
+            "hackoladeStyles": {
+                "GUID": "0b074b37-28bc-49cc-8694-7addf6c3654d",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1577,
+                        "y": 1387.6666666666667
+                    },
+                    {
+                        "x": 1602,
+                        "y": 1387.6666666666667
+                    },
+                    {
+                        "x": 1602,
+                        "y": 1605.5
+                    },
+                    {
+                        "x": 1564,
+                        "y": 1605.5
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "right"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "be71d230-d78f-4426-bb87-4df656f0db50": "Livraria - References",
+        "be7a8802-55a4-46d4-92cf-5c1a08647576": "Livro",
+        "0736f97b-cd7e-4c25-9fb9-deacc0788418": "Autor",
+        "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff": "Aluno",
+        "527bd153-74f5-4540-a349-fe87d6342959": "Emprestimo",
+        "101e853f-54e3-4905-8a9c-8e63fb43546b": "_isbn",
+        "712bde9c-6315-455b-ad79-249aef3f4ddd": "titulo",
+        "2ef4a654-2175-4344-b435-3771a02492d8": "id_autor",
+        "d2b89bfc-6dfd-4e8a-b4f9-75172d1d37bf": "categoria",
+        "cc8bdf54-112b-47e0-9bc0-4e68cff06812": "_id",
+        "6064330d-290f-4035-b078-ca837cfd4a2b": "nome",
+        "1da4f5b8-ed3c-438c-9845-de3e5c51b733": "biografia",
+        "94de5be1-861f-480b-86ba-e7f7d25ce174": "nascimento",
+        "5b2218bf-c37b-4d32-a9c1-8fb083c2d7ef": "_matricula",
+        "635f01a2-1060-44f8-b162-b7557cb54358": "nome",
+        "e50704b9-e01b-4477-8970-86fed7830692": "curso",
+        "3c54df13-5c66-43b7-b62a-a7247e87b22a": "nascimento",
+        "92307555-4320-4bff-9e1a-25443b703e10": "_id",
+        "9066168a-ffff-4af9-ba0d-d14461ddf2f8": "dt_emprestimo",
+        "b3cdea80-8ecf-4867-8c07-8b7258e0b8cc": "dt_devolucao",
+        "252cec61-97a8-4518-b418-08bd99c03331": "fk Livro.autor to Autor._id",
+        "b1f70738-65cd-42f9-aead-22ba3418a8c6": "isbn_livro",
+        "c548d36f-5b8c-4f4e-a37f-0896937f4537": "matricula_aluno",
+        "49fdef26-7dc4-4e0d-8432-b647bf849797": "fk Emprestimo.isbn_livro to Livro._isbn",
+        "9f3c06d9-a7f1-4cbe-b0c6-003c490a3b53": "fk Emprestimo.matricula_aluno to Aluno._matricula"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "7e393ee6-e8a5-4f3c-af30-8d3351470bd6"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "851d2897-2d16-4f92-819b-b06685160725"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "173bc603-6f34-4276-9eff-5ed5dd10e886"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v7.x",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2024-03-06T18:06:22.107Z",
+    "GUID": "0e687747-3413-4e9e-bdb7-00636d1acfeb",
+    "isLineageEnabled": false,
+    "lastModifTS": "2024-03-10T14:58:33.058Z",
+    "persistenceSchemaVersion": "7",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "7.3.2"
+    },
+    "hackoladeMeta": {},
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "be7a8802-55a4-46d4-92cf-5c1a08647576",
+                        "x": 1638,
+                        "y": 1194,
+                        "width": 290,
+                        "height": 150,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "0736f97b-cd7e-4c25-9fb9-deacc0788418",
+                        "x": 1676,
+                        "y": 1496,
+                        "width": 268,
+                        "height": 186,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff",
+                        "x": 1301,
+                        "y": 1510,
+                        "width": 263,
+                        "height": 191,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "527bd153-74f5-4540-a349-fe87d6342959",
+                        "x": 1292,
+                        "y": 1199,
+                        "width": 285,
+                        "height": 283,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1252,
+                        "y": 1154,
+                        "GUID": "be71d230-d78f-4426-bb87-4df656f0db50"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "527bd153-74f5-4540-a349-fe87d6342959"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "89e0b1e6-9137-41bd-a9f5-844bc9bf01ff"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "be7a8802-55a4-46d4-92cf-5c1a08647576"
+                    },
+                    {
+                        "autoWidth": false,
+                        "autoHeight": false,
+                        "GUID": "0736f97b-cd7e-4c25-9fb9-deacc0788418"
+                    }
+                ],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

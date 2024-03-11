@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/NIPOMED.md",
+                "file": "notes/Untitled/Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aada7f20bfef6f81",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MISC.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/NIPOMED.md",
+                "file": "MISC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/NIPOMED.md",
+                "file": "MISC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/NIPOMED.md"
+                "file": "MISC.md"
               }
             }
           }
@@ -146,25 +159,34 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "56ea5e91bb166c0a",
+  "active": "aada7f20bfef6f81",
   "lastOpenFiles": [
-    "ASAAS.md",
     "Linux.md",
+    "NIPOMED.md",
+    "MISC.md",
+    "notes/EDS/Aula 03.md",
+    "notes/Untitled/Untitled.md",
+    "notes/Untitled",
+    "notes/EDS/Aula 02.md",
+    "notes/EDS/Aula 01.md",
+    "TODO.md",
+    "ASAAS.md",
+    "notes/EDS/Media/sc-2024-02-26T09-18-02.png",
+    "notes/EDS/Media/Pasted image 20240226103523.png",
+    "notes/AED/SLa.md",
+    "notes/EDS/Media",
+    "notes/EDS/Media/sc-2024-02-26T09-13-56.png",
+    "notes/EDS/Media/sc-2024-02-26T09-13-17.png",
+    "notes/EDS/Media/sc-2024-02-26T08-48-23.png",
+    "notes/EDS/Media/Pasted image 20240226103553.png",
+    "notes/SEM02/JAVA/8- Polimorfismo.md",
+    "notes/AED",
     "notes/MAD/0305.md",
-    "notes/EDS/0226.md",
     "notes/MAD",
     "notes/Untitled.md",
-    "notes/EDS/Aula 2.md",
-    "notes/NIPOMED.md",
-    "Pasted image 20240226103523.png",
-    "sc-2024-02-26T09-18-02.png",
-    "sc-2024-02-26T09-13-56.png",
-    "sc-2024-02-26T09-13-17.png",
-    "sc-2024-02-26T09-08-09.png",
-    "sc-2024-02-26T09-07-29.png",
-    "sc-2024-02-26T08-48-23.png",
-    "sc-2024-02-26T08-41-08.png",
-    "Pasted image 20240226103553.png",
+    "notes/EDS/Media/sc-2024-02-26T09-08-09.png",
+    "notes/EDS/Media/sc-2024-02-26T09-07-29.png",
+    "notes/EDS/Media/sc-2024-02-26T08-41-08.png",
     "Pasted image 20240226095757.png",
     "notes/SEM02/C/3- Estruturas.md",
     "notes/SEM02/JAVA/1- Base.md",
@@ -173,7 +195,6 @@
     "notes/SEM02/JAVA/5- Herança.md",
     "notes/SEM02/JAVA/FORMS/FORMS.md",
     "notes/EDS",
-    "TODO.md",
     "notes/SEM02",
     "notes/SEM02/KT/BASICS.md",
     "notes/SEM02/KT",
@@ -183,17 +204,9 @@
     "PY/Exception.md",
     "notes/SEM02/JS/10- Frontend.md",
     "notes/JS/Untitled.md",
-    "notes/SEM02/JS/8- Aplicações Web.md",
-    "notes/SEM02/JS/9- Backend.md",
-    "notes/SEM02/JS/7- Operações Assíncronas.md",
-    "notes/SEM02/JS/6- POO.md",
-    "notes/SEM02/JS/5- Modularidade.md",
     "PY",
     "notes/SEM02/ARQ/Media",
     "notes/SEM02/JAVA/FORMS",
-    "notes/SEM02/JS/Forms",
-    "notes/SEM02/JAVA/Media",
-    "notes/SEM02/BD/Media",
     "Untitled.canvas"
   ]
 }
