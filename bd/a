@@ -1,1 +1,6 @@
 documento, array simples e array de documento
+nao deve haver tabela associativa para n:n, cria um atributo correspondente dentro de cada um
+onde aparecer o n eh onde vc cria o atributo correspondente, clica no N e arrasta para o 1
+
+schema rigido relacional, precisa definir a estrutura antes de fazer o banco de dados 
+schemaless nao ser preocupa com esquema, preocupa com dados, estrutura diferentes dentro da mesma collection

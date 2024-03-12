@@ -151,7 +151,7 @@ Para a consulta de avaliação, podemos oferecer o preço de associado antes mes
 ___
 ### Agendamento de avaliação 
 
-Confirmado agendamento para avaliação com o Dr. FERNANDO CABRAL DE MENEZES no dia 29/02/2024 (quinta-feira) as 16h.
+Confirmado agendamento para avaliação com o Dr. FERNANDO CABRAL DE MENEZES no dia 14/03/2024 (quinta-feira) as 15h.
 
 Valor: R$90 no dinheiro ou Pix (R$110 no cartão)
 
@@ -217,10 +217,10 @@ Local: RUA MINISTRO GABRIEL DE REZENDE PASSOS, 500 - CONJ. 1313 - MOEMA - SÃO P
 
 Olá, boa tarde! A Nipomed é uma assistência médica por credenciamento voltado para quem não possui plano de saúde e precisa de acesso a exames, consultas e cirurgias programadas, nossos planos não são para emergências. 
 
-Boa tarde Tereza, teria como agendar uma consulta de avaliação para
-Nome:
-Nascimento: 
-Telefone:
+Boa tarde Tereza, teria como agendar uma consulta de avaliação para hemorroidas para dia 14/03(quinta-feira) às 15h?
+Nome: Antonio Marcellino Machado
+Nascimento: 08/03/1954
+Telefone: 11 94552-9864
 
 O nosso Plano Consultas e Exames para 2 pessoa está por R$872,00 no Pix ou boleto, podendo ser parcelado em até 4x no cartão.
 ___
