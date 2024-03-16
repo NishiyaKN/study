@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/MAD/Prova.md",
+                "file": "NIPOMED.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "notes/MAD/Prova.md",
+                "file": "NIPOMED.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "notes/MAD/Prova.md"
+                "file": "NIPOMED.md"
               }
             }
           }
@@ -159,10 +158,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "aada7f20bfef6f81",
+  "active": "56ea5e91bb166c0a",
   "lastOpenFiles": [
-    "NIPOMED.md",
     "notes/MAD/Prova.md",
+    "NIPOMED.md",
     "notes/MAD/0305.md",
     "Pasted image 20240312140902.png",
     "notes/Untitled/Untitled.md",

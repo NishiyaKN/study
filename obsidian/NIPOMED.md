@@ -275,10 +275,8 @@ ___
 
 Para utilizar o benefício, é necessário informar que é convênio NIPOMED e informar a matrícula/CPF.
 
-Olá novamente Tereza! Teria como agendar uma consulta de avaliação de hérnia umbilical para dia 01/03 (sexta-feira) às 16h?
-Luiz Carlos dos santos
-12/11/1960
-+55 11 95739-5355
+Olá novamente Tereza! Teria como agendar uma consulta de avaliação de hérnia umbilical para dia 15/03 (sexta-feira) às 14h?
+11 93463-9785
 
 
 sobre exames a central agenda sim, porém a orientação é informar a cotação e orientar o cliente entrar em contato com o local p/ agendar conforme a disponibilidade dele, já que nao temos acesso as agendas dos locais

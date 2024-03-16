@@ -1,7 +1,7 @@
 **Processo de software** - conjunto de atividades relacionadas que levam á produção de um software, podem envolver a criação a partir do zero
 Hoje em dia novos softwares de negócios são desenvolvidos por meio da extensão e modificação de sistemas existentes
 
-**Ativdades fundamentais de um processo de software**
+**Atividades fundamentais de um processo de software**
 1. Especificação (funcionalidades e restrições)
 2. Projeto e implementação (produção)
 3. Validação (garantir que atenda às demandas)
@@ -10,7 +10,7 @@ Hoje em dia novos softwares de negócios são desenvolvidos por meio da extensã
 Sistemas *críticos* precisam de um processo de desenvolvimento bem estruturado (**dirigidos à plano**), onde tudo é planejado com antecedência
 Sistemas de *negócios*, onde requisitos mudam constantemente, é melhor algo menos formal e mais flexível (**processos ágeis**), onde o planejamento é gradativo
 
-Quando a diversidade de processos de software é reduzida, os eles podem ser melhorados pela padronização
+Quando a diversidade de processos de software é reduzida, eles podem ser melhorados pela padronização
 
 **Modelo de processo de software** - representação simplificado do processo, fornecendo informações parciais sobre ele.
 Normalmente são usadas em conjunto
@@ -84,8 +84,7 @@ Sistemas stand-alone (funciona de maneira independente, não há source code em 
 Não tem controle sobre todo o projeto, depende de terceiros que criaram os componentes sendo utilizados
 Há um compromisso com os requisitos, não é possível entregar o que o cliente realmente quer
 
-6. Cite duas vantagens da utilização da metodologia desenvolvimento
-incremental.
+6. Cite duas vantagens da utilização da metodologia desenvolvimento incremental.
 Entrega rápida
 Fácil de acomodar mudança nos requisitos
 ___
@@ -114,7 +113,7 @@ Benefícios:
 **Entrega incremental**: alguns dos incrementos desenvolvidos são entregues ao cliente e implantados para uso em um ambiente operacional.
  Os clientes identificam os serviços a serem fornecidos pelo sistema, quais são os mais e menos importantes.
  Problemas:
- 1. A maioria dos sistemas exige um conjutno de recursos básicos. Há a dificuldade em identificar recuros comuns, necesśarios a todos os incrementos. 
+ 1. A maioria dos sistemas exige um conjutno de recursos básicos. Há a dificuldade em identificar recursos comuns, necessários a todos os incrementos. 
  2. Pode ser difícil de iterar quando um sistema substituto está a ser desenvolvido, usuarios ficam relutantes em experimentar um sistema novo incompleto
  3. Especificação desenvolvida junto ao software, o que significa que não há especificação completa até que o último incremento seja especificado
 ___
@@ -143,10 +142,8 @@ Dificuldade em identificar recursos comuns à todos os incrementos
 Quando o sistema em questão está sendo desenvolvido para substituir outro, os usuários ficam com receio de testar um software experimental incompleto
 
 4. Entre os modelos listados a seguir, quais utilizam os princípios dos métodos ágeis?
-
 (x) XP (x) SCRUM ( ) RUP (x) FDD ( ) Waterfall (x) DSDM
 
-5. Reescreva o modelo de desenvolvimento utilizado na aula anterior para a utilização do
-desenvolvimento ágil.
+5. Reescreva o modelo de desenvolvimento utilizado na aula anterior para a utilização do desenvolvimento ágil.
 ?????
 
