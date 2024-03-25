@@ -1,2 +1,0 @@
-1- Será exibido "y = 23"
-2- Ele irá dar erro pois atribuição em Kotlin não retorna valor.

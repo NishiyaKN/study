@@ -29,7 +29,7 @@ O uso é imediato após a adesão e não tem reajuste por idade, o valor da taxa
 
 Sobre os planos, temos duas modalidades:
 - Plano Consultas, onde você pode realizar consultas e exames nos mais diversos laboratórios e clínicas de nossa rede credenciada, tudo por um baixo custo, além de receber descontos nas compras de medicamentos em drogarias.
-- Plano Master, que além dos benefícios do Plano Consultas, consta com preços mais Gacessíveis para cirurgia de hemorroida, hérnia (menos de disco), vesícula, catarata e outras cirurgias eletivas.
+- Plano Master, que além dos benefícios do Plano Consultas, consta com preços mais acessíveis para cirurgia de hemorroida, hérnia (menos de disco), vesícula, catarata e outras cirurgias eletivas.
 Nossos planos não possuem carência e nem limite de uso.
 ___
 ### Dr. Fernando 
@@ -45,8 +45,7 @@ Quinta das 14h às 16h
 Sexta das 13h às 15h
 ___
 ### Cartão virtual
-Entrar no site https://nipomed.app/login e entrar com o cpf e data de nascimento
-Aperta esc e clica no cartão virtual > baixar
+Entrar no site https://nipomed.app/login e entrar com o cpf e data de nascimento Aperta esc e clica no cartão virtual > baixar
 
 - Após finalizar o contrato, há um prazo de 24 horas para a liberação da carteirinha virtual
 ___
@@ -151,9 +150,9 @@ Para a consulta de avaliação, podemos oferecer o preço de associado antes mes
 ___
 ### Agendamento de avaliação 
 
-Confirmado agendamento para avaliação com o Dr. FERNANDO CABRAL DE MENEZES no dia 14/03/2024 (quinta-feira) as 15h.
+Confirmado agendamento para avaliação com o Dr. FERNANDO CABRAL DE MENEZES no dia 27/03/2024 (quarta-feira) as 16h.
 
-Valor: R$90 no dinheiro ou Pix (R$110 no cartão)
+Valor: R$90 no dinheiro ou Pix
 
 Endereço:
 RUA MINISTRO GABRIEL DE REZENDE PASSOS, 500 - CONJ. 1313 - MOEMA - SÃO PAULO
@@ -217,10 +216,10 @@ Local: RUA MINISTRO GABRIEL DE REZENDE PASSOS, 500 - CONJ. 1313 - MOEMA - SÃO P
 
 Olá, boa tarde! A Nipomed é uma assistência médica por credenciamento voltado para quem não possui plano de saúde e precisa de acesso a exames, consultas e cirurgias programadas, nossos planos não são para emergências. 
 
-Boa tarde Tereza, teria como agendar uma consulta de avaliação para hemorroidas para dia 14/03(quinta-feira) às 15h?
-Nome: Antonio Marcellino Machado
-Nascimento: 08/03/1954
-Telefone: 11 94552-9864
+Bom dia Tereza, teria como agendar uma consulta de avaliação de hernia inguinal para dia 27/03 (quarta-feira) às 14h?
+Rogerio Vicente Sousa Mesquita
+13/02/1968
+037 99906-4850
 
 O nosso Plano Consultas e Exames para 2 pessoa está por R$872,00 no Pix ou boleto, podendo ser parcelado em até 4x no cartão.
 ___
@@ -266,6 +265,8 @@ Neste caso o contrato é a própria NF, contendo informações da Nipo Corporati
 Porem os nossos valores não são dedutíveis. Por que, a nipomed não é a prestadora direta de serviço medico, somo intermediários. 
 Somos um sistema de autogestão, por sermos de autogestão os clientes para ter dedução eles precisam declarar os recibos de pagamento de consulta, exame e etc diretamente nos locais utilizados.
 Ele pode declarar nossos serviços sim, utilizando nosso contrato, porém sem deduções.*
+
+Neste caso, a declaração de pagamento é o próprio contrato. Mas os nossos valores não são dedutíveis pois a Nipomed não é a prestadora direta de serviço médico, somos intermediários. Somos um sistema de autogestão, e portanto para os clientes terem dedução eles precisam declarar os recibos de pagamento das consultas, exames e etc. diretamente nos locais utilizados.
 ___
 
 ### Outros
@@ -307,3 +308,6 @@ DEPENDENTE
 - Data de nascimento
 - Gênero 
 - Parentesco
+
+
+Para cirurgias eletivas temos o Plano Master, que oferece descontos para consultas, exames, medicamentos e cirurgias.
