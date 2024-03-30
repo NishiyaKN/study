@@ -11,7 +11,7 @@ ___
 - Quais exames serão pedidos antes de fazer a cirurgia? Tem que ver com o doutor
 - Não existe local físico para adesão
 - Não há tratamentos na área da oncologia (câncer), somente consulta com clínico oncológico
-- Não há casa de internação
+j- Não há casa de internação
 - A efetivação da adesão e liberação da carteirinha digital é realizada em até 24h após a confirmação do pagamento.
 
 Os planos da Nipomed:
@@ -88,7 +88,7 @@ O Plano Consultas Individual está por R$548,00 anual no Pix ou boleto. Fazemos 
 O Plano Consultas Duplo está por R$872,00 anual no Pix ou boleto. Fazemos também em até 4x no cartão
 O Plano Consultas Familiar está por R$1164,00 anual no Pix ou boleto. Fazemos também em até 4x no cartão
 
-O Plano Duplo é para duas pessoas.
+kO Plano Duplo é para duas pessoas.
 O Plano Familiar é para os pais e filhos, inclui todos os filhos que tiver. Para incluir outros familiares (tios, primos, netos, avôs) é um adicional de R$432,00 no Master ou R$217,00 no Consultas por pessoa.
 ___
 ### Central
@@ -150,9 +150,9 @@ Para a consulta de avaliação, podemos oferecer o preço de associado antes mes
 ___
 ### Agendamento de avaliação 
 
-Confirmado agendamento para avaliação com o Dr. FERNANDO CABRAL DE MENEZES no dia 27/03/2024 (quarta-feira) as 16h.
+Confirmado agendamento para avaliação com o Dr. FERNANDO CABRAL DE MENEZES no dia 01/04/2024 (segunda-feira) as 15h.
 
-Valor: R$90 no dinheiro ou Pix
+Valor: R$90 no dinheiro ou Pix, R$110 no cartão
 
 Endereço:
 RUA MINISTRO GABRIEL DE REZENDE PASSOS, 500 - CONJ. 1313 - MOEMA - SÃO PAULO
@@ -216,10 +216,10 @@ Local: RUA MINISTRO GABRIEL DE REZENDE PASSOS, 500 - CONJ. 1313 - MOEMA - SÃO P
 
 Olá, boa tarde! A Nipomed é uma assistência médica por credenciamento voltado para quem não possui plano de saúde e precisa de acesso a exames, consultas e cirurgias programadas, nossos planos não são para emergências. 
 
-Bom dia Tereza, teria como agendar uma consulta de avaliação de hernia inguinal para dia 27/03 (quarta-feira) às 14h?
-Rogerio Vicente Sousa Mesquita
-13/02/1968
-037 99906-4850
+Bom dia Tereza, teria como agendar uma consulta de avaliação de hernia umbilical para dia 01/04 (segunda-feira) às 15h?
+Damião Almeida de Jesus
+22/05/1960
+11 98251-1094
 
 O nosso Plano Consultas e Exames para 2 pessoa está por R$872,00 no Pix ou boleto, podendo ser parcelado em até 4x no cartão.
 ___
@@ -311,3 +311,12 @@ DEPENDENTE
 
 
 Para cirurgias eletivas temos o Plano Master, que oferece descontos para consultas, exames, medicamentos e cirurgias.
+
+
+
+Tereza, tem um cliente que possui hérnia inguinal e umbilical e quer passar pela consulta da avaliação, ele mora perto diz que em 30 minutos chega aqui. Tem como ele passar por avaliação hoje?
+Luciano dos Santos Oliveira
+18/01/1987
+11 96350-3050
+
+vp=5Ei9GUmKO_91+To=u
