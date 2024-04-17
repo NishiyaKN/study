@@ -6,6 +6,7 @@
 - Identifica os **tipos de usuários** que interagem com o sistema, os **papéis** que eles assumem e as **funções** requisitadas;
 - Apresentado durante **reuniões iniciais** com os clientes, auxilia na **identificação de possíveis falhas**;
 - Descreve os requerimentos **funcionais** do sistema
+==LEMBRAR DESSES ELEMENTOS CORRETAMENTE==
 ![[Pasted image 20240405204428.png]]
 - Atores podem ser qualquer elemento externo que interaja com o sistema, inclusive um software ou hardware (impressora fiscal por ex).
 - Casos de uso - serviços, tarefas ou funções usados pelos usuários (podemos associar a uma 'tela' do sistema), inicia com verbo, como 'cadastrar produto', 'emitir NF-e'

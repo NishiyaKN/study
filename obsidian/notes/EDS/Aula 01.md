@@ -17,16 +17,16 @@ muitos defeitos vão aparecer no início, serão corrigidos **durante**, softwar
 
 DADOS -> INFORMAÇÕES -> REQUISITOS -> SOFTWARE
 
-### Engenharia de software 
+### Engenharia de software  *+Importante+*
 é um conjunto de **processos**, **métodos**, **técnicas** e **ferramentas** que ajudam a produzir software com maior qualidade e com menor custo. Trata desde a **especificação** até **manutenção**
 O software tem varias etapas, por isso é uma engenharia, **feito de requisitos** de sistemas.
 Conceito de ES surge com a crise do software. Fim dos anos 60 reconheceram que não tinham qualidade, eram caros, não cumpriam prazos, etc. Engenharia de software obtem seu nome a partir da conferencia da OTAN 1968
 Era desenvolvimento imediatista, depois começou a surgir modelos, como o modelo cascata. 
 
-### Processos de software
+### Processos de software !!! *+Importante+*
 Conjunto de atividades para produção de software
-- **Especifição** dos requisitos, o que é necessário implementar.
-- Definir o **projeto**, fazer o 'desenho'.
+- **Especificação** dos requisitos, o que é necessário implementar. (planejamento)
+- Definir o **projeto**, fazer o 'desenho'. (planejamento)
 - Verificar como irá **implementar**, desenvolver o sistema a partir dos requisitos.
 - **Validar**, testar o software.
 - **Evoluir** com novas funcionalidades e manutenção
@@ -38,6 +38,7 @@ Conjunto de atividades para produção de software
 Se estiver por ex na parte de projeto e o cliente disser que esqueceu de alguma coisa terá que voltar na analisa de requisitos.
 É um ciclo pois sempre terá que voltar na primeira etapa para qualquer implementação. 
 ![[sc-2024-02-26T08-48-23.png|500]]
+# *Bom saber mas nao essencial*
 ### Mitos
 Gerenciamento
 - Ferramentas modernas de software e hardware são suficientes: precisa saber usá-las e saber fazer a gestão de pessoas
@@ -53,7 +54,8 @@ Cliente
 - Uma definição geral dos objetivos é suficiente para comecar a escrever os programas: precisa entender por inteiro o projeto, para que você quer, o que te motivou, onde vai utilizar, estudo de viabilidade.
 - Os requisitos de software mudam continuamente, mas as mudanças podem ser facilmente assimilada, o software é flexível: hoje a metodologia agil buscou segmentar o processo. Mudança e fato, e necessario melhorar a gestao das mudanças, como controlar elas efetivamente.
 ___
-![[sc-2024-02-26T09-07-29.png|1200]]
+Boa sintetização:
+![[sc-2024-02-26T09-07-29.png|1200]]  
 ![[sc-2024-02-26T09-08-09.png|1200]]
 
 o que motiva bem a questao do desenvolvimento do software e a consequencia da pandemia do home office 
