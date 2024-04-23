@@ -1,0 +1,3 @@
+- Independentes de objetos e classes
+- Podem ser chamadas em qualquer parte do código
+- Bloco de código que executa uma tarefa específica

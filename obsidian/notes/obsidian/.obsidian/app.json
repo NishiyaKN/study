@@ -1,0 +1,16 @@
+{
+  "readableLineLength": false,
+  "legacyEditor": false,
+  "vimMode": true,
+  "spellcheck": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "promptDelete": false,
+  "newFileLocation": "current",
+  "alwaysUpdateLinks": true
+}

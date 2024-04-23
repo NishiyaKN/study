@@ -1,0 +1,1 @@
+Programação assíncrona é uma técnica utilizada para que, ao decorrer da execução de uma tarefa, o programa possa executar outras tarefas sem ter que esperar pela finalização da tarefa inicial.
