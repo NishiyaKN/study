@@ -8,6 +8,10 @@
 - Precisa do JDK, seta o caminho do JDK como env JAVA_HOME
 ___
 # 2
+
+Declarações podem conter expressões, mas por si só, não são avaliadas para um valor;
+Declarações são instruções que definem variáveis, funções, classes ou outros elementos do código;
+Diferentemente de expressões, que sempre retornam um valor, as declarações servem para estruturar o programa e não produzem um valor diretamente.
 ```kotlin
 val b: Boolean
 b = (9 == 9)
@@ -79,15 +83,17 @@ for(char in nome){
 ___
 ### If
 ```kotlin
-val res = if(condition){
-	foo
+val res = if(x > 0){
+	"foo"
 }
-else{
-	bar
+else{ // quando if usado como expression precisa sempre do else
+	"bar"
 }
+
+val res2 = if (x > 0) "foo" else "bar"
 ```
 ___
-### when
+### when (substitui o switch)
 ```kotlin
 when (expression){
 	value1 ->{
@@ -101,7 +107,10 @@ when (expression){
 	}
 }
 ```
+![[Pasted image 20240416202759.png]]
 ![[Pasted image 20240408200049.png]]
+![[Pasted image 20240416202827.png]]
+![[Pasted image 20240416202842.png]]
 ![[Pasted image 20240408200111.png]]
 ___
 ### For
@@ -181,7 +190,7 @@ fun main(){
 - Adiciona novas funções à classes existentes
 - Útil para adicionar funcionalidades a classes sobre as quais não se tem controle (biblioteca padrão ou de terceiros)
 ___
-# 4
+# 4.1
 - Kotlin é uma linguagem orientada a objetos e baseada em classes;
 - Utiliza interfaces e classes para definir tipos personalizados;
 - Tipos de dados básicos: Int, Char, Boolean, String, Byte, etc
@@ -260,3 +269,21 @@ fun main(){
 ![[Pasted image 20240410195555.png]]
 ![[Pasted image 20240410195604.png]]
 ![[Pasted image 20240410195609.png]]
+___
+# 4.2
+```kotlin
+open data class Pessoa(val nome: String, val idade: Int){
+	public var α
+	private var β
+	protected var γ
+
+}
+fun main(){
+	val pessoa = Pessoa("John", 25)
+	val (nome, idade) = pessoa
+	var pessoa2 = pessoa.copy(nome = "Jonas")
+}
+
+
+```
+- Visibilidade padrão é pública

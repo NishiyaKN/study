@@ -15,10 +15,11 @@ Quando a diversidade de processos de software é reduzida, eles podem ser melhor
 **Modelo de processo de software** - representação simplificado do processo, fornecendo informações parciais sobre ele.
 Normalmente são usadas em conjunto
 ### Modelo em Cascata
+![[Pasted image 20240414095657.png]]
 - Derivado de processos mais gerais da engenharia
 - Também chamado de "ciclo de vida de software" ou "waterfall"
 - Dirigido a **planos**
-- Principais estagios:
+- Principais estágios:
 	1. Análise e definição de requisitos (serviços, metas e restrições)
 	2. Projeto de sistema e software (definição da arquitetura geral do sistema)
 	3. Implementação e teste unitário (desenvolvimento e teste de cada unidade)
@@ -30,6 +31,7 @@ Normalmente são usadas em conjunto
 - Deve ser usado quando os requisitos são bem compreendidos e inalterados
 
 ### Desenvolvimento incremental
+![[Pasted image 20240414095813.png]]
 - Desenvolve uma implementação inicial e recebe feedback, cria **várias versões** de acordo até que um sistema adequado seja desenvolvido.
 - Atividades de especificação, desenvolvimento e validação são **intercaladas**.
 - Abordagem dirigida a planos, ágil ou mais comumente uma mistura de **ambos**
@@ -48,17 +50,17 @@ Normalmente são usadas em conjunto
 
 ### Desenvolvimento orientado a reuso
 Todos os processos de desenvolvimento incluem um pouco de reúso.
-- Abordagens orientadas a reuso dependem de uma ampla base de componentes reusaveis de software
+- Abordagens orientadas a reuso dependem de uma ampla base de componentes reusáveis de software
 - Estágios:
 	- Especificação de requisitos
-	- Análise de componentes (busca por componentes para implementar as especifiações)
-	- Alterações nos requisitos (modifica os requisitos para refletir os componentes disponiveis)
-	- Projeto de sistem com reuso (framework do sistema é projetado ou algo existente é reusado)
+	- Análise de componentes (busca por componentes para implementar as especifciações)
+	- Alterações nos requisitos (modifica os requisitos para refletir os componentes disponíveis)
+	- Projeto de sistema com reuso (framework do sistema é projetado ou algo existente é reusado)
 	- Desenvolvimento e integração (softwares que não podem ser adquiridos são desenvolvidos e integrados)
 	- Validação de sistema
 - Componentes:
 	1. Web services (invocação remota. xml, json)
-	2. Coleção de objetos (desenvolvidas como um pacote a ser inegrado com um framework, propria empresa tem o source. .net)
+	2. Coleção de objetos (desenvolvidas como um pacote a ser integrado com um framework, própria empresa tem o source. .net)
 	3. Sistemas stand-alone (uso em ambiente particular)
 - Reduz a quantidade de software a ser desenvolvido, custos e riscos
 - Entrega mais rápida
