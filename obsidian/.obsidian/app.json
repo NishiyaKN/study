@@ -2,7 +2,7 @@
   "readableLineLength": false,
   "legacyEditor": false,
   "vimMode": true,
-  "spellcheck": true,
+  "spellcheck": false,
   "pdfExportSettings": {
     "includeName": true,
     "pageSize": "A4",
