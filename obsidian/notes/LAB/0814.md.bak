@@ -1,0 +1,54 @@
+### Fonte
+- Tem tamanhos padronizados
+- **Transforma a corrente alternada em corrente contínua**
+- SFF - Small Form Factor
+- Notebook tem fonte externa
+
+- 0 indica que a partir dessa parte há outras tensões
+
+**Fonte boa é bivolt vai de 100V a 240V, pois diferentes partes do mundo usa diferentes tensões**, tem variação de +- 10%
+- JP 100V
+- America 110V a 127V
+- Eu 240V
+
+- Brasil e américa central usa 60hz 115V 117V
+- Alguns países da américa do sul como chile e paraguay usa 50hz
+- EU 50hz 240V
+
+- Ventilador ou coisas com motores também precisam de uma voltagem mais precisa, se não a velocidade fica muito alterada
+
+- Colocar equipamento no 220V em vez de 110V não vai economizar energia
+
+
+ICSM imposto de transporte de energia 18%, se gastar 100 reais vai ser 118, mas tem que pagar mais imposto sobre esse valor já com imposto
+
+Cabos
+Amarelo 12v, vermelho 5v, laranja ou marrom 3,3v, preto 0v
+Energia elétrica de cabos pode fazer ou sofrer interferência elétrica
+
+Peso do gabinete as vezes é de cabos que não usa
+Fonte modular - não tem cabos saindo, tem várias entradas de conectores e tem vário cabos para plugar apenas o que precisa
+
+Preço de uma fonte determinada pela quantidade de corrente que ela fornece para a tensão
+Numa boa fonte vai estar escrito quantas saidas fornecem os niveis de energia ex
+650W
+AC input: 115-240ac 60-50hz, 10(115V)-5(240V)A ................   se consumir mais A é por que ta em curto, vai pegar fogo. Disjuntor normal por comodo é de 16 a 25 A
+Output: +3,3V   +5V      +12V1     +12V2      +12V3 .................. -12V   
+Max(A): 33A       24A        13A         18A          16A .................... 0.5A
+Tem como programar na bios para clicar qualquer tecla ou usar o mouse para ligar a maquina, por isso tensão negativa
+3,3V + 5V Combined Load 170 W (se fizer a multiplicação e soma dá 220W, mas ele só consegue fornecer 170W)
+12V1 + 12V2 .......... Combined Load 464W (no total vai ser 634W e não 650W)
+Existe um conceito chamado **Fonte Real**: existe uma declaração que você vai comprar a fonte pela capacidade mas no final ela nunca dá. **Fonte a gente compra por peso, por kg** pois tem que ter bastante componente pra ser potente, compara o peso das fontes para saber qual é mais pesado (melhor se for da mesma fabricante).
+
+NR10 governo - reformas de casa deve ser feito com egenheiro eletricista
+Dificilmente tem uma casa com 3 chuveiros, pois se ligar os 3 provavelmente vai desligar tudo pois o fornecimento é uns 100A, cada chuveiro é uns 35A
+Não é bom colocar celular pra ficar carregando em notebook pois degrada a bateria
+Quem tem problelma de desligar disjuntor em casa é ou porque já está no limite (se for mais pode pegar fogo no poste da rua), se for em casa pode resolver colocando cabo mais grosso mais disjuntor
+para um datacenter precisa ter acesso a fios de energia de 88mil volts
+Em servers, fontes podem ser removíveis hot-swappable (consegue trocar mesmo com o server ainda ativo), tem várias fontes pois se uma delas queimar as ouitras restantes devem conseguir manter o sistema vivo (redundancia), 
+
+resistor diminui a tensao ao liberar calor, entra 12V sai 5V de outro lado por exemplo, normalmente feito de ceramica pois esse material nao conduz eletricidade
+Não cai as formulas de resitor, etc nas provas. So foca mais em fontes e cabos
+Capacitor armazena energia, quando a tensão for 0V ou negativo, o capacitor preenche a energia de tensão positiva
+
+*Video no YT sobre tour de data center IBX SP3*

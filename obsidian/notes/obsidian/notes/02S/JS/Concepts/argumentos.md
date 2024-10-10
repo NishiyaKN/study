@@ -1,2 +1,0 @@
-- Valores **reais** passados para uma [[função]] ou [[método]] quando for chamado.
-- Correspondem aos [[parâmetros]] definidos nas funções ou métodos.

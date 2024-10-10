@@ -1,0 +1,60 @@
+### RISC e CISC
+Foco maior do RISC V é permitir que vários produtores de CPU usem o RISC V de modo livre, pra smartphone, tables, serers, notebook, desktop, etc. (alta escalabilidade)
+
+CISC tem instruções complexas, desempenho vem pelo multiprocessamento possível por microcódigo. Flexibidade que otimiza o código e redução do tempo de execução. Uma instrução de cada vez.
+
+Dependendo da necessidade da empresa, deve escolher o RISC ou CISC.
+- Operações financeiras, débito e crédito, geração de nota fiscal, dá pra usar RISC.
+- Aplicações complexas, empresas de engenharia, melhor optar por CISC.
+
+CISC começou em 1960 com IBM, x86 surgiu no final da década de 70 para computadores pessoais.
+x86-64 em 2003 (AMD64) é uma extensão da arquitetura x86, trouxe suporte para 64bits.
+
+Chipset é o planejamento de toda a arquitetura de um computador. É lá onde se define o tipo de processador que irá utilizar. 
+
+Exemplos de CISC
+- Motorola 68000
+- VAX - usado por mainframes e minicomputador (servidor de médio porte)
+- SPARC - para servers e workstation Unix
+
+### Microprogramação
+- Otimizado para arquitetura CISC
+- Pipeline é possível pela microprogramação
+- Multiprocessamento: possibilidade de usar um hardware mais simples para executar diversas instruções reduzidas (micro instruções) de forma concorrente.
+
+Exemplo: Para executar uma determinada instrução multiprocessada
+- soma y vezes o valor de x
+- microprograma é previamente desenvolvido pelo fabricante e armazenado em uma ROM do processador
+
+- Com o surgimento da microprogramação foi inserido um nível intermediário entre a linguagem de máquina (baixo) e o nível de hardware (alto), este nível é denominado firmware, constituído pelo microprgrama. *No chipset faz o planejamento do firmware, e nele é possível fazer a implementação de ambas as arquiteturas de RICS e CISC.*
+- É como se tivesse uma micro-CPU dentro do CPU: precisa de uma UC para controlar as microinstruções, um microcontador de instruções, um microrrregistrador de instrução.
+
+[[Colocar a imagem da figura 37]]
+
+[Memória de Controle (Unidade de controle) - executa ou controla a execução da instrução de máquina, associada ao CP (ajuda no endereçamento da próxima instrução). ]
+
+Microprogramação tem dois tipos de microinstruções:
+- Horizontais:
+    - tem estrutura do RISC, pois o conceito é de instruções reduzidas: divisão da instrução em microinstruções lineares
+    - cada bit da microinstrução tem uma função específica
+    - controla uma linha do barramento de controle
+    - permite condição de desvio se for necessário
+    - pra ser executada precisa de duas funcionalidades:
+        - ativar a linha de controle (vai ter um bit que é 1 indica que a microoperação é realizada)
+        - avaliar os bits de condição, executar a partir da necessidade de desvio. Se todos os bits for 0, executa a próxima microinstrução, se um dos bits de condição for igual a 1 é executada em seguida a microinstrução
+    - reduz o custo/complexidade da micro UC, memória passa a ser menor, reduz os bits das microinstruções, mas há maior quantidade de microinstruções.
+    - pequena perda de tempo por causa de decodificação desse grande número de microinstruções
+
+- Verticais:
+    - tem estrutura do CISC - instruções complexas com multiprocessamento, decodificação das diferentes microinstruções
+    - simplifica a microinstrução, não há necessidade de quebrar em linhas verticais cada instrução
+
+_
+- Misto:
+
+- não será totalmente horizontal com a maior quantidade possível de bits
+- nem totalmente vertical com a codificação de todos os campos
+
+- reduz a quantidade de bits em relação ao formato horizontal
+- reduz o custo da memória de controle
+- não introduz acentuada perda de tempo em decodificação

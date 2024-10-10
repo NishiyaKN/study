@@ -1,0 +1,142 @@
+# Chapter 1
+
+**ESD** - Electrostatic Discharge, < 30 volts can damage pc components
+___
+### Power supply
+- **Types**
+	- AT - obsolete, doesn't have +3.3V
+	- ATX - obsolete
+	- ATX12V - 'most' common, has dedicated power to CPU
+	- EPS12V - used for high-end desktop models
+- **Connectors**
+	- 20/24 pin - motherboard
+	- SATA - disk drives
+	- Molex - hard drives, optical drives, etc
+	- Berg - floppy drives
+	- 4/8 pin - auxiliary power for GPU, CPU
+	- 6/8 pin - PCIe power connector
+- **Voltage** 
+	- 3.3V (digital circuit)
+	- 5V (digital circuit)
+	- 12V (disk and fan motor)
+---
+### Motherboard
+- **Connections**
+	- Chipset - control how system hardware interacts with the CPU, limits how much RAM  can be added
+	- BIOS - boot the system and manage the flow of data to every component
+	- UEFI - newer BIOS, specifies a different firmware 
+	- IDE - old disk drives, 40 pin connector
+	- Internal USB - 19 pin for USB 3, 9 pin for USB 1.1 and 2
+- **Chipset**
+	- Northbridge - high speed data: RAM, GPU, CPU, PCIe - conectados pelo FSB front side bus
+	- Southbridge - slow speed data: HDD, BIOS, PCI, peripherals
+ - **Form factors**
+	 - ATX - most used, 20 pin connector
+	 - Micro ATX - used in small pcs
+	 - ITX - small, uses little power
+	 - Mini ITX - used in thin clients
+---
+### CPU
+- **Architectures**
+	- PGA - pin grid array, pins are in the CPU package
+	- LGA - land grid array, pins are in the socket
+ ---
+### Memory - cnp
+- **ROM**
+	Directly accessed by the CPU, stores basic operation instructions such as boot
+	- ROM - Read-Only Memory
+	- PROM - Programmable ROM
+	- EPROM - Erasable PROM, erased by UV light exposure
+	- EEPROM - Electrically EPROM, used for BIOS
+		- Flash Memroy is an upgrade from EEPROM
+- **RAM**
+	Acessed by programs used by the CPU
+	- DRAM - Dynamic RAM, used for main memory
+	- SRAM - Static RAM, cache memory, low power, much faster than DRAM
+	- SDRAM - Synchronous Dynamic RAM, high transfer rates
+	- DDR SDRAM - Double Data Rate SDRAM, each gen is faster, uses less power, has more pins, etc. 
+	- GDDR RAM - Graphics, GPU
+- **Modules**
+	Memory modules can be single-sided or double-sided.
+	- DIP - Dual Inline Package
+	- SIMM - Single Inline Memory Module, small circuit board that holds sevelra memory chips
+	- DIMM - Dual Inline Memory Module, holds SDRAM chips
+	- SODIMM - Small Outline DIMM, used on laptops, printers and small devices
+	- RDDIM -  memória com buffer, que permite uma maior quantidade de RAM mas uma velocidade reduzida. Ela possui um controlador que faz o gerenciamento de grandes quantidades da RAM. Mais comum em servers e workstations
+ - **Memory errors**
+	 - Nonparity - doesn't check for errors, most common for home and business workstations
+	 - Parity - contains eight bits for data and one for error checking (parity bit)
+	 - ECC - Error Correction Code memory can detec multiple bit errors and correct single bit errors, used on financial or data analytics servers
+ ___
+### Hard Disk Drives
+- **Magnetic**
+	- HDD
+		- 1.8'
+		- 2.5'
+		- 3.5'
+	- Tape - used for archiving
+ - **Solid State**
+	- Disc drive - like HDD, 1,8', 2.5' ,3.5'
+	- Expasion cards - plugged directly into the motherboard
+	- mSata (M.2) - use a special socket
+![[Pasted image 20231012092135.png]]
+
+___
+# Chapter 2
+
+![[Pasted image 20241006181418.png]]
+![[Pasted image 20241006181842.png]]
+![[Pasted image 20241006182003.png]]
+![[Pasted image 20241006182107.png]]
+![[Pasted image 20241006194214.png]]
+![[Pasted image 20241006194841.png]]
+![[Pasted image 20241007165346.png]]
+- Memoria buffer é comumente utilizada em servidores
+- 5,25" - unidade optica
+- PSU fica assegurada por parafusos
+- PCIe é serial, PCI é paralelo
+- Adaptador de vídeo (GPU) deve precisar de dois conectores de energia de 8 pinos
+- Finalidade de um "espelho" I/O é tornar as portas I/O da mobo disponíveis para conexão para uma variedade de gabinetes
+- CPU e RAM conectados pelo barramento frontal 
+___
+# Chapter 3
+### POST
+Means power-on self-test, and is a **hardware check** performed by the BIOS on boot. Whenever some hardware fails, it will beep x times corresponding to the hardware fail beep code defined by the manufacturer 
+### BIOS
+- Is a small program contained inside a ROM chip on the motherboard, which controls communication between the OS and the hardware.
+- It's settings are saved on a CMOS memory chip.
+- When booted, the BIOS look for the configuration set on the CMOS.
+- CMOS uses a watch battery
+### UEFI
+Unified Extensible Firmware Interface, provides additional features and better security compared with legacy BIOS.
+Can run on 32-bit and 64-bit systems, support larger boot drives and have things like secure boot. 
+Secure boot faz com que apenas sistemas operacionais e drivers confiáveis sejam bootados
+### Security features
+- Passwords - allows for different levels of access to the BIOS settings
+- Drive encryption
+- LoJack - locate, lock and delete
+- TPM - Trusted Platform Module - chip that stores encyption keys, digital certificates, password and data. Used by BitLocker's full disk encryption
+- Secure boot - computer will only boot an OS trusted by the motherboard manufacturer
+### Power Fluctuation Types
+Unsteady voltages 
+ - Blackout - Complete loss of AC power
+ - Brownout - Drops below 80% of the normal voltage level or is overloaded
+ - Noise - Interferences form generators and lightning (poor quality power)
+ - Spike - Sudden increase of voltage, over 100% of normal levels, caused by lightning or when electrical system comes backs
+ - Power surge - Dramatic increase in voltage, lasts for a few nanoseconds
+### Power Protection Devices
+- Surge protector - protects from surge and spikes, diverts extra voltage to the ground
+- UPS - Uninterruptible power supply, supplies a **consistent** level of power to a device. Helps on blackouts or brownouts. 
+- SPS- Standby power supply, provides a backup battery when voltage drops below the normal level. Not reliable as UPS since it takes time to switch and if may fail.
+### CPU Architectures
+CPU executes programs (sequence of stored instructions) by following a specific instrcutions set:
+- RISC - Reduced Instruction Set Computer, have very small instructions, designed to execute them rapidly. E.g, ARM, PowerPC.
+- CISC - Complex Instruction Set Computer, uses a broad set of instructions, fewer steps. E.g., Intel x86.
+### CPU Operation
+- Hyper-Threading - multiple pieces of code (threads) are executed simultaneously in the CPU. It's like there are multiple CPUs
+- HyperTransport - high-speed connection between the CPU and Northbridge chip
+The amount of data that a CPU can process at one time depends on the size of the [[FSB]]. 
+### Multicore
+- Cache L2 e L3 normalmente são separados, L1 é compartilhada
+- Multicore usa menos energia e produz menos calor que singlecore
+- 

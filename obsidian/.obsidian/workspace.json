@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "B3.md",
+                "file": "notes/README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "B3.md",
+                "file": "notes/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "B3.md",
+                "file": "notes/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "B3.md"
+                "file": "notes/README.md"
               }
             }
           }
@@ -146,18 +146,35 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "56ea5e91bb166c0a",
+  "active": "73ea793750b2f734",
   "lastOpenFiles": [
     "B3.md",
-    "MISC.md",
-    "notes/AED/SLa.md",
-    "notes/AED/Questionários.md",
-    "NIPOMED.md",
-    "notes/ADS/Aula 03 !!!!.md",
-    "notes/ADS/Aula 02.md",
-    "notes/ADS/Aula 01.md",
+    "notes/ALG/Hash Tables.md",
+    "PY/Exception.md",
+    "notes/SDI/Untitled.md",
+    "notes/SDI/Resumo.md",
+    "notes/SDI/0910.md",
+    "notes/SDI/Karnaugh.md",
+    "notes/SDI/AT05 - Circuitos Combinacionais.md",
+    "notes/SDI/3 - Algebra booleana.md",
+    "notes/SDI/0820.md",
+    "notes/SDI/4 - Circuitos lógicos.md",
+    "notes/SDI/2 - Binário.md",
+    "notes/SDI/1 - Sistemas de negócios e de infraestrutura.md",
+    "notes/RED/0814.md",
+    "notes/RED/N1.md",
+    "notes/RED/0813.md",
+    "notes/LAB/Especificação de configs até outubro.md",
+    "notes/LAB/Fundamentos do Hardware do Computador.md",
+    "notes/LAB/0828.md",
+    "notes/LAB/0821.md",
+    "notes/LAB/0814.md",
+    "notes/ENG/0815.md",
+    "notes/ENG/0829.md",
+    "notes/ENG/0905.md",
+    "notes/ENG/1003.md",
+    "notes/ENG/0822.md",
     "notes/DDA/Media/Pasted image 20240410175346.png",
-    "notes/DDA/Kotlin Slides.md",
     "notes/DDA/Media/Pasted image 20240410195609.png",
     "notes/DDA/Media/Pasted image 20240410195604.png",
     "notes/DDA/Media/Pasted image 20240410195555.png",
@@ -166,29 +183,12 @@
     "notes/DDA/Media/Pasted image 20240410195529.png",
     "notes/DDA/Media/Pasted image 20240410154145.png",
     "notes/DDA/Media/Pasted image 20240410161656.png",
-    "notes/EDS/Aula 08.md",
-    "notes/EDS/Aula 07.md",
-    "notes/EDS/Aula 06.md",
-    "notes/EDS/Aula 05.md",
-    "notes/EDS/Aula 04.md",
-    "notes/EDS/Aula 03.md",
-    "notes/EDS/Aula 02.md",
-    "notes/EDS/Aula 01.md",
     "notes/EDS/Media/Pasted image 20240410142600.png",
-    "notes/EDS/Aula 09.md",
     "notes/DDA/Media",
-    "Linux.md",
-    "ASAAS.md",
-    "notes/DDA/LISTA 1.md",
-    "notes/DDA/Inicio.md",
-    "notes/DDA/2_01.md",
     "notes/AED/Media",
-    "notes/ADS/Aula 04.md",
-    "notes/ADS/Questionarios.md",
     "notes/ADS/Media",
     "notes/BDN",
     "notes/ADS",
-    "notes/EDS/Aula Noite.md",
     "notes/MAD/Media",
     "notes/DDA",
     "notes/ADS",
